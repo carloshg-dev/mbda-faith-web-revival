@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-12T22:54:01.903877",
-  "total_articles": 86,
+  "last_updated": "2026-08-13T11:08:28.660332",
+  "total_articles": 63,
   "sources": [
     "Arqueologia e Pré-História",
     "BBC News Brasil",
@@ -8,20 +8,13 @@
     "Cafetorah - Notícias de Israel",
     "Christianity Today (PT)",
     "Folha Gospel",
-    "Google News - Achados Arqueológicos",
-    "Google News - Calvinismo",
-    "Google News - Crescente Fértil",
-    "Google News - Cópias e Manuscritos",
-    "Google News - Grécia Antiga e Helenismo",
-    "Google News - Idade Média",
     "Google News - NSC Total (SC)",
-    "Google News - Nínive e Assíria",
     "Google News - Patrística",
     "Google News - Síria e Damasco",
-    "Google News - Terra Santa",
     "IBArq",
     "Incrível História",
     "MAE USP",
+    "Monergismo",
     "National Geographic Brasil - Arqueologia",
     "Notícias de Israel",
     "Portas Abertas",
@@ -36,34 +29,34 @@
       "summary": "Segundo as teorias mais aceitas, os povos Tupi se originaram na região amazônica, a partir de onde teriam começado a se expandir por volta de 5000 AP (antes do Presente).",
       "url": "https://arqueologiaeprehistoria.com/2026/06/13/o-oceano-e-os-tupinamba/",
       "source": "Arqueologia e Pré-História",
-      "date": "Wed, 12 Aug 2026 22:53:03 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:26 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://arqueologiaeprehistoria.com/wp-content/uploads/2021/03/cropped-logo-fundo-vazio.png"
-    },
-    {
-      "title": "5 Curiosidades sobre Nabucodonosor II",
-      "summary": "5 Curiosidades sobre Nabucodonosor II, o Destruição de Nações (o Leão da Babilônia), o maior rei do Segundo Império da Babilônia.",
-      "url": "https://incrivelhistoria.com.br/5-curiosidades-sobre-nabucodonosor-ii/",
-      "source": "Incrível História",
-      "date": "Wed, 12 Aug 2026 22:52:59 GMT",
-      "category": "História e Arqueologia",
-      "image_url": "https://incrivelhistoria.com.br/app/uploads/2026/01/nabucodonosor-ii-curiosidades-incrivel-historia.jpg"
     },
     {
       "title": "Al Capone, o poderoso chefão de Chicago",
       "summary": "Biografia de Al Capone, o mais notório e um dos mais gângsteres que o mundo já conheceu. Dos primeiros anos até a sua morte.",
       "url": "https://incrivelhistoria.com.br/al-capone-biografia/",
       "source": "Incrível História",
-      "date": "Wed, 12 Aug 2026 22:52:58 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:23 GMT",
       "category": "História e Arqueologia",
       "image_url": "https://incrivelhistoria.com.br/app/uploads/2015/05/biografia-al-capone-historia-crime-morte-incrivel-historia_1.webp"
+    },
+    {
+      "title": "5 Curiosidades sobre Nabucodonosor II",
+      "summary": "5 Curiosidades sobre Nabucodonosor II, o Destruição de Nações (o Leão da Babilônia), o maior rei do Segundo Império da Babilônia.",
+      "url": "https://incrivelhistoria.com.br/5-curiosidades-sobre-nabucodonosor-ii/",
+      "source": "Incrível História",
+      "date": "Thu, 13 Aug 2026 11:07:23 GMT",
+      "category": "História e Arqueologia",
+      "image_url": "https://incrivelhistoria.com.br/app/uploads/2026/01/nabucodonosor-ii-curiosidades-incrivel-historia.jpg"
     },
     {
       "title": "As 3 incríveis descobertas da Arqueologia Bíblica em Dezembro de 2021",
       "summary": "O último mês do ano reservou boas supresas para os amantes da arqueologia bíblica. Curiosamente, todos tem relação com o Novo Testamento e nos auxiliarão a ter mais compreensão sobre o contexto histórico-cultural da época de Jesus Cristo.1. O Crucificado InglêsRaridade encontrada em Cambridgeshire traz mais luz sobre a cruz, instrumento de tortura e morte do Império RomanoQuem nos segue no Instagr...",
       "url": "https://www.ibarq.org.br/post/as-3-incríveis-descobertas-da-arqueologia-bíblica-em-dezembro-de-2021",
       "source": "IBArq",
-      "date": "Wed, 12 Aug 2026 22:52:55 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:19 GMT",
       "category": "Arqueologia Bíblica",
       "image_url": "https://static.wixstatic.com/media/5a70b4_a416af5b047b4d519140bf08f0f83a46~mv2.jpg/v1/fill/w_936,h_526,al_c,lg_1,q_85/5a70b4_a416af5b047b4d519140bf08f0f83a46~mv2.jpg"
     },
@@ -72,7 +65,7 @@
       "summary": "Quando pensamos nos tempos antigos descritos na Bíblia, uma das perguntas mais frequentes entre estudiosos e curiosos é: Israel realmente possuía um reino organizado e letrado no século X a.C.? Apesar do ceticismo de muitos estudioso, a resposta, sustentada por descobertas arqueológicas recentes e impactantes, é cada vez mais afirmativa.Achados arqueológicos surgiram nos últimos anos para reforçar...",
       "url": "https://www.ibarq.org.br/post/3-evidências-arqueológicas-do-reino-de-davi",
       "source": "IBArq",
-      "date": "Wed, 12 Aug 2026 22:52:54 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:16 GMT",
       "category": "Arqueologia Bíblica",
       "image_url": "https://static.wixstatic.com/media/5a70b4_f57390de86e144afb7f7db962e445c71~mv2.jpg/v1/fill/w_280,h_399,al_c,lg_1,q_80/5a70b4_f57390de86e144afb7f7db962e445c71~mv2.jpg"
     },
@@ -81,7 +74,7 @@
       "summary": "O MAE-USP oferece os seguintes cursos de pós-graduação: Mestrado e Doutorado em Arqueologia do Programa de Pós-graduação",
       "url": "https://mae.usp.br/pos-graduacao-no-mae/",
       "source": "MAE USP",
-      "date": "Wed, 12 Aug 2026 22:52:47 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:06 GMT",
       "category": "Arqueologia e História",
       "image_url": null
     },
@@ -90,16 +83,25 @@
       "summary": "Oportunidade de bolsa FAPESP TT-4 no projeto Palynofacies Analysis in Archaeological Sediments from Amazonian Sites: Reconstructing the",
       "url": "https://mae.usp.br/bolsa-fapesp-tt-iv/",
       "source": "MAE USP",
-      "date": "Wed, 12 Aug 2026 22:52:46 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:05 GMT",
       "category": "Arqueologia e História",
       "image_url": null
+    },
+    {
+      "title": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste do Brasil",
+      "summary": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste d...",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1350",
+      "source": "SABNET Revista",
+      "date": "Thu, 13 Aug 2026 11:07:01 GMT",
+      "category": "Arqueologia e História",
+      "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
     {
       "title": "Abordagens multidisciplinares à arqueologia forense: tópicos discutidos durante as reuniões europeias de arqueologia forense (EMFA)",
       "summary": "Abordagens multidisciplinares à arqueologia forense: tópicos discutidos durante as reuniões europeias de arqueologia for...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1383",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:43 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:01 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -108,16 +110,7 @@
       "summary": "A pesquisa teve como objetivo analisar a relação entre a identidade local e o patrimônio arqueológico no distrito de Llata (Huánuco, Peru), identificando o nível de percepção dos cidadãos e sua influência na valorização cultural. O estudo foi básico, com enfoque quantitativo correlacional e desenho transversal não experimental. Foi aplicada uma pesquisa a 116 habitantes da área urbana, selecionado...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1298",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:42 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
-    },
-    {
-      "title": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste do Brasil",
-      "summary": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste d...",
-      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1350",
-      "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:42 GMT",
+      "date": "Thu, 13 Aug 2026 11:07:00 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -126,7 +119,7 @@
       "summary": "Sítios arqueológicos no estado do Piauí, Brasil, apresentam eflorescências salinas em abrigos rochosos. No sítio arqueológico Toca do Baixão do Milho, os minerais whewellita (CaC₂O₄H₂O) e weddellita (CaC₂O₄2H₂O) foram identificados e datados por radiocarbono. Dada a relevância da área de pesquisa para a história das Américas, os dados de radiocarbono da Serra das Confusões, Piauí, Brasil, foram co...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1405",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:41 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:59 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -135,7 +128,7 @@
       "summary": "A salvaguarda das coleções arqueológicas sob a guarda da reserva técnica da Universidade Federal do Maranhão (2020-2023)...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1385",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:41 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:59 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -144,7 +137,7 @@
       "summary": "Alimentação e ferramentas marinhas: a importância da fauna tetrápode marinha nas práticas culturais dos construtores de ...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1332",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:40 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:58 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -153,7 +146,7 @@
       "summary": "Estruturas, agencialidade e paisagem a arte rupestre nos sítios Matão 1 e Siriema 2, Alto Araçuaí, Minas Gerais, Brasil...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1336",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:39 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:57 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -162,16 +155,7 @@
       "summary": "Este artigo tem como objetivo abordar os sítios arqueológicos indígenas identificados no município de Belo Horizonte (MG) entre as décadas de 1930 e 1950, com destaque para o sítio arqueológico Córrego do Cardoso. A partir da articulação entre dados documentais, paisagísticos e de cultura material, localizados em distintas instituições, buscamos recriar um vínculo referencial sobre o contexto arqu...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1301",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:38 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
-    },
-    {
-      "title": "Editorial",
-      "summary": "Este trabalho está licenciado sob uma licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
-      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1417",
-      "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:37 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:56 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -180,7 +164,16 @@
       "summary": "Este artigo investiga o sentido e as implicações da expressão isso não é arqueologia, frequentemente ouvida em alguns espaços de poder como bancas, congressos, salas de aula e corredores de instituições de ensino , mas raramente escrita, como dispositivo discursivo de exclusão e demarcação disciplinar. Argumenta-se que tal afirmação opera como uma fronteira que busca preservar um ideal de cientifi...",
       "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1359",
       "source": "SABNET Revista",
-      "date": "Wed, 12 Aug 2026 22:52:37 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:55 GMT",
+      "category": "Arqueologia e História",
+      "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
+    },
+    {
+      "title": "Editorial",
+      "summary": "Este trabalho está licenciado sob uma licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1417",
+      "source": "SABNET Revista",
+      "date": "Thu, 13 Aug 2026 11:06:54 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png"
     },
@@ -189,7 +182,7 @@
       "summary": "Christianity Today em Português",
       "url": "https://www.facebook.com/ChristianityTodayPT/",
       "source": "Christianity Today (PT)",
-      "date": "Wed, 12 Aug 2026 22:52:33 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:50 GMT",
       "category": "Teologia e Igreja",
       "image_url": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/07/Olasky_resilience-kids_online-2.jpg?w=1266"
     },
@@ -198,7 +191,7 @@
       "summary": "Uma sessão de perguntas e respostas com Tish Harrison Warren sobre resiliência, criação de filhos e tecnologia. Para criar filhos resilientes, não lhes tire o desafio",
       "url": "https://pt.christianitytoday.com/2026/07/criacao-filhos-resiliencia-desafios-pt/",
       "source": "Christianity Today (PT)",
-      "date": "Wed, 12 Aug 2026 22:52:33 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:50 GMT",
       "category": "Teologia e Igreja",
       "image_url": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/07/Olasky_resilience-kids_online-2.jpg?resize=1200,628"
     },
@@ -207,7 +200,7 @@
       "summary": "Russell Moore fala sobre críticas, aconselhamento de casais, períodos de deserto e intuição. 30 Coisas que aprendi em 30 anos de ministério",
       "url": "https://pt.christianitytoday.com/2026/07/pastor-licoes-pastorado-ministerio-russell-moore-pt/",
       "source": "Christianity Today (PT)",
-      "date": "Wed, 12 Aug 2026 22:52:33 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:50 GMT",
       "category": "Teologia e Igreja",
       "image_url": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/07/30-things-learned-30-years-ministry.jpg?resize=1200,628"
     },
@@ -216,259 +209,214 @@
       "summary": "Para ser bem-sucedida, a nova adaptação hollywoodiana do poema épico deve navegar em direção ao verdadeiro porto seguro de Cristo.",
       "url": "https://pt.christianitytoday.com/2026/07/nolan-odisseia-homero-fragmentos-do-evangelho-pt/",
       "source": "Christianity Today (PT)",
-      "date": "Wed, 12 Aug 2026 22:52:33 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:50 GMT",
       "category": "Teologia e Igreja",
       "image_url": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/07/christopher-nolan-odyssey-review.jpg?resize=1200,628"
-    },
-    {
-      "title": "História e Cultura",
-      "summary": "Reabilitação dos animaisVermilinguaTamanduá bandeiraPerda de habitatEstradaMulheres na Conservação CulturaPsicologiaCiências sociaisEmoçõesAmor",
-      "url": "https://www.nationalgeographicbrasil.com/historia",
-      "source": "National Geographic Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:52:02 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/queen-victoria-og.jpg?w=1600&h=1067"
     },
     {
       "title": "Roma Antiga",
       "summary": "Para revelar uma antiga rua com degraus em Jerusalém, arqueólogos e engenheiros israelenses estão construindo uma espécie de túnel de metrô sob um bairro...",
       "url": "https://www.nationalgeographicbrasil.com/assunto/temas/historia/idade-antiga/civilizacoes-antigas/roma-antiga",
       "source": "National Geographic Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:52:02 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:22 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/og-jerusalem-street.jpg?w=1600&h=1600"
     },
     {
+      "title": "História e Cultura",
+      "summary": "Reabilitação dos animaisVermilinguaTamanduá bandeiraPerda de habitatEstradaMulheres na Conservação CulturaPsicologiaCiências sociaisEmoçõesAmor",
+      "url": "https://www.nationalgeographicbrasil.com/historia",
+      "source": "National Geographic Brasil - Arqueologia",
+      "date": "Thu, 13 Aug 2026 11:06:21 GMT",
+      "category": "Arqueologia e História",
+      "image_url": "https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/queen-victoria-og.jpg?w=1600&h=1067"
+    },
+    {
       "title": "Por que viúvas negras comem os machos durante o sexo? Resposta está nos genes",
       "summary": "Ritual de acasalamento inclui uma cambalhota em direção às presas da fêmea e pode favorecer a reprodução Por que viúvas negras comem os machos durante o sexo? Resposta está nos genes",
-      "url": "https://revistagalileu.globo.com/ciencia/biologia/noticia/2026/08/por-que-viuvas-negras-comem-os-machos-durante-o-sexo-resposta-esta-nos-genes.ghtml#GALILEU-POST-TOP-24H-item,top,f0cf7de4-bf7c-4720-9eee-669949647b1c",
+      "url": "https://revistagalileu.globo.com/ciencia/biologia/noticia/2026/08/por-que-viuvas-negras-comem-os-machos-durante-o-sexo-resposta-esta-nos-genes.ghtml#GALILEU-POST-TOP-24H-item,top,99a63947-caf7-4fe1-bdb5-6eb4abdc17ae",
       "source": "Revista Galileu",
-      "date": "Wed, 12 Aug 2026 22:51:56 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:16 GMT",
       "category": "Ciência e Tecnologia",
       "image_url": "https://s2-galileu.glbimg.com/TcNuvzDB7-baALC5U_i4AKSifvg=/1996x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/b/g/QAmk8RQECQhKgntnJizw/5b099c49b54cbcdd37d1ce8fff114d67.png"
     },
     {
+      "title": "Cientistas capturam uma convulsão em tempo real pela 1ª vez; veja vídeo",
+      "summary": "Nova técnica de microscopia permitiu registrar, em três dimensões e do início ao fim, a propagação da atividade elétrica em um modelo de cérebro de larvas de peixe-zebra",
+      "url": "https://revistagalileu.globo.com/saude/noticia/2026/08/cientistas-capturam-uma-convulsao-em-tempo-real-pela-1a-vez-veja-video.ghtml#GALILEU-POST-TOP-24H-item,top,99a63947-caf7-4fe1-bdb5-6eb4abdc17ae",
+      "source": "Revista Galileu",
+      "date": "Thu, 13 Aug 2026 11:06:16 GMT",
+      "category": "Ciência e Tecnologia",
+      "image_url": "https://s2-galileu.glbimg.com/_ln4SuTZyZZMR0RivDwYD8Pjfyg=/2828x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/x/m/JeCwkARTWISeqIcLbsAw/captura-de-tela-2026-08-12-131725.png"
+    },
+    {
       "title": "15 minutos de atividade física já podem ajudar a reduzir risco de câncer",
       "summary": "Trocar breves períodos de sono ou de tempo sentado por movimento, mesmo em tarefas do dia a dia, foi associado a uma queda na incidência da doença, apontam dados coletados de quase 60 mil pessoas",
-      "url": "https://revistagalileu.globo.com/saude/noticia/2026/08/15-minutos-de-atividade-fisica-ja-podem-ajudar-a-reduzir-risco-de-cancer.ghtml#GALILEU-POST-TOP-24H-item,top,f0cf7de4-bf7c-4720-9eee-669949647b1c",
+      "url": "https://revistagalileu.globo.com/saude/noticia/2026/08/15-minutos-de-atividade-fisica-ja-podem-ajudar-a-reduzir-risco-de-cancer.ghtml#GALILEU-POST-TOP-24H-item,top,99a63947-caf7-4fe1-bdb5-6eb4abdc17ae",
       "source": "Revista Galileu",
-      "date": "Wed, 12 Aug 2026 22:51:56 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:16 GMT",
       "category": "Ciência e Tecnologia",
       "image_url": "https://s2-galileu.glbimg.com/Jf4WSx5GDOveQNkV8Z26vijsnME=/6000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/p/l/9CHIFZT3aVPBAVwGHWtQ/pexels-cristian-camilo-estrada-2152272341-36182438.jpg"
     },
     {
       "title": "Explore o mapa 2D do Universo mais completo até hoje, com 4 bilhões de objetos espaciais",
       "summary": "Ferramenta gratuita permite navegar por estrelas, galáxias, buracos negros e asteroides capturados por telescópios dos Estados Unidos e do Chile. Veja como explorar",
-      "url": "https://revistagalileu.globo.com/ciencia/espaco/noticia/2026/08/mapa-2d-do-universo-mais-completo-ate-hoje-feito-em-13-anos-tem-4-bilhoes-de-objetos-espaciais.ghtml#GALILEU-POST-TOP-24H-item,top,f0cf7de4-bf7c-4720-9eee-669949647b1c",
+      "url": "https://revistagalileu.globo.com/ciencia/espaco/noticia/2026/08/mapa-2d-do-universo-mais-completo-ate-hoje-feito-em-13-anos-tem-4-bilhoes-de-objetos-espaciais.ghtml#GALILEU-POST-TOP-24H-item,top,99a63947-caf7-4fe1-bdb5-6eb4abdc17ae",
       "source": "Revista Galileu",
-      "date": "Wed, 12 Aug 2026 22:51:56 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:16 GMT",
       "category": "Astronomia",
       "image_url": "https://s2-galileu.glbimg.com/r7SHPXTtVCfbWZPIdcpLRrT7CY8=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/t/j/uodiBmRMST5WHeXucejQ/noirlab2620a.jpg"
     },
     {
-      "title": "Por que a previsão do tempo tem limite máximo de 129 dias, segundo este estudo",
-      "summary": "Incertezas em relação à energia solar limitam as condições físicas da atmosfera terrestre a previsibilidade meteorológica; entenda",
-      "url": "https://revistagalileu.globo.com/ciencia/noticia/2026/08/por-que-a-previsao-do-tempo-tem-limite-maximo-de-129-dias-segundo-este-estudo.ghtml#GALILEU-POST-TOP-24H-item,top,f0cf7de4-bf7c-4720-9eee-669949647b1c",
+      "title": "Sarampo: 15 dúvidas respondidas sobre a vacinação e o risco da doença",
+      "summary": "Especialistas explicam como o vírus se espalha, quem deve se vacinar, quais são as exceções e como agir diante de uma suspeita",
+      "url": "https://revistagalileu.globo.com/saude/noticia/2026/08/sarampo-15-duvidas-respondidas-sobre-a-vacinacao-e-o-risco-da-doenca.ghtml#GALILEU-POST-TOP-24H-item,top,99a63947-caf7-4fe1-bdb5-6eb4abdc17ae",
       "source": "Revista Galileu",
-      "date": "Wed, 12 Aug 2026 22:51:56 GMT",
-      "category": "Ciência e Tecnologia",
-      "image_url": "https://s2-galileu.glbimg.com/O3IOFaJ8cdHa7RYLV1ILnT_ewHM=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/H/g/cZCk6rTOuMAPZgZqPGBw/image3.png"
-    },
-    {
-      "title": "Cientistas capturam uma convulsão em tempo real pela 1ª vez; veja vídeo",
-      "summary": "Nova técnica de microscopia permitiu registrar, em três dimensões e do início ao fim, a propagação da atividade elétrica em um modelo de cérebro de larvas de peixe-zebra",
-      "url": "https://revistagalileu.globo.com/saude/noticia/2026/08/cientistas-capturam-uma-convulsao-em-tempo-real-pela-1a-vez-veja-video.ghtml#GALILEU-POST-TOP-24H-item,top,f0cf7de4-bf7c-4720-9eee-669949647b1c",
-      "source": "Revista Galileu",
-      "date": "Wed, 12 Aug 2026 22:51:56 GMT",
-      "category": "Ciência e Tecnologia",
-      "image_url": "https://s2-galileu.glbimg.com/_ln4SuTZyZZMR0RivDwYD8Pjfyg=/2828x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/x/m/JeCwkARTWISeqIcLbsAw/captura-de-tela-2026-08-12-131725.png"
-    },
-    {
-      "title": "Revista digital",
-      "summary": "Tudo sobre ciência, tecnologia, cultura, cinema, artes, séries de tv, sociedade, comportamento, vestibular e Enem e lifehacks.",
-      "url": "https://revistagalileu.revistadigital.globo.com/",
-      "source": "Revista Galileu - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:53 GMT",
-      "category": "Arqueologia e História",
-      "image_url": null
+      "date": "Thu, 13 Aug 2026 11:06:16 GMT",
+      "category": "Saúde e Medicina",
+      "image_url": "https://s2-galileu.glbimg.com/iKdiXx8SygHqtHrvS0yNokw8yUI=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/h/X/6ubsQXQRCldB55g05YHA/morbillivirus-measles-infection.jpg"
     },
     {
       "title": "Tumba encontrada na Turquia pode pertencer a antigo lutador; veja fotos",
       "summary": "Sepultura encontrada em Aspendos contém esqueleto e moedas de prata com representações de lutadores; descoberta ajuda a revelar detalhes sobre o período clássico da antiga cidade",
       "url": "https://revistagalileu.globo.com/ciencia/arqueologia/noticia/2026/08/tumba-encontrada-na-turquia-pode-pertencer-a-antigo-lutador-veja-fotos.ghtml",
       "source": "Revista Galileu - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:53 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:13 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://s2-galileu.glbimg.com/Mc18MCOiSOaonBtrLmxM4jAGUpA=/1920x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/9/s/Z9i56URqAW5CaXAkLbEQ/design-sem-nome.jpg"
     },
     {
-      "title": "Os mistérios de uma antiga civilização avançada ainda pouco conhecida",
-      "summary": "A civilização do Vale do Indo era contemporânea dos mesopotâmicos e dos egípcios e existiu por milhares de anos; mas por que sabemos tão pouco sobre ela?",
-      "url": "https://www.bbc.com/portuguese/articles/c248qzqvzqpo",
-      "source": "BBC News Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:50 GMT",
+      "title": "Revista digital",
+      "summary": "Tudo sobre ciência, tecnologia, cultura, cinema, artes, séries de tv, sociedade, comportamento, vestibular e Enem e lifehacks.",
+      "url": "https://revistagalileu.revistadigital.globo.com/",
+      "source": "Revista Galileu - Arqueologia",
+      "date": "Thu, 13 Aug 2026 11:06:12 GMT",
       "category": "Arqueologia e História",
-      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d5e3/live/a0f0a870-0bf7-11f1-b830-51fcdb0e0c16.jpg"
-    },
-    {
-      "title": "6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
-      "summary": "Durante séculos, as técnicas de artesãos romanos, incas, etruscos e maias permaneceram inexplicáveis. 6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
-      "url": "https://www.bbc.com/portuguese/articles/cgkpxvyyy4no",
-      "source": "BBC News Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:49 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d861/live/88b51ad0-378e-11f1-9d5c-8ba507d7dbde.jpg"
+      "image_url": null
     },
     {
       "title": "O zoológico de Montezuma que surpreendeu os espanhóis há 500 anos  e que só agora começamos a entender",
       "summary": "Uma nova pesquisa revela detalhes sobre os animais mantidos pelo imperador asteca Montezuma II na antiga cidade de Tenochtitlán. Entre eles, aves, serpentes, onças-pintadas, pumas e lobos",
       "url": "https://www.bbc.com/portuguese/articles/clyx5ewj8p9o",
       "source": "BBC News Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:49 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:08 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/597a/live/46aeda70-3448-11f1-acfc-bb3dca3045bc.jpg"
+    },
+    {
+      "title": "Os mistérios de uma antiga civilização avançada ainda pouco conhecida",
+      "summary": "A civilização do Vale do Indo era contemporânea dos mesopotâmicos e dos egípcios e existiu por milhares de anos; mas por que sabemos tão pouco sobre ela?",
+      "url": "https://www.bbc.com/portuguese/articles/c248qzqvzqpo",
+      "source": "BBC News Brasil - Arqueologia",
+      "date": "Thu, 13 Aug 2026 11:06:08 GMT",
+      "category": "Arqueologia e História",
+      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d5e3/live/a0f0a870-0bf7-11f1-b830-51fcdb0e0c16.jpg"
     },
     {
       "title": "A versão mais antiga e simples de Stonehenge encontrada a poucos quilômetros do famoso monumento",
       "summary": "A estrutura consistia em dois postes alinhados com os solstícios de 5 mil anos atrás. A versão mais antiga e simples de Stonehenge encontrada a poucos quilômetros do famoso monumento",
       "url": "https://www.bbc.com/portuguese/articles/cql12re7dg4o",
       "source": "BBC News Brasil - Arqueologia",
-      "date": "Wed, 12 Aug 2026 22:51:48 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:07 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/8e10/live/8ce1b710-6adf-11f1-b1db-af71d47507d6.jpg"
     },
     {
-      "title": "Eclipse solar total: as imagens do fenômeno que aconteceu nesta quarta-feira na Europa",
-      "summary": "O eclipse acontece nesta quarta-feira (128) e poderá ser observado em partes da Europa, incluindo regiões da Espanha, de Portugal e da Islândia. No Brasil, não será visível.",
-      "url": "https://www.bbc.com/portuguese/articles/cd9wp02y9y0o",
-      "source": "BBC News Brasil",
-      "date": "Wed, 12 Aug 2026 22:51:46 GMT",
+      "title": "6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
+      "summary": "Durante séculos, as técnicas de artesãos romanos, incas, etruscos e maias permaneceram inexplicáveis. 6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
+      "url": "https://www.bbc.com/portuguese/articles/cgkpxvyyy4no",
+      "source": "BBC News Brasil - Arqueologia",
+      "date": "Thu, 13 Aug 2026 11:06:07 GMT",
       "category": "Arqueologia e História",
-      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/9928/live/15b7e9e0-9684-11f1-a7ab-8b30adf0800a.jpg"
+      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d861/live/88b51ad0-378e-11f1-9d5c-8ba507d7dbde.jpg"
     },
     {
-      "title": "Padres brasileiros são excomungados em meio a conflito entre Vaticano e grupo ultraconservador",
-      "summary": "Conflito antigo entre o Vaticano e a Fraternidade Sacerdotal São Pio X ressurgiu no pontificado do papa Leão 14, com um vai e vem de ameaças e provocações que levou a uma onda de excomunhões, uma das punições mais extremas da Igreja Católica.",
-      "url": "https://www.bbc.com/portuguese/articles/cn8n9d24n43o",
+      "title": "'Putin não tem mais como declarar vitória na Ucrânia', diz Nobel da Paz à BBC",
+      "summary": "Em entrevista exclusiva ao jornalista Steve Rosenberg, da BBC, Dmitry Muratov afirma que o líder do Kremlin só é capaz de 'destruir a Ucrânia, não conquistá-la', com a guerra entrando em seu quinto ano.",
+      "url": "https://www.bbc.com/portuguese/articles/ce8kppe3vvjo",
       "source": "BBC News Brasil",
-      "date": "Wed, 12 Aug 2026 22:51:46 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:04 GMT",
       "category": "Arqueologia e História",
-      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d226/live/1bde7b10-95c4-11f1-8ccf-29f879cbf253.jpg"
+      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/f358/live/9af53810-96f2-11f1-b2ab-0dd01740f9f6.jpg"
     },
     {
-      "title": "Entrada da China na ação do Brasil na OMC ajuda a combater guerra tarifária contra os EUA?",
-      "summary": "O Brasil ganhou um reforço importante no seu enfrentamento ao tarifaço dos Estados Unidos, segundo analistas ouvidos pela BBC News Brasil.",
-      "url": "https://www.bbc.com/portuguese/articles/c5yvrwxd6zzo",
+      "title": "Travis Kelce faz primeiras revelações sobre casamento com Taylor Swift: 'Melhor noite da minha vida'",
+      "summary": "Em entrevista à imprensa, Kelce chamou Swift de sua 'esposa' pela primeira vez e disse que era um 'sonho de infância' ter estado no Madison Square Garden.",
+      "url": "https://www.bbc.com/portuguese/articles/cm2gp034z7ro",
       "source": "BBC News Brasil",
-      "date": "Wed, 12 Aug 2026 22:51:46 GMT",
+      "date": "Thu, 13 Aug 2026 11:06:04 GMT",
       "category": "Arqueologia e História",
-      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/453f/live/cd1db6b0-9651-11f1-9a70-ddb12b8bcc9e.jpg"
+      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/a017/live/b5f275d0-96e1-11f1-870d-5d08c49babb2.jpg"
     },
     {
-      "title": "Tiffany Haddish condenada em Israel",
-      "summary": "Tiffany Haddish condenada em Israelagosto 12, 2026Tiffany haddish israel: Tiffany Haddish condenada por dirigir sob efeito de álcool: A atriz estadunidense enfrenta consequências legais após evasão...",
-      "url": "https://cafetorah.com/tiffany-haddish-condenada-em-israel/",
-      "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:53 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+      "title": "'Ao sentir terremoto, voltei à escola da minha filha e menina de 10 anos morreu em meus braços'",
+      "summary": "Em meio ao colapso em Cali, a psicóloga Kelly Díaz prestou os primeiros socorros após a escola de sua filha desabar. 'Ao sentir terremoto, voltei à escola da minha filha e menina de 10 anos morreu em meus braços'",
+      "url": "https://www.bbc.com/portuguese/articles/cd7lpzw11w9o",
+      "source": "BBC News Brasil",
+      "date": "Thu, 13 Aug 2026 11:06:04 GMT",
+      "category": "Arqueologia e História",
+      "image_url": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/0e70/live/85b71980-9677-11f1-82fc-4d0c496681c3.jpg"
     },
     {
-      "title": "Israel condena assentamentos ilegais em vilarejos palestinos",
-      "summary": "Israel condena assentamentos ilegais em vilarejos palestinosagosto 12, 2026Slams reprehensible: A Força de Defesa de Israel (FDI) recentemente condenou a instalação de assentamentos ilegais de colonos...",
-      "url": "https://cafetorah.com/israel-condena-assentamentos-ilegais-em-vilarejos-palestinos/",
-      "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:51 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
-    },
-    {
-      "title": "Israel Revisa Estratégia de Defesa Contra Gaza e Irã",
-      "summary": "Israel Revisa Estratégia de Defesa Contra Gaza e Irãagosto 12, 2026A estratégia israel gaza sofre mudanças após três anos de guerra, refletindo complexidade regional e necessidade de adaptação.",
-      "url": "https://cafetorah.com/israel-revisa-estrategia-de-defesa-contra-gaza-e-ira/",
-      "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:50 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
-    },
-    {
-      "title": "Israel e a Falha do Ocidente na Luta Contra a Fobia Ocult",
-      "summary": "Escalada conflito israel: A inação do Ocidente pode encorajar a agressão, colocando o mundo em risco. Israel e a Falha do Ocidente na Luta Contra a Fobia Ocult",
-      "url": "https://cafetorah.com/israel-e-a-falha-do-ocidente-na-luta-contra-a-fobia-ocult/",
-      "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:48 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+      "title": "Protestantismo Communio",
+      "summary": "Contrariamente à mitologia que talvez tenhas ouvido dos lábios de apologetas católicos-romanos, a Reforma não foi um movimento individualista, mas um movimento católico e eclesial. Um esforço para restaurar à igreja sua catolicidade, e isto se evidencia de várias formas.",
+      "url": "https://monergismo.com/protestantismo-communio/",
+      "source": "Monergismo",
+      "date": "Thu, 13 Aug 2026 11:05:16 GMT",
+      "category": "Teologia Reformada",
+      "image_url": "https://monergismo.com/wp-content/uploads/2026/06/Generatedimage_1781199443721-930x620.png"
     },
     {
       "title": "Haredis Protestam em Bnei Brak Contra Recusa ao Serviço M",
-      "summary": "Haredis protestam Israel: Manifestantes ultraortodoxos tomam as ruas de Bnei Brak após prisão de jovem que se recusou a se alistar no exército.",
+      "summary": "Haredis Protestam em Bnei Brak Contra Recusa ao Serviço Magosto 12, 2026Haredis protestam Israel: Manifestantes ultraortodoxos tomam as ruas de Bnei Brak após prisão de jovem que se recusou a se...",
       "url": "https://cafetorah.com/haredis-protestam-em-bnei-brak-contra-recusa-ao-servico-m/",
       "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:46 GMT",
+      "date": "Thu, 13 Aug 2026 11:05:01 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
     {
       "title": "Israel pode perder direito de sediar Festival Eurovisão",
-      "summary": "Eurovision exclui Israel: EBU confirma mudança nas regras para evitar países em conflito. Conheça os impactos desta decisão no Festival da Canção.",
+      "summary": "Israel pode perder direito de sediar Festival Eurovisãoagosto 12, 2026Eurovision exclui Israel: EBU confirma mudança nas regras para evitar países em conflito. Conheça os impactos desta decisão no Fes...",
       "url": "https://cafetorah.com/israel-pode-perder-direito-de-sediar-festival-eurovisao/",
       "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:45 GMT",
+      "date": "Thu, 13 Aug 2026 11:05:00 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
     {
       "title": "Israel Acordo com Hamas Negociado",
-      "summary": "Israel Revisa Estratégia de Defesa Contra Gaza e Irãagosto 12, 2026A estratégia israel gaza sofre mudanças após três anos de guerra, refletindo complexidade regional e necessidade de adaptação.",
+      "summary": "Israel Acordo com Hamas Negociadoagosto 12, 2026Conflito Gaza Israel: negociações de acordo financeiro com Hamas são negadas Um representante do Conselho de Paz, uma organização internacional...",
       "url": "https://cafetorah.com/israel-acordo-com-hamas-negociado/",
       "source": "Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:42 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:59 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
     {
-      "title": "Israel Revisa Estratégia de Defesa Contra Gaza e Irã",
-      "summary": "Israel Revisa Estratégia de Defesa Contra Gaza e Irãagosto 12, 2026No CommentsA estratégia israel gaza sofre mudanças após três anos de guerra, refletindo complexidade regional e necessidade de adapta...",
-      "url": "https://cafetorah.com/israel-revisa-estrategia-de-defesa-contra-gaza-e-ira/",
-      "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:18 GMT",
+      "title": "Desaparecimento em Viena: Nova Pista na Investigação sobr",
+      "summary": "Desaparecimento em Viena: Polícia avalia se mãe e filha israelenses saíram voluntariamente da cidade, desafiando teoria do sequestro.",
+      "url": "https://cafetorah.com/desaparecimento-em-viena-nova-pista-na-investigacao-sobr/",
+      "source": "Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:58 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
     {
-      "title": "Israel Alerta por Plano de Ajuda ao Hamas",
-      "summary": "Israel Alerta por Plano de Ajuda ao Hamasagosto 12, 2026No CommentsHamas dívidas Israel: O plano da OECD que libera 400 milhões de dólares para o grupo considerado terrorista, responsável por...Read M...",
-      "url": "https://cafetorah.com/israel-alerta-por-plano-de-ajuda-ao-hamas/",
-      "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:17 GMT",
+      "title": "Israel não está diretamente ligado à notícia, então posso",
+      "summary": "Lakers valor recorde: equipe de basquete da NBA é comprada por 12,5 bilhões de dólares por Joshua Kushner e Bob Iger. Valor recorde que supera expectativas.",
+      "url": "https://cafetorah.com/israel-nao-esta-diretamente-ligado-a-noticia-entao-posso/",
+      "source": "Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:56 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
     {
-      "title": "Israel e a Falha do Ocidente na Luta Contra a Fobia Ocult",
-      "summary": "Israel e a Falha do Ocidente na Luta Contra a Fobia Ocultagosto 12, 2026No CommentsEscalada conflito israel: A inação do Ocidente pode encorajar a agressão, colocando o mundo em risco.Read More",
-      "url": "https://cafetorah.com/israel-e-a-falha-do-ocidente-na-luta-contra-a-fobia-ocult/",
-      "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:14 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
-    },
-    {
-      "title": "Haredis Protestam em Bnei Brak Contra Recusa ao Serviço M",
-      "summary": "Haredis Protestam em Bnei Brak Contra Recusa ao Serviço Magosto 12, 2026No CommentsHaredis protestam Israel: Manifestantes ultraortodoxos tomam as ruas de Bnei Brak após prisão de jovem que se recusou...",
-      "url": "https://cafetorah.com/haredis-protestam-em-bnei-brak-contra-recusa-ao-servico-m/",
-      "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:12 GMT",
-      "category": "Israel e Oriente Médio",
-      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
-    },
-    {
-      "title": "Israel pode perder direito de sediar Festival Eurovisão",
-      "summary": "Israel pode perder direito de sediar Festival Eurovisãoagosto 12, 2026No CommentsEurovision exclui Israel: EBU confirma mudança nas regras para evitar países em conflito. Conheça os impactos desta dec...",
-      "url": "https://cafetorah.com/israel-pode-perder-direito-de-sediar-festival-eurovisao/",
-      "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:10 GMT",
+      "title": "Israel Desenvolve Vestimenta para Proteger Astronautas de",
+      "summary": "Israel Acordo com Hamas Negociadoagosto 12, 2026Conflito Gaza Israel: negociações de acordo financeiro com Hamas são negadas Um representante do Conselho de Paz, uma organização internacional...",
+      "url": "https://cafetorah.com/israel-desenvolve-vestimenta-para-proteger-astronautas-de/",
+      "source": "Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:54 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
     },
@@ -477,16 +425,70 @@
       "summary": "Israel Acordo com Hamas Negociadoagosto 12, 2026No CommentsConflito Gaza Israel: negociações de acordo financeiro com Hamas são negadas Um representante do Conselho de Paz, uma organização internacion...",
       "url": "https://cafetorah.com/israel-acordo-com-hamas-negociado/",
       "source": "Cafetorah - Notícias de Israel",
-      "date": "Wed, 12 Aug 2026 22:50:09 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:37 GMT",
       "category": "Israel e Oriente Médio",
       "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Israel: Golpe de Estado Ameaça Poder de Netanyahu no Likud",
+      "summary": "Israel: Golpe de Estado Ameaça Poder de Netanyahu no Likudagosto 13, 2026No CommentsGolpe Estado Netanyahu: dentro do Likud, ameaças ao poder do primeiro-ministro israelense começam a ganhar força. Um...",
+      "url": "https://cafetorah.com/israel-golpe-de-estado-ameaca-poder-de-netanyahu-no-likud/",
+      "source": "Cafetorah - Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:36 GMT",
+      "category": "Israel e Oriente Médio",
+      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Cisjordânia: Policiais de Fronteira Liberam Gazela em Cat",
+      "summary": "Cisjordânia: Policiais de Fronteira Liberam Gazela em Catagosto 13, 2026No CommentsPolícia israel resgata gazela: Polícia israelense resgata gazela de cativeiro ilegal em área perto de Jenin na Cisjor...",
+      "url": "https://cafetorah.com/cisjordania-policiais-de-fronteira-liberam-gazela-em-cat/",
+      "source": "Cafetorah - Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:36 GMT",
+      "category": "Israel e Oriente Médio",
+      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Desaparecimento em Viena: Nova Pista na Investigação sobr",
+      "summary": "Desaparecimento em Viena: Nova Pista na Investigação sobragosto 13, 2026No CommentsDesaparecimento em Viena: Polícia avalia se mãe e filha israelenses saíram voluntariamente da cidade, desafiando teor...",
+      "url": "https://cafetorah.com/desaparecimento-em-viena-nova-pista-na-investigacao-sobr/",
+      "source": "Cafetorah - Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:34 GMT",
+      "category": "Israel e Oriente Médio",
+      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Israel não está diretamente ligado à notícia, então posso",
+      "summary": "Israel não está diretamente ligado à notícia, então possoagosto 13, 2026No CommentsLakers valor recorde: equipe de basquete da NBA é comprada por 12,5 bilhões de dólares por Joshua Kushner e Bob...Rea...",
+      "url": "https://cafetorah.com/israel-nao-esta-diretamente-ligado-a-noticia-entao-posso/",
+      "source": "Cafetorah - Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:33 GMT",
+      "category": "Israel e Oriente Médio",
+      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Israel Desenvolve Vestimenta para Proteger Astronautas de",
+      "summary": "Israel Desenvolve Vestimenta para Proteger Astronautas deagosto 13, 2026No CommentsAstronautas tempestades solares: Um equipamento desenvolvido em parceria por uma startup israelense e uma empresa ame...",
+      "url": "https://cafetorah.com/israel-desenvolve-vestimenta-para-proteger-astronautas-de/",
+      "source": "Cafetorah - Notícias de Israel",
+      "date": "Thu, 13 Aug 2026 11:04:32 GMT",
+      "category": "Israel e Oriente Médio",
+      "image_url": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg"
+    },
+    {
+      "title": "Notícias - Portas Abertas",
+      "summary": "Um forte terremoto de magnitude 7,4 atingiu a região de Chocó, na Colômbia, provocando danos em residências, prédios e infraestruturas. Os tremores foram sentidos em diferentes partes do país, desde a capital Bogotá até áreas próximas à fronteira com o Equador. Autoridades locais continuam avaliando a extensão dos prejuízos. Relatos iniciais apontam para pessoas feridas []",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/",
+      "source": "Portas Abertas",
+      "date": "Thu, 13 Aug 2026 11:04:24 GMT",
+      "category": "Perseguição Religiosa",
+      "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/04/07171617/Portas-Abertas-Brasil-Roxo.png"
     },
     {
       "title": "Colômbia declara desastre nacional após terremoto em Chocó",
       "summary": "Governo colombiano mobiliza resposta emergencial após terremoto. Igrejas, famílias cristãs e comunidades locais relatam perdas e danos na região de Chocó.",
       "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/terremoto-em-choco/",
       "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:50:00 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:24 GMT",
       "category": "Perseguição Religiosa",
       "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/11124410/3278x1844.avif"
     },
@@ -495,7 +497,7 @@
       "summary": "Fake News - Portas Abertas",
       "url": "https://portasabertas.org.br/noticias/fake-news/",
       "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:50:00 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:23 GMT",
       "category": "Perseguição Religiosa",
       "image_url": "https://portasabertas.org.br/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&id=38757&type=play&hash=62c1b04dee07a559f92c5d0e480428da"
     },
@@ -504,306 +506,90 @@
       "summary": "Abalo sísmico na região de Chocó causa danos e deixa comunidades em alerta. Igrejas e parceiros locais da Portas Abertas avaliam impactos e necessidades.",
       "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/colombia-enfrenta-danos-apos-forte-terremoto-em-choco/",
       "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:49:59 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:23 GMT",
       "category": "Perseguição Religiosa",
       "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/10171924/1280x720.avif"
-    },
-    {
-      "title": "Pastor enfrenta rejeição no Butão",
-      "summary": "Apesar de enfrentarem constante discriminação, os cristãos perseguidos no Butão escolhem permanecer e compartilhar sua fé com outros, como é o caso do pastor Dorji (pseudônimo).",
-      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/pastor-enfrenta-discriminacao-e-isolamento-no-butao/",
-      "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:49:59 GMT",
-      "category": "Perseguição Religiosa",
-      "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/03185404/Landscape-BT_Dorji-prays-with-longing-2-2026_0030648avif.avif"
-    },
-    {
-      "title": "Notícias - Portas Abertas",
-      "summary": "Um forte terremoto de magnitude 7,4 atingiu a região de Chocó, na Colômbia, provocando danos em residências, prédios e infraestruturas. Os tremores foram sentidos em diferentes partes do país, desde a capital Bogotá até áreas próximas à fronteira com o Equador. Autoridades locais continuam avaliando a extensão dos prejuízos. Relatos iniciais apontam para pessoas feridas []",
-      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/",
-      "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:49:59 GMT",
-      "category": "Perseguição Religiosa",
-      "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/04/07171617/Portas-Abertas-Brasil-Roxo.png"
     },
     {
       "title": "Como a opressão islâmica afeta cristãos no Chifre da África?",
       "summary": "Entenda como cristãos são impactados pela opressão islâmica no Chifre da África, especialmente aqueles que abandonam o islã para seguir a Jesus",
       "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/opressao-islamica-no-chifre-da-africa/",
       "source": "Portas Abertas",
-      "date": "Wed, 12 Aug 2026 22:49:59 GMT",
+      "date": "Thu, 13 Aug 2026 11:04:23 GMT",
       "category": "Perseguição Religiosa",
       "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2025/06/18163124/SW2026_Banners_noticias8.avif"
     },
     {
-      "title": "Exposição internacional de milagres eucarísticos abre festa dos padroeiros de Rio Maina - 4oito.com.br",
-      "summary": "a href\"https:news.google.comrssarticlesCBMixAFBVV95cUxPU2ZENjRSX0ZBTEFMajNfUkVTVlpndGZ6d2F6b1l2aGwtam55ZWlUV3ZwQnBtQ25ncE5NbUFZWF9QSEwxMGo0cFo2a2pMYVdLbDhSME1ZSmJkNmR6cFRyNFJqQlpSbGF5aWZPSDIzV09TVmZ3Y...",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPU2ZENjRSX0ZBTEFMajNfUkVTVlpndGZ6d2F6b1l2aGwtam55ZWlUV3ZwQnBtQ25ncE5NbUFZWF9QSEwxMGo0cFo2a2pMYVdLbDhSME1ZSmJkNmR6cFRyNFJqQlpSbGF5aWZPSDIzV09TVmZ3YTRzN1B5MkpaR0syMEd0YktnNkNWdzhDY1JmcW5SYkpFaFhrLXBWcnRuRWRLUXM1SXJiV1JDLXdScDZaVGVLamtFb0Y2NXhSTnZKUWZuVzhp?oc=5",
-      "source": "Google News - Patrística",
-      "date": "Wed, 12 Aug 2026 22:09:00 GMT",
-      "category": "História da Igreja",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      "title": "Pastor enfrenta rejeição no Butão",
+      "summary": "Apesar de enfrentarem constante discriminação, os cristãos perseguidos no Butão escolhem permanecer e compartilhar sua fé com outros, como é o caso do pastor Dorji (pseudônimo).",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/pastor-enfrenta-discriminacao-e-isolamento-no-butao/",
+      "source": "Portas Abertas",
+      "date": "Thu, 13 Aug 2026 11:04:22 GMT",
+      "category": "Perseguição Religiosa",
+      "image_url": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/03185404/Landscape-BT_Dorji-prays-with-longing-2-2026_0030648avif.avif"
     },
     {
-      "title": "Caminhada com Maria reúne fiéis em peregrinação da Catedral ao Santuário da Babilônia - Jornal Primeira Página",
-      "summary": "a href\"https:news.google.comrssarticlesCBMixgFBVV95cUxOYVA1bzY3NG5FMXBpeU1XZVlnNENiTFh6eGtFVWZRNFJnUk91N1lZRHZ5SzdlUnRtZTRDTURjOFpneFZvZWZOeDZSeHhqZTBpTmEzWWtmWGdXc2ZVYU9PMHk0VDF0cjFqMUtMN2cya3JzelJRX...",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYVA1bzY3NG5FMXBpeU1XZVlnNENiTFh6eGtFVWZRNFJnUk91N1lZRHZ5SzdlUnRtZTRDTURjOFpneFZvZWZOeDZSeHhqZTBpTmEzWWtmWGdXc2ZVYU9PMHk0VDF0cjFqMUtMN2cya3JzelJRX050ZjhJWE1JSkZvampMQV9KVzNqVzBORWpaOFIxWldPOWlaRDhTYzF0TldwcmpnLUEyVjFqWDRyeENGSUJwdkZQSm0yZ3hKXzQyLUd3Rlk5X1E?oc=5",
-      "source": "Google News - Crescente Fértil",
-      "date": "Wed, 12 Aug 2026 21:27:18 GMT",
-      "category": "História Antiga",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Essa cidade possui 3 km de muralhas, 52 torres, ruas medievais que sobreviveram após ameaça de demolição e hoje guarda uma das fortalezas mais impressionantes da Europa; conheça Carcassonne, na França - CPG Click Petróleo e Gás",
-      "summary": "a href\"https:news.google.comrssarticlesCBMixwJBVV95cUxQV3k2bkxGU1QzNE5FMUx1VGJOVTJ4OTBlOFhuOHgyXzJIX1U5SG5QMFBsM1lrNjdDdVlsUFdVdXQ0dWlZNFNnUGdBMDd1enJ1U2VmREVMekkzTHRyQ1NtMGJwRmFTSVptV1pPci03UFNaTnBWc...",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQV3k2bkxGU1QzNE5FMUx1VGJOVTJ4OTBlOFhuOHgyXzJIX1U5SG5QMFBsM1lrNjdDdVlsUFdVdXQ0dWlZNFNnUGdBMDd1enJ1U2VmREVMekkzTHRyQ1NtMGJwRmFTSVptV1pPci03UFNaTnBWcTY0RWhzX1hWSkhkTjl1QWFkWm5udGswRXRIZ09VTW5acVdwN0pxemdtbi1hX0VCaWR3M2NaNjFGMWlJaWQtemFnVmZXQ3F2ZFJrcUlrcjZRWDNqRVRoeUtRY1VOZnVkZGZFRXF4ckRjOGw2YTF5ZlJEdXZPdkVVNTVRY3hDbWg5cWtDT0FveWxMM1V4by13bjlNZU1NN2N0NE9od1R1akNRWEFsenl0R2xvb01YS2tvWmlNR3piVl9GTnlCaEZ4SFk4bHB2REhaVEZOWU9fSkpNX0E?oc=5",
-      "source": "Google News - Idade Média",
-      "date": "Wed, 12 Aug 2026 20:49:00 GMT",
-      "category": "História da Igreja",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Jovens buscam mais elementos litúrgicos em cultos protestantes nos Estados Unidos",
-      "summary": "Pesquisa da Lifeway Research revela que jovens protestantes têm o dobro de chance de desejar mais liturgia e estrutura nos cultos do que membros idosos. The post Jovens buscam mais elementos litúrgico...",
-      "url": "https://folhagospel.com/jovens-querem-mais-liturgia-igrejas-protestantes/",
+      "title": "Tribunal do Vietnã condena pastor a 7 anos e meio de prisão por liderar igreja cristã",
+      "summary": "Pastor Y Nuen Ayun é condenado a 7 anos de prisão no Vietnã por liderar igreja cristã. Conheça a realidade da perseguição religiosa contra minorias locais. The post Tribunal do Vietnã condena pastor a...",
+      "url": "https://folhagospel.com/pastor-condenado-prisao-vietna-igreja/",
       "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 20:22:00 +0000",
+      "date": "Thu, 13 Aug 2026 10:52:00 +0000",
       "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2026/08/jovens-querem-mais-liturgia-igrejas-protestantes.webp"
+      "image_url": "https://folhagospel.com/wp-content/uploads/2026/08/pastor-condenado-prisao-vietna-igreja.webp"
     },
     {
-      "title": "Consumidora será indenizada após encontrar fragmentos de vidro em alimento industrializado - Tribunal de Justiça do Estado do Ceará",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiwgFBVV95cUxOQkxlN0dhMXJ2am15N0hVNFRTWmNRZTBmdXJENjJlYnF6amhEQ2x0WV9OZFJlempVSDZWNFc4Zm80YVN5RnRYM3RadG9ZRnRDTGxwZE1RUnhsdzJRbExWUG1PeHppOUV0Smg2VGZLMTEyQ0Ewa...",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQkxlN0dhMXJ2am15N0hVNFRTWmNRZTBmdXJENjJlYnF6amhEQ2x0WV9OZFJlempVSDZWNFc4Zm80YVN5RnRYM3RadG9ZRnRDTGxwZE1RUnhsdzJRbExWUG1PeHppOUV0Smg2VGZLMTEyQ0Ewa0ZXRzJoSjRrN2p6S0h1UUtUMXpCWnhaSk9YcWtnclhNQ2JaekRkZGtDUGxaQTJjNUV5Y0ZvXzBJYU9wRGlNNml5V0tJZ2dValVYSFJGUQ?oc=5",
-      "source": "Google News - Cópias e Manuscritos",
-      "date": "Wed, 12 Aug 2026 19:32:22 GMT",
-      "category": "Arqueologia Bíblica",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Robin Hood: um foco original em lenda da Idade Média - Folha de Londrina - folhadelondrina.com.br",
-      "summary": "a href\"https:news.google.comrssarticlesCBMirAFBVV95cUxQQU95TENLUldMekVQZHZZT3gwRDVmam9JaEROaGprZGZnTlJUM0FwV0k4WmJQemE1RGxIMDhLU3lzOXFNMWtTLU1sdlBlOFRJOVNyZUZ3bTgwOGZHRDFEbERVLVpMTl9DVnNJV1R3RkptMnVlS...",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQU95TENLUldMekVQZHZZT3gwRDVmam9JaEROaGprZGZnTlJUM0FwV0k4WmJQemE1RGxIMDhLU3lzOXFNMWtTLU1sdlBlOFRJOVNyZUZ3bTgwOGZHRDFEbERVLVpMTl9DVnNJV1R3RkptMnVlSzNCSlVabkpNV1pleUpUVEk1M2NfNWJtbUNrLXlXN3VvUnZ3YkkwcjZxeVlDdHBXR1RnU3Q3TzVR0gG0AUFVX3lxTFBCQWdTOWtUVUNYOHJQM2NodERqMm9ZcEFVbEIxQ0JCMGcwNVJ1VmRvcDl4amNnRi04R2xZZVFoRjI2SFhVVVc3VnBKd0p6TS1FaTljWXpOYzVXekN5Z2h3bHRzaFFxZS0wQTBxVjlLR05YUFluempsTDFpTG80QjY2NVBZWUxhZ1dDelJMcnRGNDRnUVFDRHE1ZFlaVmNSWHJfUDNHSUJILU0zQlR6OWNhNU8zdg?oc=5",
-      "source": "Google News - Idade Média",
-      "date": "Wed, 12 Aug 2026 18:45:33 GMT",
+      "title": "Lula da Fonte conquista novo apoio no Cabo de Santo Agostinho - Blog Cenário",
+      "summary": "a href\"https:news.google.comrssarticlesCBMioAFBVV95cUxObjBLMElXM2hHWjRyMngxbzFoVXYwM1BpLV9DTmhfWVZxMHlqRkRUVnl6eEpzbnBldkFXTmJqZkxDcFJZU3JCM3BVOV9KZzNiX1E1ZUJKb1p5V2xKNkFnc3l1ZkxNZ3dYclFqNmxIMlMzM3MxV...",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObjBLMElXM2hHWjRyMngxbzFoVXYwM1BpLV9DTmhfWVZxMHlqRkRUVnl6eEpzbnBldkFXTmJqZkxDcFJZU3JCM3BVOV9KZzNiX1E1ZUJKb1p5V2xKNkFnc3l1ZkxNZ3dYclFqNmxIMlMzM3MxVVU3cFVkYWlJS1k3cUdNWEhiVTh6NDFpQTJfZXRZWGU5RFRFeWoydlFjMHpU?oc=5",
+      "source": "Google News - Patrística",
+      "date": "Thu, 13 Aug 2026 10:20:00 GMT",
       "category": "História da Igreja",
       "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
     },
     {
-      "title": "Al Mosul vs Baghdad  Iraq Stars League  resultados - OneFootball",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiVkFVX3lxTE80cWphblJ6bDllek5pZ1B4Q2RBQnVtZnJVR0wwVlFnb0dyWnFmQjBSczdVR2tYUEFSazZ2SlVwY1Q5SEtuQUFicmdSbjlBWVhrbzN6Zmh3?oc5\" target\"_blank\"Al Mosul vs Baghdad ...",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE80cWphblJ6bDllek5pZ1B4Q2RBQnVtZnJVR0wwVlFnb0dyWnFmQjBSczdVR2tYUEFSazZ2SlVwY1Q5SEtuQUFicmdSbjlBWVhrbzN6Zmh3?oc=5",
-      "source": "Google News - Nínive e Assíria",
-      "date": "Wed, 12 Aug 2026 17:21:58 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      "title": "Terroristas obrigam menino cristão a comer corpo de outra cristã na Nigéria",
+      "summary": "Cristãos foram sequestrados por militantes Fulani. The post Terroristas obrigam menino cristão a comer corpo de outra cristã na Nigéria appeared first on Rádio 93FM-RJ.",
+      "url": "https://radio93.com.br/noticias/giro-cristao/terroristas-obrigam-menino-cristao-a-comer-corpo-de-outra-crista-na-nigeria/",
+      "source": "Radio 93 - Giro Cristão",
+      "date": "Thu, 13 Aug 2026 09:00:01 +0000",
+      "category": "Notícias Cristãs",
+      "image_url": "https://radio93.com.br/wp-content/uploads/2026/08/Bandeira-da-Nigeria_52.jpg"
     },
     {
-      "title": "Maysan vs Al Mosul  Iraq Stars League  resultados - OneFootball",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiVkFVX3lxTFBRNzJObDdoZFR1eTNhbWRSR1V2UG1XVmQwb2I2MFRKLWI4WF8xbUZQWGlzU1pYdjF5Y3NfakNVSjRleXBqUGNvRGRyR1Z2RjBvTng0ZU9R?oc5\" target\"_blank\"Maysan vs Al Mosul I...",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRNzJObDdoZFR1eTNhbWRSR1V2UG1XVmQwb2I2MFRKLWI4WF8xbUZQWGlzU1pYdjF5Y3NfakNVSjRleXBqUGNvRGRyR1Z2RjBvTng0ZU9R?oc=5",
-      "source": "Google News - Nínive e Assíria",
-      "date": "Wed, 12 Aug 2026 17:19:14 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Lages através das décadas: fotos antigas contam a história da maior cidade em extensão de SC - NSC Total",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiyAFBVV95cUxQNWN4TFJpbGRxQ3hZZnFIY3VCRW0zZU53Wlp1OWV2LUVjZ1FZdGpNbUZTTFh1bDc3VUxHSzZkd2pyMDlxMHNZeWpQSnZhQzBmeFpDRDdIdVNpbGc3eWtGNE1qTHBlQm9VQnplMEF6UUduTk4zN...",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNWN4TFJpbGRxQ3hZZnFIY3VCRW0zZU53Wlp1OWV2LUVjZ1FZdGpNbUZTTFh1bDc3VUxHSzZkd2pyMDlxMHNZeWpQSnZhQzBmeFpDRDdIdVNpbGc3eWtGNE1qTHBlQm9VQnplMEF6UUduTk4zN0dZdktnTTNsdGszd042ZWl0aUJ2YXRWRDRucC1uMGhQMld1QzNhNTdER2VOdkxfeW9JUGRuTVpjeEFrRHNnXzZKMGFQVXB6NmJSTVpGTzJLSlRPMQ?oc=5",
+      "title": "Mega-Sena perfeita? Como seria a aposta com os seis números mais sorteados na história da loteria - nsctotal.com.br",
+      "summary": "a href\"https:news.google.comrssarticlesCBMizgFBVV95cUxOZkZaUkJ5R3RXcHEzR2FpZ1d3cHJPWjNEZTkta1Nra0c0R0pfQ3Bfb3hhRGpkWlhvelJLNHg3Q08xM05FUV9SRE1aMVJmSHRkWUhMbklmQWRmcVlzLVY3ZzEyRHctOVFtS3B6dUpqZVV2TW5PS...",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZkZaUkJ5R3RXcHEzR2FpZ1d3cHJPWjNEZTkta1Nra0c0R0pfQ3Bfb3hhRGpkWlhvelJLNHg3Q08xM05FUV9SRE1aMVJmSHRkWUhMbklmQWRmcVlzLVY3ZzEyRHctOVFtS3B6dUpqZVV2TW5PSUdCcHNYTmI4MWdkZlJGVFd5MUlkM2hSOS1naDZUcDl0eE5feUJxcGg4allyZ1pYXzZlR1p0NUlFZ0M1VkladFF4aC16RE92dm9BNUdDUTRxMWlsTnA0R1Judw?oc=5",
       "source": "Google News - NSC Total (SC)",
-      "date": "Wed, 12 Aug 2026 17:11:39 GMT",
+      "date": "Thu, 13 Aug 2026 09:00:00 GMT",
       "category": "Notícias Regionais",
       "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
     },
     {
-      "title": "Theos: Cities of Myth, jogo de construção de cidades da Grécia Antiga, ganha trailer de gameplay - Terra",
-      "summary": "a href\"https:news.google.comrssarticlesCBMinwJBVV95cUxPZElMMmtiTk1fY3Rxc2Ffd2RmVzAtUkZsVm5fN2xTVFR0VllGSUpnSXdnT3pmcjdhel9UeTZhSWFaR2p0YnJMRWlGVnYtREQ2Nk5hY2JnTnE0SjNpUDRPcnJTWDk1bGZ3SUNxUUtIOGs5TWNET...",
-      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPZElMMmtiTk1fY3Rxc2Ffd2RmVzAtUkZsVm5fN2xTVFR0VllGSUpnSXdnT3pmcjdhel9UeTZhSWFaR2p0YnJMRWlGVnYtREQ2Nk5hY2JnTnE0SjNpUDRPcnJTWDk1bGZ3SUNxUUtIOGs5TWNET1AtblVxUENGbm1XZnhVcWY4NmxreHlTY2RKLVB3NTBPRG92bEp6Uk5yMG1NTnFKVjhfeXlhTWp2NDBBMHhJNUNpcjFjUGRDUFdRYmJ2ZkZGZVVvUDhIUkhyaE5qZU1PX2RNQkNLM1MyREc4ZEFyenU4bGRjUkJzdUxfMks5bkh2UHZVYXZRajd3YzlNbjlwZTE3RzB4WDNVQko1NGdpU0M5U011Z3RsWVE3OA?oc=5",
-      "source": "Google News - Grécia Antiga e Helenismo",
-      "date": "Wed, 12 Aug 2026 17:06:00 GMT",
-      "category": "Contexto Histórico",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Justiça síria condena Bashar al-Assad à morte por crimes de guerra - Agora RN",
-      "summary": "a href\"https:news.google.comrssarticlesCBMidEFVX3lxTE9rODJXd01nUmNjVEtaX3JEY3ZWTWhfZlZXUkRuNDJubk9CcEVKaF9SRVBxcnNWS3B4bzVEOE0zNjlBM1kxMXUxbTU1N3FzSnFaMEpOQ2NXZGFSWmVzX0RPZ0FZcnlQTmVoSUFBd1Q1S0pNakNz?...",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9rODJXd01nUmNjVEtaX3JEY3ZWTWhfZlZXUkRuNDJubk9CcEVKaF9SRVBxcnNWS3B4bzVEOE0zNjlBM1kxMXUxbTU1N3FzSnFaMEpOQ2NXZGFSWmVzX0RPZ0FZcnlQTmVoSUFBd1Q1S0pNakNz?oc=5",
+      "title": "Vídeo mostra supostos Su-22 da Força Aérea Síria de volta ao voo - AIRWAY",
+      "summary": "a href\"https:news.google.comrssarticlesCBMilgFBVV95cUxPb0hwazY4Rm44VWtEdFBtOEp6c2w3SzliVDZjOU9DN1BPMkZ6LUNtX3hucTJwanJuZnA1MHdINll6aFlramRWeXFQeTU2NTVyMnFZcktPdEt5NGNLM3V1UDZIZF9BMEIwZThYWEhiS2RiNXdtU...",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPb0hwazY4Rm44VWtEdFBtOEp6c2w3SzliVDZjOU9DN1BPMkZ6LUNtX3hucTJwanJuZnA1MHdINll6aFlramRWeXFQeTU2NTVyMnFZcktPdEt5NGNLM3V1UDZIZF9BMEIwZThYWEhiS2RiNXdtUFllei1TN3NnYXFzYlc1aGNxZ1hselc1SzlIRXBMUU5IY1E?oc=5",
       "source": "Google News - Síria e Damasco",
-      "date": "Wed, 12 Aug 2026 16:51:35 GMT",
+      "date": "Thu, 13 Aug 2026 08:16:03 GMT",
       "category": "Arqueologia e História",
       "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
     },
     {
-      "title": "Filme Beyond Belief apresenta músicas da banda Petra para o público jovem",
-      "summary": "Carson Lueders apresenta a música de Petra a uma nova geração no filme 'Beyond Belief' The post Filme Beyond Belief apresenta músicas da banda Petra para o público jovem first appeared on Folha Gospel...",
-      "url": "https://folhagospel.com/filme-beyond-belief-apresenta-musicas-da-banda-petra-para-o-publico-jovem/",
-      "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 16:43:00 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2026/08/image-5-e1786536865379.png"
-    },
-    {
-      "title": "SECDH  CRAS Uirapuru é entregue reformado e ampliado em Ananindeua - Prefeitura de Ananindeua",
-      "summary": "a href\"https:news.google.comrssarticlesCBMisAFBVV95cUxNaXFuWEFKN1RKeTYxdHZpSTB3MXM5WjllY1FVMG05eHVxUnpsdDZUOWdnbjdMSU5aSy1NOUVHQlpSbzVHdVFRMUs5LXFkaDlFNmZydXUxU3Y1cXFSMFVrNWlWdS15NlpCOTdWVWtXMEsxMG9yQ...",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXFuWEFKN1RKeTYxdHZpSTB3MXM5WjllY1FVMG05eHVxUnpsdDZUOWdnbjdMSU5aSy1NOUVHQlpSbzVHdVFRMUs5LXFkaDlFNmZydXUxU3Y1cXFSMFVrNWlWdS15NlpCOTdWVWtXMEsxMG9yQTdMLW1NU1h3bXRuVE5PVjBpeFlETEFJUVhQSnYtZXQxY3N2MnA4Mi05emY1RnAxMUZJZXo1bll5WkVMMA?oc=5",
-      "source": "Google News - Calvinismo",
-      "date": "Wed, 12 Aug 2026 15:10:00 GMT",
-      "category": "Teologia Reformada",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "PM reformado morre após colidir motocicleta com ônibus na Cidade dos Funcionários - O POVO",
-      "summary": "a href\"https:news.google.comrssarticlesCBMitAFBVV95cUxNR21YN3A0YWxBNE5jNUZmdVZ5TGFRcGFYM2l0R3k2LWJoTDRYbDZkZzh6ZHNTdW1uZ1RDblpGVWhKQ2NNMGVpTmZ5YVJJcjJnMFltYnBFVURxSDhJajg0ZUdhOXRvWFU0UWxFVFRBWVJHYkwye...",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR21YN3A0YWxBNE5jNUZmdVZ5TGFRcGFYM2l0R3k2LWJoTDRYbDZkZzh6ZHNTdW1uZ1RDblpGVWhKQ2NNMGVpTmZ5YVJJcjJnMFltYnBFVURxSDhJajg0ZUdhOXRvWFU0UWxFVFRBWVJHYkwyektNWGtkS001TmEtTTVyZ1gzLUdRQS1YZGtoOENfMGxBUUJDUGVtZUJFdldFUHNsR0xpMzhENTVsNUtJN1ZSWmU?oc=5",
-      "source": "Google News - Calvinismo",
-      "date": "Wed, 12 Aug 2026 15:04:00 GMT",
-      "category": "Teologia Reformada",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Subtenente reformado da PMCE morre em acidente de trânsito em Fortaleza - Diário do Nordeste",
-      "summary": "a href\"https:news.google.comrssarticlesCBMi0AFBVV95cUxNczVyOGkxbjQ4MC1GYUF2UWFYakxIVlFacjlyNFM1a0JUNm1JUjNYY2pabnJ4T2F3RnpTNmhSOWFseDBSTlZxdXZnUlRXXzluTTRYemh5N0RpdmNnNXVzQVdWZUFsYTEwVzE5MjVsUEpfNlhGR...",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNczVyOGkxbjQ4MC1GYUF2UWFYakxIVlFacjlyNFM1a0JUNm1JUjNYY2pabnJ4T2F3RnpTNmhSOWFseDBSTlZxdXZnUlRXXzluTTRYemh5N0RpdmNnNXVzQVdWZUFsYTEwVzE5MjVsUEpfNlhGRWdkNlFnalQyZF9IUVNObklvMWlwUV92TGtVcWRjVEdvNlZ3ai05TlZBT1FaZi1wMmxOZ3hrOUozVDUwaVMwanEtZ1JZcWUyTnJwS1UtSTkyRmw1MFpvM0xHOEhI?oc=5",
-      "source": "Google News - Calvinismo",
-      "date": "Wed, 12 Aug 2026 15:03:13 GMT",
-      "category": "Teologia Reformada",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Mais antigos que Jesus: cientistas encontram tesouros de ouro e monumentos de mais 2 mil anos na Grécia - Revista Fórum",
-      "summary": "a href\"https:news.google.comrssarticlesCBMi1gFBVV95cUxPUWhOdGpWTTYwb0FDMFpqX2FrUnJGSnkwYkJwMnF2dk44aFNESDdtZEZtVkRiX0ZHUnlwSU1Kb2JPQ1ROQVJjVWN4VHk5RnBhUG5OSUhGTjNMeHdMUlBSdHBGLTMwN0tacmtMUkpsVkJYV2JTM...",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUWhOdGpWTTYwb0FDMFpqX2FrUnJGSnkwYkJwMnF2dk44aFNESDdtZEZtVkRiX0ZHUnlwSU1Kb2JPQ1ROQVJjVWN4VHk5RnBhUG5OSUhGTjNMeHdMUlBSdHBGLTMwN0tacmtMUkpsVkJYV2JTMTBYM01KNW42a1lUTFlMak10SGduaFNDa2U3M2JTX0RFN19fRXVTZXc5TUk4S1JKMW55NTlGcms5alMycE9PU3dmNEtSa3NxMUUxZVZISmhYOXAwdjBiSWlhb3hSSnNsdEZB?oc=5",
-      "source": "Google News - Achados Arqueológicos",
-      "date": "Wed, 12 Aug 2026 14:43:10 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Novo presidente da Igreja Presbiteriana do Brasil rejeita rótulos políticos e defende igreja apartidária",
-      "summary": "Juarez Marcondes Filho assume o Supremo Concílio da Igreja Presbiteriana do Brasil e fala sobre polarização política, Legendários, críticas nas redes sociais e participação feminina O reverendo Juarez...",
-      "url": "https://folhagospel.com/novo-presidente-da-igreja-presbiteriana-do-brasil-rejeita-rotulos-politicos-e-defende-igreja-apartidaria/",
-      "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 14:05:00 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2026/07/novo-presidente-igreja-presbiteriana-brasil-foco-uniao-e1786532739827.webp"
-    },
-    {
-      "title": "Condenação de Bashar al-Assad à morte tem carga simbólica e pouca aplicabilidade prática; entenda - Brasil de Fato",
-      "summary": "a href\"https:news.google.comrssarticlesCBMi1wFBVV95cUxPRzBUZmZyY3ZJbGQxVWtNU1VINzVmVUhTejJwMGRrUzFzLVVTQUJGVnhSeEhtU1hLbEF4WldjRmhIMUk2dkloSnRicWtkV2E0c3lsal80d0hUSkk3emR4bUxZTmZmMXZfYWhGNmVMZ1pjVmFON...",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRzBUZmZyY3ZJbGQxVWtNU1VINzVmVUhTejJwMGRrUzFzLVVTQUJGVnhSeEhtU1hLbEF4WldjRmhIMUk2dkloSnRicWtkV2E0c3lsal80d0hUSkk3emR4bUxZTmZmMXZfYWhGNmVMZ1pjVmFONDZtcldOWVMwNlpDRVhab25RcFdyRmhZMEQyR1pac3hEaGtPTXliZHFabmM5ZE1TOWpoNTltcElpQXdDajFvaUl1ZnJfZ0J2cmF4QXhBVlRSeUozWTRPVDFjWi1mYU1jSUctMA?oc=5",
-      "source": "Google News - Síria e Damasco",
-      "date": "Wed, 12 Aug 2026 13:39:00 GMT",
-      "category": "Arqueologia e História",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Tribunal de Justiça de Santa Catarina condena ex-vice-prefeito por ordenar incêndio em igreja",
-      "summary": "O Tribunal de Justiça de Santa Catarina condenou um ex-vice-prefeito por mandar incendiar o pavilhão de uma igreja para desestabilizar a política local. The post Tribunal de Justiça de Santa Catarina ...",
-      "url": "https://folhagospel.com/ex-vice-prefeito-condenado-incendio-igreja-santa-catarina/",
-      "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 13:22:00 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2026/07/justica-trabalho-afasta-vinculo-emprego-igreja-esposa-pastor-mg.webp"
-    },
-    {
-      "title": "Terroristas forçam menino a comer restos mortais de vítima em cativeiro na Nigéria",
-      "summary": "Entenda a grave perseguição religiosa na Nigéria após relato chocante de menino cristão forçado por terroristas a consumir restos mortais de uma vítima. The post Terroristas forçam menino a comer rest...",
-      "url": "https://folhagospel.com/perseguicao-religiosa-nigeria-menino-cristao-terroristas/",
-      "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 12:28:00 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2026/08/perseguicao-religiosa-nigeria-menino-cristao-terroristas.webp"
-    },
-    {
-      "title": "Angra apresenta a turnê Holy Land 30th Anniversary Tour no Vivo Rio - Rota Cult",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiogFBVV95cUxObjg1c3hkSkVCSGppUjBlNDNUdV9vRm9xWU5NRHJITE55MWx3TWY2ME91d3ZjOE1mbFZuUnlkOEU3UGI4ZTdsUTJxN0h1MFJNRXF5VkEtUkFndXpOb183NXJkSy1yM0NSTkhsUDloWl85UDJlQ...",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObjg1c3hkSkVCSGppUjBlNDNUdV9vRm9xWU5NRHJITE55MWx3TWY2ME91d3ZjOE1mbFZuUnlkOEU3UGI4ZTdsUTJxN0h1MFJNRXF5VkEtUkFndXpOb183NXJkSy1yM0NSTkhsUDloWl85UDJlQl9ad1pLYXpSeVJNRGN6emNJY19oNDAwWHJTM0dYbVdMVGVaUnh6b0VNZ3hwS2c?oc=5",
-      "source": "Google News - Terra Santa",
-      "date": "Wed, 12 Aug 2026 11:48:25 GMT",
-      "category": "Arqueologia Bíblica",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Ted Lasso: vestiário reformado marca a nova temporada - diariodamidia.com.br",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiiAFBVV95cUxOYzY1dS00ZFpKaGZwbWFDRzZkdmxob2VuZDhtV3NhdmdhMmg3RDVRMTdoLV9UU3JYcjVwMnNaTUJzZTFpRkpUNURJbzczMkVRbUZaMWVfU0dScDlmYk9FeDNvYkZvQjZEd3VrVXhNSzJUN0pFS...",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYzY1dS00ZFpKaGZwbWFDRzZkdmxob2VuZDhtV3NhdmdhMmg3RDVRMTdoLV9UU3JYcjVwMnNaTUJzZTFpRkpUNURJbzczMkVRbUZaMWVfU0dScDlmYk9FeDNvYkZvQjZEd3VrVXhNSzJUN0pFSXRoSC1LTkYydllXYkJWdklwSE8z?oc=5",
-      "source": "Google News - Calvinismo",
-      "date": "Wed, 12 Aug 2026 11:18:47 GMT",
-      "category": "Teologia Reformada",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Cristãos no Sudão enfrentam perseguição crescente com igrejas destruídas pela guerra",
-      "summary": "Cristãos no Sudão enfrentam escalada de violência e destruição de templos em meio à guerra civil A minoria cristã no Sudão está vivenciando um aumento alarmante na perseguição, com ataques diretos a l...",
-      "url": "https://folhagospel.com/cristaos-no-sudao-enfrentam-perseguicao-crescente-com-igrejas-destruidas-pela-guerra/",
-      "source": "Folha Gospel",
-      "date": "Wed, 12 Aug 2026 10:50:25 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://folhagospel.com/wp-content/uploads/2025/12/Predio-da-Igreja-Presbiteriana-no-Sudao-Foto-ReproducaoInstagram.jpg"
-    },
-    {
-      "title": "Criatura do Mar Vermelho regenera o corpo a partir de 3 fragmentos e consegue reconstruir todo o sistema nervoso em 7 dias - Revista Oeste",
-      "summary": "a href\"https:news.google.comrssarticlesCBMi_wFBVV95cUxOWERoTEEyTWtGY2JXd3NhRFNFd3pkS3NOOEdRRHdzWlB5M1dlaUNhdXBGMkdINDRVU0VWTmdNN0hOMVlmQ2FiLVhYMGlxVWg1Yi10ZXFjSWdTR3J1bTVKN1g2ZE4yTS1MdTYwZ1JuVGMzcUk4L...",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOWERoTEEyTWtGY2JXd3NhRFNFd3pkS3NOOEdRRHdzWlB5M1dlaUNhdXBGMkdINDRVU0VWTmdNN0hOMVlmQ2FiLVhYMGlxVWg1Yi10ZXFjSWdTR3J1bTVKN1g2ZE4yTS1MdTYwZ1JuVGMzcUk4LW81aHdLRnRvaGRmSVV5U09XdHU0NmpfSmQ5anktNzFqbzZLcXA5UXRMOGZ0ZzhKTm1VS01nNkI0LU13WXNBN0FRX2lNWW8zR3c3eDVjeS1WM0d5Y0lRWGlTcEtTdTRCSV9Xd0JrV0liSEQxUWdtdllyb3pOMFQ3c28zN0drMXNUMkJST1FPekNSTDA?oc=5",
-      "source": "Google News - Cópias e Manuscritos",
-      "date": "Wed, 12 Aug 2026 10:35:00 GMT",
-      "category": "Arqueologia Bíblica",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Cristão teve seguro do carro negado por causa de adesivo com mensagem bíblica",
-      "summary": "Adesivo traz frase: \"Jesus te ama\". The post Cristão teve seguro do carro negado por causa de adesivo com mensagem bíblica appeared first on Rádio 93FM-RJ.",
-      "url": "https://radio93.com.br/noticias/giro-cristao/cristao-teve-seguro-do-carro-negado-por-causa-de-adesivo-com-mensagem-biblica/",
-      "source": "Radio 93 - Giro Cristão",
-      "date": "Wed, 12 Aug 2026 09:00:02 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://radio93.com.br/wp-content/uploads/2026/08/Adesivo_Carro-Cristao.jpg"
-    },
-    {
-      "title": "Manchester City libera um dos jogadores mais caros de sua história para a segunda divisão - NSC Total",
-      "summary": "a href\"https:news.google.comrssarticlesCBMixAFBVV95cUxQU2hRTml6dVo5Zk5kazRqZ2FaTHMzSkhueWlidDlFR0x0WFZ3QTk0cklzck13VEFrUTlQUl9KTDJRMmFfT2NreVdRRnpYcFphc3JTNzgyeHU0eUpYYmhDeGR5VzJIRmRKTDNMZ1VSem1yejlSe...",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQU2hRTml6dVo5Zk5kazRqZ2FaTHMzSkhueWlidDlFR0x0WFZ3QTk0cklzck13VEFrUTlQUl9KTDJRMmFfT2NreVdRRnpYcFphc3JTNzgyeHU0eUpYYmhDeGR5VzJIRmRKTDNMZ1VSem1yejlSejkwWUR4eEtyTU56ajREd2VDaEtvNXViMlEwaXNLVVNveWxCSlBDd2xsX2JFbFpsRG5LNS1oYU1WVUVMazB1UEtaN1RjUjRsZENQa3N2TWdG?oc=5",
-      "source": "Google News - NSC Total (SC)",
-      "date": "Wed, 12 Aug 2026 08:30:00 GMT",
-      "category": "Notícias Regionais",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Por que empreender aos 20 é melhor que aos 40, segundo bilionário dos brinquedos - InfoMoney",
-      "summary": "a href\"https:news.google.comrssarticlesCBMiwwFBVV95cUxPWmZtTDRNMzhITmh3RHBZWk9OSUdOYXIxVEdheW03ZU9Ubm80TkhaeTJ3VXF2NkxOcGo3Ykxjc2pnNWZkY0hnMDN2X3N3Mm5ZWmlrTFlmdTlkRUQ2LVlIZEo1anZlTHl2a3RRSTNLYU9NdmJGT...",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWmZtTDRNMzhITmh3RHBZWk9OSUdOYXIxVEdheW03ZU9Ubm80TkhaeTJ3VXF2NkxOcGo3Ykxjc2pnNWZkY0hnMDN2X3N3Mm5ZWmlrTFlmdTlkRUQ2LVlIZEo1anZlTHl2a3RRSTNLYU9NdmJGTmI4U0NSNk4yYk1rZkpXY2tZNlhpOHZlTjRPdkVZWmItclN0dTFUZ0ZzTl8wTnNVSGpSVW04VTBpUUs2ZUhYLWszY1lHZUFkY3Q0TFNtczjSAcgBQVVfeXFMT2k2YWpZdXpxUkp5RTRUX0tOYll0T29EcjY3ZGtybUxwR2ZFRnoyRDROYy1HS0FBbGNLYkpNMWpuQktzd0NDbW4zLV9jZTdFNkFXVzVqaDB4elRCMl9ncnlmNDFvQ3dacU9Vd1V1WXJTOUN0Yl8tTXZRZlhOOWJ5a2xxSk9FUld6Sm04cW9udlhQQ2p4YzFzbXprWV9xZnNvZ0tBejJSdm5oc2laRFE5SzRwQmpsanBDMHZuSmxsdmxmc0hWbWtfa0Y?oc=5",
-      "source": "Google News - Idade Média",
-      "date": "Wed, 12 Aug 2026 08:00:00 GMT",
-      "category": "História da Igreja",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Previsão do tempo hoje para Cabo de Santo Agostinho (PE): sol com algumas nuvens e chuva passageira; à noite, muitas nuvens mas com tempo firme - G1",
-      "summary": "a href\"https:news.google.comrssarticlesCBMivAJBVV95cUxORk5oYUJtd3Z4dXBQN1ZBaHQ0OGN4RkE4bkxjSnREeWtHa1F5OUM3emp4cHNiRElTbEsyZk5STmFKcGp4VTdpWGxXWGtOZmM5SGEwb0lIUVpvUDBLUXdEQlV5TDJYWEhXYUt4NS0yYWROSnFtc...",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxORk5oYUJtd3Z4dXBQN1ZBaHQ0OGN4RkE4bkxjSnREeWtHa1F5OUM3emp4cHNiRElTbEsyZk5STmFKcGp4VTdpWGxXWGtOZmM5SGEwb0lIUVpvUDBLUXdEQlV5TDJYWEhXYUt4NS0yYWROSnFtc1dRaG9zQzVtZlZxZ01jZFFJcFhWTVlnY3JibTFBY1VJXzV5SW9mTXNRcWNmMkpjX2xZWHg2QUdYZGo3X2owOFBEdVRvMTlWem9HY081b1FGczVlQmx1RktTLXJXUE1KcVk3YUR3Y2FiZnBwZjJGRHVIX2RDRkdfbUd2dnlIYXhkdGR2b0xIdWF6V2owU05ObzU3TFZ4QzdGSlotQkx2c21UeUdjVnVzUi1sSzNPeEJ4bHA3WFBfekJob2MyQmpzMkhRUUh6YTd50gHLAkFVX3lxTE91dFQ5OGZjTkJLTFpPNkJiQThTWHhhdjdYM2t4SmlHaFR6VUMtSEU2dW9qUlJHQXVlQUlnZjZIQ2Zrald0MUNfSFRrbXhEc3Y0dnhoRF93bmhuRDhpeHRwX0xMMG1BTXpFdmlZSlBOdzJULVJNTHk0UlFXUXJQNDYtZ0wzU2FKRDcwOWZkT0ZoWGswTVg3ZUIxTmNmcFloMDlVeG9nRkN1ZmFzM2RkMjRiaFE5VkxxLTg4X1NLdGFZemQ0TFpwcldzMThrT05SbWVyVUFOd19rbWxjcEpWQkpIWTVaMXlVb3pYRDluZFd0RFdybnJjd1RQZmdxZlA1amRhRUxqb0R0ak5pMnBTRG5PbkZNVW5ZRTJOSXJKdlkwU2swSGNaZm1qQ3dGRVNwY2lUR2FRcVEtTzJsQXNtNl9GSno3UHI1R193SlE?oc=5",
+      "title": "Previsão do tempo hoje para Cabo de Santo Agostinho (PE): sol, com pancadas de chuva de manhã e muitas nuvens à tarde; à noite, tempo firme - G1",
+      "summary": "a href\"https:news.google.comrssarticlesCBMitgJBVV95cUxOSUxZN2V3aXkwZ3dJeXRhcm1OcnZkVW9QUEUxWXhObmYtYlBxcmJXTDRnSVJzcFFFMjg5Z2FDTkd6UmY2RTVJZFpoZmlBcERRQ2EtZUs0LXVpbTNIY1hLdF93Zkxtd200blNiM1k2bjJpWWYwW...",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOSUxZN2V3aXkwZ3dJeXRhcm1OcnZkVW9QUEUxWXhObmYtYlBxcmJXTDRnSVJzcFFFMjg5Z2FDTkd6UmY2RTVJZFpoZmlBcERRQ2EtZUs0LXVpbTNIY1hLdF93Zkxtd200blNiM1k2bjJpWWYwWXl6LTFDUnJjOVRoclVnYTZXTEZsY2tFQWRvam4tN0ZwUFdydmZKdHZJdGFFZVJqMDNWeWN6WTRPaUNNSFRTN1R3R0l5aUlIRDVQQkstQjV5ME9HUFZiR0hNUkwyQkJFTWJrQnFINXBGdm1WWF9SSEZMWnRRZnJGMHp3enoxcmoxMnJWVWdDdDNUcGFPTFp6LTZEdXZyeHBVUzIzZUNGRHVkSjNRa09tWVRaeFVaSEdROFlZbC1SUW9GV3pLYURxSnF30gHEAkFVX3lxTFA1S1RDZkExd2lQdkZONkFmSThUTXpqX1N5YnJYSmFPYWtOU0lfeTdyb1hIczdwQUdscmhvVWs1d3hmZEJ3UGo0andFcC1TcXVoTGlYWGU5MnRzLTM5ZzZXYnNqcmdIWmVLdGxVN3o3d2U1Y24zQUcteW4ybmJ3STI2LTIwQTdBMmxveDl5SzduQ2ZvOGtUbHVOdWF4OU4wSkF2V3NuaHlUQUtnb2FqQndKSTVWY3BucWo2Y3FoR19URnJ6eGkxWE5Vc1FnZlRLaXkzY1laMzJFbm1Yb29rd0Y4cS1sbE5ackFTTVNTQXdIOVd6bmZmd283aF90WE5hbU4xNEZyZU1SMS16VmFwMHJoSnJnbXBoV0dXZ2tuQUdHSUNvUi04MkFBSE1Kc3BZVFBqcG51b0hULWQ5c19lQzgtbFVXNA?oc=5",
       "source": "Google News - Patrística",
-      "date": "Wed, 12 Aug 2026 06:00:52 GMT",
+      "date": "Thu, 13 Aug 2026 06:00:40 GMT",
       "category": "História da Igreja",
       "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
     },
     {
-      "title": "Festa de Nossa Senhora Aparecida da Babilônia movimenta o Santuário até 15 de agosto - Radio Sanca Web TV",
-      "summary": "a href\"https:news.google.comrssarticlesCBMi2AFBVV95cUxOWUFVTWpicmZJOTRrUTM2YzRlT0RzTlpiN0JfQTZQcjgtUUtwUS0tMHRCUlFaNnpycnlfLXVQNkxlMnhsSlJOWWM0NkdKRURXbEhjY0t1bUpfS1VfUEhHTV85dXZUSG9rU1pUS3BKYkJibFVvd...",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWUFVTWpicmZJOTRrUTM2YzRlT0RzTlpiN0JfQTZQcjgtUUtwUS0tMHRCUlFaNnpycnlfLXVQNkxlMnhsSlJOWWM0NkdKRURXbEhjY0t1bUpfS1VfUEhHTV85dXZUSG9rU1pUS3BKYkJibFVvdUhtRGRrMUozVDktVG5KQW0zNDlVbVc0VXdZMUIxVEl4aTYxN0Q2aE41VjEzSEoxNDJwV3h1dVdLZzNId2NEc2M5QzVQdmxaaDdwMnhwZW5NOGRlZGVtRlhhbXVRWHlpdF9JUXM?oc=5",
-      "source": "Google News - Crescente Fértil",
-      "date": "Wed, 12 Aug 2026 03:14:03 GMT",
-      "category": "História Antiga",
+      "title": "Israel diz que tropas continuarão no Líbano, na Síria e em Gaza - Poder360",
+      "summary": "a href\"https:news.google.comrssarticlesCBMisAFBVV95cUxNc09MTFJCZV9ISW82dmFWSnp6N2czZDVuVVVlMW5rcm5kWDN2aHVpYTNDTHQtZVlYMnRISG9oSEVMRkx6Ti04MUtzdElxekhhd0hfVWJTS2JpcERxbU5ZRG51QzA5Z0FieVk1OThsbFRwZFNsU...",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc09MTFJCZV9ISW82dmFWSnp6N2czZDVuVVVlMW5rcm5kWDN2aHVpYTNDTHQtZVlYMnRISG9oSEVMRkx6Ti04MUtzdElxekhhd0hfVWJTS2JpcERxbU5ZRG51QzA5Z0FieVk1OThsbFRwZFNsU21KcXAyZUZJVXlKQ3B1ZzJvdFRHcW5LR1pkN2o5VVVNNUluX2E4MVhMaE9LSHJfdkNnV2h5S3QzZXZuLQ?oc=5",
+      "source": "Google News - Síria e Damasco",
+      "date": "Thu, 13 Aug 2026 03:19:43 GMT",
+      "category": "Arqueologia e História",
       "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-    },
-    {
-      "title": "Nigéria atinge patamar alarmante de mortes de cristãos",
-      "summary": "Foram mais de 2500 mortes no último ano. The post Nigéria atinge patamar alarmante de mortes de cristãos appeared first on Rádio 93FM-RJ.",
-      "url": "https://radio93.com.br/noticias/giro-cristao/nigeria-atinge-patamar-alarmante-de-mortes-de-cristaos/",
-      "source": "Radio 93 - Giro Cristão",
-      "date": "Wed, 12 Aug 2026 03:05:22 +0000",
-      "category": "Notícias Cristãs",
-      "image_url": "https://radio93.com.br/wp-content/uploads/2026/08/Bandeira-da-Nigeria_51.jpg"
     }
   ]
 }
