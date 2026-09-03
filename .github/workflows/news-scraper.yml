@@ -1,131 +1,53 @@
 name: News Scraper
-
 on:
   schedule:
-    # Executa às 7:00 UTC (4:00 AM BRT) e 19:00 UTC (4:00 PM BRT)
-    # Ajustado para 10:00 UTC (7:00 AM BRT) e 22:00 UTC (7:00 PM BRT)
+    # Existing cadence preserved: 07:00 and 19:00 BRT.
     - cron: '0 10,22 * * *'
-  workflow_dispatch: # Permite execução manual
-
+  workflow_dispatch:
 permissions:
   contents: write
-
+concurrency:
+  group: recon-news-static-feed
+  cancel-in-progress: false
 jobs:
   scrape-news:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 10
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: true
-        ref: main
-      
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r scripts/requirements.txt
-        pip install supabase python-dotenv
-        echo "✅ Dependencies installed"
-
-    - name: Environment diagnostics
-      env:
-        # Prefer secrets; fall back to repository variables if secrets are not set
-        VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-        VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-        VITE_SUPABASE_URL_VAR: ${{ vars.VITE_SUPABASE_URL }}
-        VITE_SUPABASE_ANON_KEY_VAR: ${{ vars.VITE_SUPABASE_ANON_KEY }}
-        NEWS_SOURCES_ALLOWLIST: ${{ secrets.NEWS_SOURCES_ALLOWLIST }}
-        NEWS_SOURCES_ALLOWLIST_VAR: ${{ vars.NEWS_SOURCES_ALLOWLIST }}
-        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        SUPABASE_SERVICE_ROLE_KEY_VAR: ${{ vars.SUPABASE_SERVICE_ROLE_KEY }}
-      run: |
-        python --version
-        pip list | sed -n '1,50p'
-        echo "Repo root contents:" && ls -la
-        echo "Scripts dir contents:" && ls -la scripts || true
-        if [ -n "$VITE_SUPABASE_URL" ]; then echo "🔒 Supabase URL secret: PRESENT"; else echo "⚠️ Supabase URL secret: MISSING"; fi
-        if [ -n "$VITE_SUPABASE_ANON_KEY" ]; then echo "🔒 Supabase ANON KEY secret: PRESENT"; else echo "⚠️ Supabase ANON KEY secret: MISSING"; fi
-        if [ -n "$VITE_SUPABASE_URL_VAR" ]; then echo "ℹ️ Supabase URL variable: PRESENT"; else echo "ℹ️ Supabase URL variable: MISSING"; fi
-        if [ -n "$VITE_SUPABASE_ANON_KEY_VAR" ]; then echo "ℹ️ Supabase ANON KEY variable: PRESENT"; else echo "ℹ️ Supabase ANON KEY variable: MISSING"; fi
-        if [ -n "$NEWS_SOURCES_ALLOWLIST" ]; then echo "🔒 Allowlist secret: PRESENT"; else echo "ℹ️ Allowlist secret: MISSING"; fi
-        if [ -n "$NEWS_SOURCES_ALLOWLIST_VAR" ]; then echo "ℹ️ Allowlist variable: PRESENT"; else echo "ℹ️ Allowlist variable: MISSING"; fi
-        if [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then echo "🔒 Supabase SERVICE ROLE KEY secret: PRESENT"; else echo "ℹ️ Supabase SERVICE ROLE KEY secret: MISSING"; fi
-        if [ -n "$SUPABASE_SERVICE_ROLE_KEY_VAR" ]; then echo "ℹ️ Supabase SERVICE ROLE KEY variable: PRESENT"; else echo "ℹ️ Supabase SERVICE ROLE KEY variable: MISSING"; fi
-        # Export fallbacks so subsequent steps have them available
-        export VITE_SUPABASE_URL="${VITE_SUPABASE_URL:-$VITE_SUPABASE_URL_VAR}"
-        export VITE_SUPABASE_ANON_KEY="${VITE_SUPABASE_ANON_KEY:-$VITE_SUPABASE_ANON_KEY_VAR}"
-        export NEWS_SOURCES_ALLOWLIST="${NEWS_SOURCES_ALLOWLIST:-$NEWS_SOURCES_ALLOWLIST_VAR}"
-        export SUPABASE_SERVICE_ROLE_KEY="${SUPABASE_SERVICE_ROLE_KEY:-$SUPABASE_SERVICE_ROLE_KEY_VAR}"
-        # Show summary (without revealing secrets)
-        if [ -n "$VITE_SUPABASE_URL" ]; then echo "✅ Using Supabase URL (length $(echo -n "$VITE_SUPABASE_URL" | wc -c))"; else echo "❌ Supabase URL not set"; fi
-        if [ -n "$VITE_SUPABASE_ANON_KEY" ]; then echo "✅ Using Supabase ANON KEY (length $(echo -n "$VITE_SUPABASE_ANON_KEY" | wc -c))"; else echo "❌ Supabase ANON KEY not set"; fi
-        if [ -n "$NEWS_SOURCES_ALLOWLIST" ]; then echo "✅ Using NEWS_SOURCES_ALLOWLIST"; else echo "ℹ️ NEWS_SOURCES_ALLOWLIST not set (defaults applied)"; fi
-        
-    - name: Run news scraper (capture logs)
-      env:
-        # Prefer secrets; allow fallback to repo variables
-        VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-        VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-        VITE_SUPABASE_URL_VAR: ${{ vars.VITE_SUPABASE_URL }}
-        VITE_SUPABASE_ANON_KEY_VAR: ${{ vars.VITE_SUPABASE_ANON_KEY }}
-        NEWS_SOURCES_ALLOWLIST: ${{ secrets.NEWS_SOURCES_ALLOWLIST }}
-        NEWS_SOURCES_ALLOWLIST_VAR: ${{ vars.NEWS_SOURCES_ALLOWLIST }}
-        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        SUPABASE_SERVICE_ROLE_KEY_VAR: ${{ vars.SUPABASE_SERVICE_ROLE_KEY }}
-        # Volume e janela de recência
-        NEWS_MAX_ITEMS: '200'
-        NEWS_MAX_AGE_HOURS: '72'
-        # Modo de filtro (STRICT, RELAXED, OFF)
-        NEWS_FILTER_MODE: 'RELAXED'
-        # Discord webhook integration (optional)
-        NEWS_DISCORD_NOTIFY: 'true'
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        SITE_URL: https://www.igrejadarecon.com.br/
-      run: |
-        set -o pipefail
-        cd scripts
-        export VITE_SUPABASE_URL="${VITE_SUPABASE_URL:-$VITE_SUPABASE_URL_VAR}"
-        export VITE_SUPABASE_ANON_KEY="${VITE_SUPABASE_ANON_KEY:-$VITE_SUPABASE_ANON_KEY_VAR}"
-        export NEWS_SOURCES_ALLOWLIST="${NEWS_SOURCES_ALLOWLIST:-$NEWS_SOURCES_ALLOWLIST_VAR}"
-        export SUPABASE_SERVICE_ROLE_KEY="${SUPABASE_SERVICE_ROLE_KEY:-$SUPABASE_SERVICE_ROLE_KEY_VAR}"
-        # Volume e janela
-        export NEWS_MAX_ITEMS="${NEWS_MAX_ITEMS}"
-        export NEWS_MAX_AGE_HOURS="${NEWS_MAX_AGE_HOURS}"
-        # Filtro
-        export NEWS_FILTER_MODE="${NEWS_FILTER_MODE}"
-        # Pass-through optional Discord integration flags
-        export NEWS_DISCORD_NOTIFY="${NEWS_DISCORD_NOTIFY}"
-        export DISCORD_WEBHOOK_URL="${DISCORD_WEBHOOK_URL}"
-        export SITE_URL="${SITE_URL}"
-        python news_scraper.py 2>&1 | tee ../scraper_run.log
-
-    - name: Upload scraper logs
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: scraper-logs-${{ github.run_id }}
-        path: scraper_run.log
-        retention-days: 7
-        
-    - name: Commit and push if changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
-        git fetch origin main
-        git checkout -B main
-        git add src/data/christian_news.json
-        git add public/data/christian_news.json || true
-        if ! git diff --staged --quiet; then
-          git commit -m "chore: update news data - $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
-        else
-          echo "No changes to commit."
-        fi
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install collector dependencies
+        run: python -m pip install -r scripts/requirements.txt
+      - name: Offline collector and domain checks
+        run: |
+          python -m unittest discover -s tests -p "test_*.py"
+          node --test tests/*.test.mjs
+      - name: Collect bounded, dated publisher articles
+        env:
+          NEWS_SOURCES_ALLOWLIST: ${{ vars.NEWS_SOURCES_ALLOWLIST }}
+          NEWS_MAX_ITEMS: '60'
+          NEWS_MAX_AGE_HOURS: '72'
+          NEWS_FILTER_MODE: 'RELAXED'
+          NEWS_WRITE_SUPABASE: 'false'
+          NEWS_DISCORD_NOTIFY: 'false'
+        run: python scripts/news_scraper.py
+      - name: Validate and generate syndication feeds
+        run: node scripts/generate-feeds.mjs
+      - name: Commit only a changed edition
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add src/data/christian_news.json public/data/christian_news.json public/reconnews-feed.json public/reconnews-rss.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update verified news edition"
+            git push origin HEAD:main
+          fi

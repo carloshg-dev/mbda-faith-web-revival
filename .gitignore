@@ -48,3 +48,13 @@ _stitch/
 .temp_historico.txt
 
 tore-*
+
+# User source assets are preserved locally; publish only optimized derivatives.
+/public/images/reunião-de-casais/
+/public/images/agenda-semanal-novo.jpg
+/public/images/logo-23anos.png
+/public/images/logo-24anos.png
+/public/images/logo-25anos.png
+/public/images/logo-26anos.png
+/public/images/logo-sem-faicha.png
+/.impeccable/review/

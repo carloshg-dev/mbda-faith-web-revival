@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import { Abrigo } from '../data/abrigos';
+import { Abrigo } from './data/abrigos';
 
 interface AbrigoModalProps {
   abrigo: Abrigo | null;

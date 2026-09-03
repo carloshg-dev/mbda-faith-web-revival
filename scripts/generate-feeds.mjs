@@ -1,125 +1,34 @@
-// Geração de JSON Feed 1.1 e RSS 2.0 a partir de public/data/christian_news.json
-// Uso: node scripts/generate-feeds.mjs
+import { createReadStream } from 'node:fs';
+import { writeFile } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { normalizeFeed, MAX_FEED_BYTES } from '../src/domain/news.ts';
 
-import { readFile, writeFile, mkdir } from 'fs/promises';
-import path from 'path';
-
-const siteUrl = process.env.SITE_URL || 'http://localhost:8080';
-const rootDir = process.cwd();
-const inputPath = path.join(rootDir, 'public', 'data', 'christian_news.json');
-const outputJsonFeedPath = path.join(rootDir, 'public', 'reconnews-feed.json');
-const outputRssPath = path.join(rootDir, 'public', 'reconnews-rss.xml');
-
-function xmlEscape(str = '') {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
+const SITE = 'https://www.igrejadarecon.com.br';
+const escapeXml = (value='') => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[char]));
+export function renderFeeds(data, now=Date.now()) {
+  const feed = normalizeFeed(data, now);
+  const json = {version:'https://jsonfeed.org/version/1.1',title:'Reconciliação News',home_page_url:SITE,
+    feed_url:SITE+'/reconnews-feed.json',language:'pt-BR',description:'Referências de notícias cristãs, com acesso à fonte original.',
+    items:feed.articles.map(item=>({id:item.url,url:item.url,title:item.title,content_text:item.summary,
+      date_published:item.dateVerified?item.date:undefined,image:item.image_url,tags:[item.category],authors:[{name:item.source}]}))};
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Reconciliação News</title><link>${SITE}</link><description>Referências de notícias cristãs</description><language>pt-BR</language>`
+    +(feed.updatedAt?`<lastBuildDate>${new Date(feed.updatedAt).toUTCString()}</lastBuildDate>`:'')
+    +feed.articles.map(item=>`<item><title>${escapeXml(item.title)}</title><link>${escapeXml(item.url)}</link><guid isPermaLink="true">${escapeXml(item.url)}</guid>`
+      +(item.dateVerified?`<pubDate>${new Date(item.date).toUTCString()}</pubDate>`:'')
+      +`<category>${escapeXml(item.category)}</category><description>${escapeXml(item.summary)}</description></item>`).join('\n')+'</channel></rss>\n';
+  return {json:JSON.stringify(json,null,2)+'\n',rss};
 }
-
-function guessMimeTypeFromUrl(url = '') {
-  const u = url.toLowerCase();
-  if (u.endsWith('.jpg') || u.endsWith('.jpeg')) return 'image/jpeg';
-  if (u.endsWith('.png')) return 'image/png';
-  if (u.endsWith('.webp')) return 'image/webp';
-  if (u.endsWith('.avif')) return 'image/avif';
-  return 'image/*';
-}
-
-function toISO(dateStr) {
-  const ts = Date.parse(dateStr);
-  if (Number.isNaN(ts)) return undefined;
-  return new Date(ts).toISOString();
-}
-
-function toUTC(dateStr) {
-  const ts = Date.parse(dateStr);
-  if (Number.isNaN(ts)) return undefined;
-  return new Date(ts).toUTCString();
-}
-
-async function generate() {
-  const raw = await readFile(inputPath, 'utf-8');
-  const data = JSON.parse(raw);
-  const metaLastUpdatedISO = toISO(data.last_updated) || new Date().toISOString();
-  const metaLastUpdatedUTC = new Date(metaLastUpdatedISO).toUTCString();
-  const articles = Array.isArray(data.articles) ? data.articles : [];
-
-  // JSON Feed v1.1
-  const jsonFeed = {
-    version: 'https://jsonfeed.org/version/1.1',
-    title: 'Reconciliação News',
-    home_page_url: siteUrl,
-    feed_url: `${siteUrl}/reconnews-feed.json`,
-    description: 'Atualizações diárias de notícias cristãs e arqueologia bíblica.',
-    language: 'pt-BR',
-    icon: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
-    authors: [{ name: 'MB da Reconciliação' }],
-    expired: false,
-    items: articles.map((a) => {
-      const id = a.url || `${a.source || 'news'}:${a.title}`;
-      const date_published = toISO(a.date);
-      const tags = [];
-      if (a.category) tags.push(a.category);
-      if (Array.isArray(a.tags)) tags.push(...a.tags);
-      return {
-        id,
-        url: a.url,
-        title: a.title,
-        content_text: a.summary || '',
-        date_published,
-        image: a.image_url || undefined,
-        tags: tags.length ? tags : undefined,
-        authors: a.source ? [{ name: a.source }] : undefined,
-      };
-    }),
-  };
-
-  // RSS 2.0
-  let rss = '';
-  rss += '<?xml version="1.0" encoding="UTF-8"?>\n';
-  rss += '<rss version="2.0">\n';
-  rss += '  <channel>\n';
-  rss += `    <title>${xmlEscape('Reconciliação News')}</title>\n`;
-  rss += `    <link>${xmlEscape(siteUrl)}</link>\n`;
-  rss += `    <description>${xmlEscape('Atualizações diárias de notícias cristãs e arqueologia bíblica.')}</description>\n`;
-  rss += `    <language>pt-BR</language>\n`;
-  rss += `    <lastBuildDate>${xmlEscape(metaLastUpdatedUTC)}</lastBuildDate>\n`;
-
-  for (const a of articles) {
-    const pubDate = toUTC(a.date) || metaLastUpdatedUTC;
-    const enclosure = a.image_url
-      ? `\n      <enclosure url="${xmlEscape(a.image_url)}" type="${xmlEscape(guessMimeTypeFromUrl(a.image_url))}" />`
-      : '';
-    rss += '    <item>\n';
-    rss += `      <title>${xmlEscape(a.title || '')}</title>\n`;
-    rss += `      <link>${xmlEscape(a.url || '')}</link>\n`;
-    rss += `      <guid isPermaLink="true">${xmlEscape(a.url || '')}</guid>\n`;
-    rss += `      <pubDate>${xmlEscape(pubDate)}</pubDate>\n`;
-    if (a.category) rss += `      <category>${xmlEscape(a.category)}</category>\n`;
-    rss += `      <description><![CDATA[${(a.summary || '').trim()}]]></description>\n`;
-    rss += `      ${enclosure}\n`;
-    rss += '    </item>\n';
+export async function generate(root=process.cwd()) {
+  const chunks=[]; let size=0;
+  for await (const chunk of createReadStream(join(root,'public/data/christian_news.json'),{highWaterMark:64*1024})) {
+    size+=chunk.length;
+    if(size>MAX_FEED_BYTES) throw new Error('Feed exceeds 1 MB budget');
+    chunks.push(chunk);
   }
-
-  rss += '  </channel>\n';
-  rss += '</rss>\n';
-
-  // Garante diretório public existente
-  await mkdir(path.join(rootDir, 'public'), { recursive: true });
-
-  await writeFile(outputJsonFeedPath, JSON.stringify(jsonFeed, null, 2), 'utf-8');
-  await writeFile(outputRssPath, rss, 'utf-8');
-
-  console.log('✅ Feeds gerados com sucesso:');
-  console.log(' - JSON Feed:', outputJsonFeedPath);
-  console.log(' - RSS:', outputRssPath);
+  const output=renderFeeds(JSON.parse(Buffer.concat(chunks).toString('utf8')));
+  await Promise.all([writeFile(join(root,'public/reconnews-feed.json'),output.json),writeFile(join(root,'public/reconnews-rss.xml'),output.rss)]);
 }
-
-generate().catch((err) => {
-  console.error('❌ Erro ao gerar feeds:', err);
-  process.exitCode = 1;
-});
+if(process.argv[1] && import.meta.url===pathToFileURL(resolve(process.argv[1])).href) {
+  generate().then(()=>console.log('RSS and JSON Feed generated from the verified static archive.')).catch(error=>{console.error(error.message);process.exitCode=1;});
+}

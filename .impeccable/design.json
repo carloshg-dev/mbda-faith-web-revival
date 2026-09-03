@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-03T06:58:18.5349021Z",
+  "title": "Design System: Ministério Bíblico da Reconciliação",
+  "extensions": {
+    "colorMeta": {
+      "midnight-ink": {
+        "role": "primary",
+        "displayName": "Midnight Ink",
+        "canonical": "#020817",
+        "tonalRamp": ["oklch(15% 0.036 259.2)", "oklch(25% 0.036 259.2)", "oklch(35% 0.036 259.2)", "oklch(45% 0.036 259.2)", "oklch(55% 0.036 259.2)", "oklch(65% 0.036 259.2)", "oklch(80% 0.036 259.2)", "oklch(95% 0.036 259.2)"]
+      },
+      "sanctuary-navy": {
+        "role": "primary",
+        "displayName": "Sanctuary Navy",
+        "canonical": "#06132c",
+        "tonalRamp": ["oklch(15% 0.054 261.4)", "oklch(25% 0.054 261.4)", "oklch(35% 0.054 261.4)", "oklch(45% 0.054 261.4)", "oklch(55% 0.054 261.4)", "oklch(65% 0.054 261.4)", "oklch(80% 0.054 261.4)", "oklch(95% 0.054 261.4)"]
+      },
+      "scenic-cobalt": {
+        "role": "primary",
+        "displayName": "Scenic Cobalt",
+        "canonical": "#075be8",
+        "tonalRamp": ["oklch(15% 0.225 261.3)", "oklch(25% 0.225 261.3)", "oklch(35% 0.225 261.3)", "oklch(45% 0.225 261.3)", "oklch(55% 0.225 261.3)", "oklch(65% 0.225 261.3)", "oklch(80% 0.225 261.3)", "oklch(95% 0.225 261.3)"]
+      },
+      "action-blue": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "canonical": "#0744b9",
+        "tonalRamp": ["oklch(15% 0.193 262.1)", "oklch(25% 0.193 262.1)", "oklch(35% 0.193 262.1)", "oklch(45% 0.193 262.1)", "oklch(55% 0.193 262.1)", "oklch(65% 0.193 262.1)", "oklch(80% 0.193 262.1)", "oklch(95% 0.193 262.1)"]
+      },
+      "reconciliation-gold": {
+        "role": "secondary",
+        "displayName": "Reconciliation Gold",
+        "canonical": "#f3b51b",
+        "tonalRamp": ["oklch(15% 0.162 82.8)", "oklch(25% 0.162 82.8)", "oklch(35% 0.162 82.8)", "oklch(45% 0.162 82.8)", "oklch(55% 0.162 82.8)", "oklch(65% 0.162 82.8)", "oklch(80% 0.162 82.8)", "oklch(95% 0.162 82.8)"]
+      },
+      "gold-hover": {
+        "role": "secondary",
+        "displayName": "Gold Hover",
+        "canonical": "#ffd259",
+        "tonalRamp": ["oklch(15% 0.146 88)", "oklch(25% 0.146 88)", "oklch(35% 0.146 88)", "oklch(45% 0.146 88)", "oklch(55% 0.146 88)", "oklch(65% 0.146 88)", "oklch(80% 0.146 88)", "oklch(95% 0.146 88)"]
+      },
+      "cream-paper": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "#f5f1e8",
+        "tonalRamp": ["oklch(15% 0.013 86.8)", "oklch(25% 0.013 86.8)", "oklch(35% 0.013 86.8)", "oklch(45% 0.013 86.8)", "oklch(55% 0.013 86.8)", "oklch(65% 0.013 86.8)", "oklch(80% 0.013 86.8)", "oklch(95% 0.013 86.8)"]
+      },
+      "reading-white": {
+        "role": "neutral",
+        "displayName": "Reading White",
+        "canonical": "#fffefa",
+        "tonalRamp": ["oklch(15% 0.005 95.1)", "oklch(25% 0.005 95.1)", "oklch(35% 0.005 95.1)", "oklch(45% 0.005 95.1)", "oklch(55% 0.005 95.1)", "oklch(65% 0.005 95.1)", "oklch(80% 0.005 95.1)", "oklch(95% 0.005 95.1)"]
+      },
+      "pure-white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(35% 0 0)", "oklch(45% 0 0)", "oklch(55% 0 0)", "oklch(65% 0 0)", "oklch(80% 0 0)", "oklch(95% 0 0)"]
+      },
+      "slate-copy": {
+        "role": "neutral",
+        "displayName": "Slate Copy",
+        "canonical": "#536078",
+        "tonalRamp": ["oklch(15% 0.042 262.6)", "oklch(25% 0.042 262.6)", "oklch(35% 0.042 262.6)", "oklch(45% 0.042 262.6)", "oklch(55% 0.042 262.6)", "oklch(65% 0.042 262.6)", "oklch(80% 0.042 262.6)", "oklch(95% 0.042 262.6)"]
+      },
+      "quiet-line": {
+        "role": "neutral",
+        "displayName": "Quiet Line",
+        "canonical": "#d9d8d0",
+        "tonalRamp": ["oklch(15% 0.011 100.8)", "oklch(25% 0.011 100.8)", "oklch(35% 0.011 100.8)", "oklch(45% 0.011 100.8)", "oklch(55% 0.011 100.8)", "oklch(65% 0.011 100.8)", "oklch(80% 0.011 100.8)", "oklch(95% 0.011 100.8)"]
+      },
+      "quiet-surface": {
+        "role": "neutral",
+        "displayName": "Quiet Surface",
+        "canonical": "#e9e7df",
+        "tonalRamp": ["oklch(15% 0.011 95.2)", "oklch(25% 0.011 95.2)", "oklch(35% 0.011 95.2)", "oklch(45% 0.011 95.2)", "oklch(55% 0.011 95.2)", "oklch(65% 0.011 95.2)", "oklch(80% 0.011 95.2)", "oklch(95% 0.011 95.2)"]
+      },
+      "navy-copy": {
+        "role": "neutral",
+        "displayName": "Navy Copy",
+        "canonical": "#c7d1e5",
+        "tonalRamp": ["oklch(15% 0.030 264.4)", "oklch(25% 0.030 264.4)", "oklch(35% 0.030 264.4)", "oklch(45% 0.030 264.4)", "oklch(55% 0.030 264.4)", "oklch(65% 0.030 264.4)", "oklch(80% 0.030 264.4)", "oklch(95% 0.030 264.4)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Monumental Display", "purpose": "Hero principal da home; não se propaga automaticamente para outras rotas." },
+      "headline": { "displayName": "Section Headline", "purpose": "Títulos de seção e aberturas editoriais." },
+      "title": { "displayName": "Condensed Title", "purpose": "Notícias, estudos e agrupamentos de conteúdo." },
+      "action": { "displayName": "Condensed Action", "purpose": "Botões, navegação e links de alta visibilidade." },
+      "body": { "displayName": "Reading Body", "purpose": "Doutrina, artigos, formulários e texto corrente." },
+      "label": { "displayName": "Operational Label", "purpose": "Campos, metadados e estados compactos." }
+    },
+    "shadows": [
+      { "name": "ambient-lift", "value": "0 3px 8px rgb(2 8 23 / 10%)", "purpose": "Elevação curta e suave do teaser fotográfico sobre paper." },
+      { "name": "book-cover", "value": "0 20px 42px rgb(0 0 0 / 34%)", "purpose": "Destaca a capa integral sobre o stand navy." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "160ms ease-out", "purpose": "Transições de cor em botões e links de ação." },
+      { "name": "gallery-reveal", "value": "480ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Revelação autoral da fotografia atual; reduzida a 0.01ms sob prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "640px" },
+      { "name": "navigation", "value": "900px" },
+      { "name": "wide", "value": "1190px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Primary Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Ação principal em áreas claras ou escuras, com presença dourada controlada.",
+      "html": "<button class=\"ds-button ds-button-gold\">Conheça nossa igreja</button>",
+      "css": ".ds-button { min-height:54px; display:inline-flex; align-items:center; justify-content:center; gap:10px; border:1px solid transparent; border-radius:4px; padding:11px 28px; font:600 24px/1.2 var(--condensed); transition:background-color 160ms ease-out,color 160ms ease-out; } .ds-button-gold { background:var(--gold); color:var(--ink); } .ds-button-gold:hover { background:#ffd259; } .ds-button-gold:active { background:var(--gold); } .ds-button-gold:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Blue Service Button",
+      "kind": "button",
+      "refersTo": "button-blue",
+      "description": "Ação de serviço sobre superfícies claras.",
+      "html": "<button class=\"ds-button ds-button-blue\">Fale com a igreja</button>",
+      "css": ".ds-button { min-height:54px; display:inline-flex; align-items:center; justify-content:center; gap:10px; border:1px solid transparent; border-radius:4px; padding:11px 28px; font:600 24px/1.2 var(--condensed); transition:background-color 160ms ease-out,color 160ms ease-out; } .ds-button-blue { background:var(--blue); color:#fff; } .ds-button-blue:hover { background:#06368e; } .ds-button-blue:active { background:var(--blue); } .ds-button-blue:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Ação secundária ou operacional, como atualizar notícias e navegar no blog.",
+      "html": "<button class=\"ds-button ds-button-outline\">Verificar atualização</button>",
+      "css": ".ds-button { min-height:54px; display:inline-flex; align-items:center; justify-content:center; gap:10px; border-radius:4px; padding:11px 28px; font:600 20px/1.2 var(--condensed); transition:background-color 160ms ease-out,color 160ms ease-out; } .ds-button-outline { border:1px solid #b6bdca; color:var(--blue); background:transparent; } .ds-button-outline:hover { background:#e7edf7; } .ds-button-outline:active { background:transparent; } .ds-button-outline:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Circular Icon Control",
+      "kind": "button",
+      "refersTo": "icon-control",
+      "description": "Controle de 44px para galeria e paginação.",
+      "html": "<button class=\"ds-icon-control\" aria-label=\"Próximo\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-icon-control { width:44px; height:44px; border-radius:50%; border:1px solid #7c879c; background:transparent; color:var(--ink); display:inline-grid; place-items:center; transition:background-color 160ms ease-out,color 160ms ease-out,border-color 160ms ease-out; } .ds-icon-control:hover { color:#fff; background:var(--blue); border-color:var(--blue); } .ds-icon-control:active { background:#06368e; } .ds-icon-control:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "description": "Faixa midnight com cinco caminhos, incluindo Livros em /blog#livros, e visita em contorno dourado; Livros também integra o menu compacto.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a class=\"ds-brand\" href=\"/\">Reconciliação</a><div class=\"ds-nav-links\"><a href=\"/#quem-somos\">A igreja</a><a href=\"/#agenda\">Agenda</a><a href=\"/#comunidade\">Comunidade</a><a href=\"/blog#livros\">Livros</a><a href=\"/#reconnews\">ReconNews</a><a class=\"ds-visit\" href=\"/#contato\">Planeje sua visita</a></div></nav>",
+      "css": ".ds-nav { min-height:96px; background:var(--ink); color:var(--paper); border-bottom:1px solid #273049; padding:0 36px; display:flex; align-items:center; justify-content:space-between; gap:30px; } .ds-brand { color:inherit; text-decoration:none; font:700 44px/1 var(--condensed); } .ds-nav-links { display:flex; align-items:center; gap:32px; font:500 26px/1 var(--condensed); } .ds-nav-links a { color:inherit; text-decoration:none; padding:12px 0; } .ds-nav-links a:hover { color:var(--gold); } .ds-nav-links .ds-visit { padding:11px 24px; border:1px solid var(--gold); border-radius:4px; color:var(--gold); } .ds-nav a:focus-visible { outline:3px solid var(--gold); outline-offset:5px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Campo claro e compacto para busca e contato.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-field\">Buscar no acervo</label><input class=\"ds-field\" id=\"ds-field\" type=\"search\" placeholder=\"Tema, palavra ou fonte\" />",
+      "css": ".ds-field-label { display:block; margin-bottom:8px; color:var(--ink); font:600 13px/1.5 var(--body); } .ds-field { width:100%; min-height:47px; background:var(--white); color:var(--ink); border:1px solid #a9b1bd; border-radius:4px; padding:11px 13px; font:16px/1.65 var(--body); caret-color:var(--blue); } .ds-field:hover { border-color:#7c879c; } .ds-field:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "News Source Card",
+      "kind": "card",
+      "description": "Cartão editorial plano com fonte, título, resumo, data e saída explícita.",
+      "html": "<article class=\"ds-news-card\"><div class=\"ds-news-art\">FONTE</div><div class=\"ds-news-body\"><p class=\"ds-news-meta\">Fonte <span>· História</span></p><h3><a href=\"#\">Título verificável da matéria</a></h3><p class=\"ds-news-summary\">Resumo breve do conteúdo, preservando a origem e a leitura editorial.</p><div class=\"ds-news-footer\"><time>Publicado em 03 set. 2026</time><a href=\"#\">Ler na fonte ↗</a></div></div></article>",
+      "css": ".ds-news-card { max-width:360px; display:flex; flex-direction:column; color:var(--ink); border-bottom:1px solid var(--line); } .ds-news-art { height:192px; display:grid; place-items:center; background:#e8edf5; color:var(--blue); border-radius:4px; padding:25px; font:600 32px var(--condensed); } .ds-news-body { padding:20px 0; display:flex; flex-direction:column; } .ds-news-meta { margin:0 0 10px; color:var(--blue); font:600 11px/1.5 var(--body); } .ds-news-meta span,.ds-news-summary,.ds-news-footer time { color:var(--muted); } .ds-news-card h3 { margin:0; font:600 27px/1.18 var(--condensed); } .ds-news-card h3 a { color:inherit; text-decoration:none; } .ds-news-card h3 a:hover { color:var(--blue); text-decoration:underline; } .ds-news-summary { margin:14px 0 22px; font:14px/1.6 var(--body); } .ds-news-footer { display:flex; justify-content:space-between; gap:10px; align-items:center; font:11px var(--body); } .ds-news-footer a { color:var(--blue); font-weight:600; text-decoration:none; } .ds-news-card a:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Active Blog Study",
+      "kind": "custom",
+      "description": "Estado atual do roteiro do blog: faixa da lição, título, preenchimento quiet, texto azul e sublinhado estrutural de 1px.",
+      "html": "<button class=\"ds-reflection-item\" aria-current=\"step\"><span>Lição 1</span>Tessalônica e a missão</button>",
+      "css": ".ds-reflection-item { width:270px; text-align:left; color:var(--ink); background:transparent; border:0; border-bottom:1px solid transparent; padding:10px 16px; font:15px/1.3 var(--body); } .ds-reflection-item span { display:block; margin-bottom:3px; color:var(--muted); font:600 12px/1 var(--condensed); letter-spacing:.06em; text-transform:uppercase; } .ds-reflection-item:hover { background:#e9e3d8; } .ds-reflection-item[aria-current] { border-bottom-color:var(--blue); color:var(--blue); background:#e9e3d8; font-weight:600; } .ds-reflection-item:focus-visible { outline:3px solid var(--cobalt); outline-offset:5px; }"
+    },
+    {
+      "name": "Book Stand",
+      "kind": "custom",
+      "description": "Trilho navy com prateleira dourada, capa integral em contain e texto lado a lado, inclusive no compacto. O link externo só aparece quando há destino configurado.",
+      "html": "<section class=\"ds-book-stand\"><div class=\"ds-book-shelf\"><article class=\"ds-book\"><div class=\"ds-book-cover\"><img src=\"/images/site/blog/tessalonicenses-evento-480.webp\" width=\"480\" height=\"854\" loading=\"lazy\" decoding=\"async\" alt=\"Capa ou arte de divulgação de Tessalonicenses — visão de uma igreja local\" /></div><div class=\"ds-book-copy\"><h3>Tessalonicenses — visão de uma igreja local</h3><p class=\"ds-book-author\">Editora Cristã Evangélica</p><p>A revista que orienta a série atual da Escola Bíblica, percorrendo as duas cartas de Paulo e a esperança da volta de Cristo.</p><a href=\"https://loja.editoracristaevangelica.com.br/cartas-aos-tessalonicenses-revista-do-aluno.html\" target=\"_blank\" rel=\"noopener noreferrer\">Conhecer na editora <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M15 3h6v6m0-6L10 14M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div></article></div></section>",
+      "css": ".ds-book-stand { background:var(--navy); color:var(--paper); } .ds-book-shelf { display:flex; gap:64px; align-items:stretch; padding:0 0 38px; overflow-x:auto; border-bottom:5px solid #23324e; box-shadow:0 5px 0 var(--gold); scrollbar-width:thin; scrollbar-color:var(--gold) #23324e; } .ds-book { flex:0 0 min(690px,75vw); display:grid; grid-template-columns:210px minmax(0,1fr); gap:34px; align-items:center; } .ds-book-cover { align-self:start; aspect-ratio:480/854; background:#111e38; box-shadow:0 20px 42px rgb(0 0 0 / 34%); } .ds-book-cover img { width:100%; height:100%; object-fit:contain; object-position:center top; } .ds-book-copy h3 { margin:0; color:var(--paper); font:600 clamp(29px,3vw,42px)/1.06 var(--condensed); } .ds-book-author { margin:11px 0 0; color:var(--gold); font:600 17px/1.25 var(--condensed); } .ds-book-copy > p:not(.ds-book-author) { max-width:45ch; margin:18px 0 24px; color:#c5cfdf; font:16px/1.65 var(--body); } .ds-book-copy a { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:var(--gold); text-decoration:underline; text-underline-offset:5px; font:600 18px/1.4 var(--condensed); } .ds-book-copy a:hover { text-decoration-thickness:2px; } .ds-book-copy a:focus-visible { outline:3px solid var(--gold); outline-offset:5px; } @media(max-width:900px) { .ds-book { flex-basis:min(640px,88vw); } } @media(max-width:640px) { .ds-book-shelf { gap:38px; } .ds-book { flex-basis:calc(100vw - 64px); grid-template-columns:118px minmax(0,1fr); gap:20px; align-items:start; } .ds-book-copy h3 { font-size:27px; } .ds-book-copy > p:not(.ds-book-author) { margin-block:14px 18px; font-size:14px; line-height:1.55; } }"
+    },
+    {
+      "name": "Monthly Gatherings",
+      "kind": "custom",
+      "description": "Recorrências mensais separadas dos horários semanais por divisor dourado; também aparecem em linhas próprias no cartaz navy.",
+      "html": "<section class=\"ds-monthly\" aria-label=\"Encontros mensais\"><h3>Encontros mensais</h3><p><span>1º domingo de cada mês</span><strong>Ceia do Senhor</strong></p><p><span>Último domingo de cada mês</span><strong>Culto da Família</strong></p></section>",
+      "css": ".ds-monthly { margin-top:28px; padding-top:24px; border-top:2px solid var(--gold); color:var(--ink); background:var(--paper); font:16px/1.65 var(--body); } .ds-monthly h3 { margin:0 0 8px; font:600 25px/1.2 var(--condensed); } .ds-monthly p { display:grid; grid-template-columns:minmax(185px,.9fr) minmax(0,1fr); gap:20px; margin:0; padding:8px 0; } .ds-monthly span { color:var(--muted); font-size:14px; } .ds-monthly strong { font-weight:600; } @media(max-width:640px) { .ds-monthly p { grid-template-columns:1fr; gap:1px; padding:10px 0; } }"
+    },
+    {
+      "name": "Community Gallery Frame",
+      "kind": "custom",
+      "description": "Moldura navy para uma fotografia por vez, sem cortar pessoas, com revelação autoral e legenda discreta.",
+      "html": "<figure class=\"ds-gallery\"><div class=\"ds-gallery-image\" role=\"img\" aria-label=\"Área de fotografia comunitária\">Registro da comunidade</div><figcaption>Eventos da Reconciliação · Ministério Bíblico da Reconciliação</figcaption></figure>",
+      "css": ".ds-gallery { width:min(420px,100%); margin:0; overflow:hidden; border-radius:4px; background:var(--navy); } .ds-gallery-image { height:480px; display:grid; place-items:center; padding:32px; color:var(--paper); background:linear-gradient(135deg,var(--navy),#0a2d6f); font:600 24px/1.2 var(--condensed); animation:ds-gallery-reveal 480ms cubic-bezier(.16,1,.3,1) both; } .ds-gallery figcaption { padding:14px; color:#c7d1e5; text-align:center; font:12px/1.5 var(--body); } @keyframes ds-gallery-reveal { from { opacity:.2; clip-path:inset(0 9% 0 0); filter:saturate(.72); } to { opacity:1; clip-path:inset(0); filter:saturate(1); } } @media (prefers-reduced-motion:reduce) { .ds-gallery-image { animation-duration:.01ms; animation-iteration-count:1; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Luz que Reconcilia",
+    "overview": "O sistema traduz acolhimento pastoral como uma cena de luz: campos midnight e navy dão profundidade institucional, planos cobalt conduzem o olhar e o dourado marca os momentos de encontro e ação. Em contraste, superfícies off-white desaceleram a experiência para agenda, doutrina, notícias e leitura longa. O resultado é solene sem ser distante, contemporâneo sem perder o caráter comunitário.\n\nA marca oficial e os registros reais da igreja são a autoridade visual. A expressão é editorial e condensada nas chamadas, mas recorre a uma sans de sistema no conteúdo extenso para sustentar legibilidade. O ritmo alterna entradas monumentais com blocos calmos e informativos; não é uma sequência indiscriminada de cartões.",
+    "keyCharacteristics": [
+      "Azul profundo e cobalt como ambiente; dourado como luz e ação.",
+      "Tipografia condensada para voz e hierarquia; sans de sistema para leitura longa.",
+      "Superfícies amplas, cantos compactos e divisores finos.",
+      "Fotografia comunitária real, exibida com enquadramento respeitoso e carregamento seletivo.",
+      "Estados de foco explícitos e movimento reduzido respeitado em toda a experiência."
+    ],
+    "rules": [
+      { "name": "The Gold Is a Signal Rule", "body": "Dourado indica ação principal, foco em fundo escuro ou um pequeno marco de hierarquia; ele não cobre grandes superfícies de leitura.", "section": "colors" },
+      { "name": "The Alternating Sanctuary Rule", "body": "Áreas navy criam presença e pausa; paper, white e quiet-surface retomam leitura e serviço. A alternância substitui grades intermináveis de cartões.", "section": "colors" },
+      { "name": "The Condensed Voice, Open Reading Rule", "body": "Anton e Barlow Condensed constroem a voz pública; a sans de sistema assume parágrafos longos, controles densos e informação verificável.", "section": "typography" },
+      { "name": "The Monument Is Route-Specific Rule", "body": "O display acima de 6rem e a linha institucional em caixa alta pertencem ao hero aprovado da home, não são um padrão automático para novas páginas.", "section": "typography" },
+      { "name": "The Tonal-First Rule", "body": "Crie profundidade primeiro com contraste de superfície, divisores e enquadramento; reserve a sombra ambiente para uma peça visual que realmente precise se destacar.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do preserve a alternância entre planos navy e superfícies quentes de leitura.",
+      "Do use dourado para ação principal, foco em fundo escuro e acentos pequenos de hierarquia.",
+      "Do use Anton e Barlow Condensed para voz pública, mantendo a sans de sistema em textos longos e controles densos.",
+      "Do preserve a marca oficial, imagens documentais reais e enquadramento `contain` quando um corte poderia remover pessoas.",
+      "Do keep controles interativos com alvo mínimo de 44px, foco visível e estados compreensíveis sem depender só de movimento.",
+      "Do keep notícias como conteúdo editorial plano, com fonte, data e saída para a publicação original."
+    ],
+    "donts": [
+      "Don't transformar cada seção em uma grade de cartões elevados; use ritmo, tom e divisores como estrutura principal.",
+      "Don't espalhar dourado por grandes superfícies ou tratá-lo como decoração sem função.",
+      "Don't aplicar o hero monumental, a linha institucional em caixa alta ou a cena de broadcast a rotas que não sejam a home sem uma nova decisão de superfície.",
+      "Don't cortar rostos e corpos em registros comunitários, pré-carregar o álbum inteiro ou iniciar mídia automaticamente.",
+      "Don't inventar edifícios, notícias, fontes, datas, doutrina ou identidade visual para preencher lacunas.",
+      "Don't depender de animação para comunicar estado; a experiência completa deve permanecer legível com movimento reduzido."
+    ]
+  }
+}

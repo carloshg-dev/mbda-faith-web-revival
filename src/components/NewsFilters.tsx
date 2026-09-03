@@ -27,7 +27,7 @@ const NewsFilters: React.FC<NewsFiltersProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const updateFilter = (key: keyof NewsFilterState, value: any) => {
+  const updateFilter = <K extends keyof NewsFilterState,>(key: K, value: NewsFilterState[K]) => {
     onFiltersChange({ ...filters, [key]: value });
   };
 

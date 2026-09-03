@@ -1,32 +1,906 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Reconciliação News",
-  "home_page_url": "http://localhost:8080",
-  "feed_url": "http://localhost:8080/reconnews-feed.json",
-  "description": "Atualizações diárias de notícias cristãs e arqueologia bíblica.",
+  "home_page_url": "https://www.igrejadarecon.com.br",
+  "feed_url": "https://www.igrejadarecon.com.br/reconnews-feed.json",
   "language": "pt-BR",
-  "icon": "http://localhost:8080/favicon.ico",
-  "favicon": "http://localhost:8080/favicon.ico",
-  "authors": [
-    {
-      "name": "MB da Reconciliação"
-    }
-  ],
-  "expired": false,
+  "description": "Referências de notícias cristãs, com acesso à fonte original.",
   "items": [
     {
-      "id": "https://radio93.com.br/noticias/giro-cristao/ataque-com-drones-mata-11-cristaos-no-sudao/",
-      "url": "https://radio93.com.br/noticias/giro-cristao/ataque-com-drones-mata-11-cristaos-no-sudao/",
-      "title": "Ataque com drones mata 11 cristãos no Sudão",
-      "content_text": "Cristãos estavam caminhando para culto natalino em igreja. The post Ataque com drones mata 11 cristãos no Sudão appeared first on Rádio 93FM-RJ.",
-      "date_published": "2026-01-07T03:05:27.000Z",
-      "image": "https://radio93.com.br/wp-content/uploads/2026/01/Bandeira-do-Sudao_11.jpg",
+      "id": "https://arqueologiaeprehistoria.com/2026/06/13/o-oceano-e-os-tupinamba/",
+      "url": "https://arqueologiaeprehistoria.com/2026/06/13/o-oceano-e-os-tupinamba/",
+      "title": "O oceano e os Tupinambá",
+      "content_text": "Segundo as teorias mais aceitas, os povos Tupi se originaram na região amazônica, a partir de onde teriam começado a se expandir por volta de 5000 AP (antes do Presente).",
+      "image": "https://arqueologiaeprehistoria.com/wp-content/uploads/2021/03/cropped-logo-fundo-vazio.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Arqueologia e Pré-História"
+        }
+      ]
+    },
+    {
+      "id": "https://incrivelhistoria.com.br/al-capone-biografia/",
+      "url": "https://incrivelhistoria.com.br/al-capone-biografia/",
+      "title": "Al Capone, o poderoso chefão de Chicago",
+      "content_text": "Biografia de Al Capone, o mais notório e um dos mais gângsteres que o mundo já conheceu. Dos primeiros anos até a sua morte.",
+      "image": "https://incrivelhistoria.com.br/app/uploads/2015/05/biografia-al-capone-historia-crime-morte-incrivel-historia_1.webp",
+      "tags": [
+        "História e Arqueologia"
+      ],
+      "authors": [
+        {
+          "name": "Incrível História"
+        }
+      ]
+    },
+    {
+      "id": "https://incrivelhistoria.com.br/5-curiosidades-sobre-nabucodonosor-ii/",
+      "url": "https://incrivelhistoria.com.br/5-curiosidades-sobre-nabucodonosor-ii/",
+      "title": "5 Curiosidades sobre Nabucodonosor II",
+      "content_text": "5 Curiosidades sobre Nabucodonosor II, o Destruição de Nações (o Leão da Babilônia), o maior rei do Segundo Império da Babilônia.",
+      "image": "https://incrivelhistoria.com.br/app/uploads/2026/01/nabucodonosor-ii-curiosidades-incrivel-historia.jpg",
+      "tags": [
+        "História e Arqueologia"
+      ],
+      "authors": [
+        {
+          "name": "Incrível História"
+        }
+      ]
+    },
+    {
+      "id": "https://www.ibarq.org.br/post/as-3-incr%C3%ADveis-descobertas-da-arqueologia-b%C3%ADblica-em-dezembro-de-2021",
+      "url": "https://www.ibarq.org.br/post/as-3-incr%C3%ADveis-descobertas-da-arqueologia-b%C3%ADblica-em-dezembro-de-2021",
+      "title": "As 3 incríveis descobertas da Arqueologia Bíblica em Dezembro de 2021",
+      "content_text": "O último mês do ano reservou boas supresas para os amantes da arqueologia bíblica. Curiosamente, todos tem relação com o Novo Testamento e nos auxiliarão a ter mais compreensão sobre o contexto histórico-cultural da época de Jesus Cristo.1. O Crucificado InglêsRaridade encontrada em Cambridgeshire traz mais luz sobre a cruz, instrumento de tortura e morte do Império RomanoQuem nos segue no Instagr...",
+      "image": "https://static.wixstatic.com/media/5a70b4_a416af5b047b4d519140bf08f0f83a46~mv2.jpg/v1/fill/w_936,h_526,al_c,lg_1,q_85/5a70b4_a416af5b047b4d519140bf08f0f83a46~mv2.jpg",
+      "tags": [
+        "Arqueologia Bíblica"
+      ],
+      "authors": [
+        {
+          "name": "IBArq"
+        }
+      ]
+    },
+    {
+      "id": "https://www.ibarq.org.br/post/3-evid%C3%AAncias-arqueol%C3%B3gicas-do-reino-de-davi",
+      "url": "https://www.ibarq.org.br/post/3-evid%C3%AAncias-arqueol%C3%B3gicas-do-reino-de-davi",
+      "title": "3 Evidências Arqueológicas do Reino de Davi",
+      "content_text": "Quando pensamos nos tempos antigos descritos na Bíblia, uma das perguntas mais frequentes entre estudiosos e curiosos é: Israel realmente possuía um reino organizado e letrado no século X a.C.? Apesar do ceticismo de muitos estudioso, a resposta, sustentada por descobertas arqueológicas recentes e impactantes, é cada vez mais afirmativa.Achados arqueológicos surgiram nos últimos anos para reforçar...",
+      "image": "https://static.wixstatic.com/media/5a70b4_f57390de86e144afb7f7db962e445c71~mv2.jpg/v1/fill/w_280,h_399,al_c,lg_1,q_80/5a70b4_f57390de86e144afb7f7db962e445c71~mv2.jpg",
+      "tags": [
+        "Arqueologia Bíblica"
+      ],
+      "authors": [
+        {
+          "name": "IBArq"
+        }
+      ]
+    },
+    {
+      "id": "https://mae.usp.br/pos-graduacao-no-mae/",
+      "url": "https://mae.usp.br/pos-graduacao-no-mae/",
+      "title": "Pós-Graduação no MAE",
+      "content_text": "O MAE-USP oferece os seguintes cursos de pós-graduação: Mestrado e Doutorado em Arqueologia do Programa de Pós-graduação",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "MAE USP"
+        }
+      ]
+    },
+    {
+      "id": "https://mae.usp.br/bolsa-fapesp-tt-iv/",
+      "url": "https://mae.usp.br/bolsa-fapesp-tt-iv/",
+      "title": "Bolsa FAPESP TT-IV",
+      "content_text": "Oportunidade de bolsa FAPESP TT-4 no projeto Palynofacies Analysis in Archaeological Sediments from Amazonian Sites: Reconstructing the",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "MAE USP"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1383",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1383",
+      "title": "Abordagens multidisciplinares à arqueologia forense: tópicos discutidos durante as reuniões europeias de arqueologia forense (EMFA)",
+      "content_text": "Abordagens multidisciplinares à arqueologia forense: tópicos discutidos durante as reuniões europeias de arqueologia for...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1298",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1298",
+      "title": "Identidade local e patrimônio arqueológico da população do distrito de Llata, Huánuco, Peru",
+      "content_text": "A pesquisa teve como objetivo analisar a relação entre a identidade local e o patrimônio arqueológico no distrito de Llata (Huánuco, Peru), identificando o nível de percepção dos cidadãos e sua influência na valorização cultural. O estudo foi básico, com enfoque quantitativo correlacional e desenho transversal não experimental. Foi aplicada uma pesquisa a 116 habitantes da área urbana, selecionado...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1350",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1350",
+      "title": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste do Brasil",
+      "content_text": "Explorando adaptações tecnoculturais iniciais na Amazônia: o conjunto lítico de Teotônio do holoceno inicial, noroeste d...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1405",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1405",
+      "title": "Primeira evidência de oxalatos e sua datação no substrato rochoso da Toca do Baixão do Milho, Caracol, Piauí, Brasil",
+      "content_text": "Sítios arqueológicos no estado do Piauí, Brasil, apresentam eflorescências salinas em abrigos rochosos. No sítio arqueológico Toca do Baixão do Milho, os minerais whewellita (CaC₂O₄H₂O) e weddellita (CaC₂O₄2H₂O) foram identificados e datados por radiocarbono. Dada a relevância da área de pesquisa para a história das Américas, os dados de radiocarbono da Serra das Confusões, Piauí, Brasil, foram co...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1385",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1385",
+      "title": "A salvaguarda das coleções arqueológicas sob a guarda da reserva técnica da Universidade Federal do Maranhão (2020-2023): histórico dos acervos, processos curatoriais e extroversão do conhecimento",
+      "content_text": "A salvaguarda das coleções arqueológicas sob a guarda da reserva técnica da Universidade Federal do Maranhão (2020-2023)...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1332",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1332",
+      "title": "Alimentação e ferramentas marinhas: a importância da fauna tetrápode marinha nas práticas culturais dos construtores de sambaquis no sul do Brasil",
+      "content_text": "Alimentação e ferramentas marinhas: a importância da fauna tetrápode marinha nas práticas culturais dos construtores de ...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1336",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1336",
+      "title": "Estruturas, agencialidade e paisagem a arte rupestre nos sítios Matão 1 e Siriema 2, Alto Araçuaí, Minas Gerais, Brasil",
+      "content_text": "Estruturas, agencialidade e paisagem a arte rupestre nos sítios Matão 1 e Siriema 2, Alto Araçuaí, Minas Gerais, Brasil...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1301",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1301",
+      "title": "A arqueologia de Belo Horizonte: reconectando memórias e vislumbrando futuros de uma cidade potencial",
+      "content_text": "Este artigo tem como objetivo abordar os sítios arqueológicos indígenas identificados no município de Belo Horizonte (MG) entre as décadas de 1930 e 1950, com destaque para o sítio arqueológico Córrego do Cardoso. A partir da articulação entre dados documentais, paisagísticos e de cultura material, localizados em distintas instituições, buscamos recriar um vínculo referencial sobre o contexto arqu...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1417",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1417",
+      "title": "Editorial",
+      "content_text": "Este trabalho está licenciado sob uma licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1359",
+      "url": "https://revista.sabnet.org/ojs/index.php/sab/article/view/1359",
+      "title": "Isso não é arqueologia",
+      "content_text": "Este artigo investiga o sentido e as implicações da expressão isso não é arqueologia, frequentemente ouvida em alguns espaços de poder como bancas, congressos, salas de aula e corredores de instituições de ensino , mas raramente escrita, como dispositivo discursivo de exclusão e demarcação disciplinar. Argumenta-se que tal afirmação opera como uma fronteira que busca preservar um ideal de cientifi...",
+      "image": "https://revista.sabnet.org/ojs/public/journals/1/cover_issue_69_pt_BR.png",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "SABNET Revista"
+        }
+      ]
+    },
+    {
+      "id": "https://pt.christianitytoday.com/2026/08/filhos-educacao-escola-salvador-fe-homeschooling-pt/",
+      "url": "https://pt.christianitytoday.com/2026/08/filhos-educacao-escola-salvador-fe-homeschooling-pt/",
+      "title": "Seus filhos não precisam da escola perfeita. Eles precisam de um Salvador.",
+      "content_text": "Quer cresçam lendo livros ou usando tablets, o futuro de seus filhos está seguro em Jesus. Seus filhos não precisam da escola perfeita. Eles precisam de um Salvador.",
+      "image": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/08/kids-need-savior-not-perfect-school.jpg?resize=1200,628",
+      "tags": [
+        "Teologia e Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Christianity Today (PT)"
+        }
+      ]
+    },
+    {
+      "id": "https://pt.christianitytoday.com/2026/08/riqueza-poder-salvacao-prosperidade-generosidade-pt/",
+      "url": "https://pt.christianitytoday.com/2026/08/riqueza-poder-salvacao-prosperidade-generosidade-pt/",
+      "title": "Exortação aos trilionários do presente século",
+      "content_text": "Não é errado ser próspero. Mas as Escrituras dizem que a riqueza deve ser partilhada, não acumulada. Exortação aos trilionários do presente século",
+      "image": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/08/warn-thy-trillionaire.jpg?resize=1200,628",
+      "tags": [
+        "Teologia e Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Christianity Today (PT)"
+        }
+      ]
+    },
+    {
+      "id": "https://pt.christianitytoday.com/2026/08/futebol-colombia-violencia-missao-ministerio-cosdecol-pt/",
+      "url": "https://pt.christianitytoday.com/2026/08/futebol-colombia-violencia-missao-ministerio-cosdecol-pt/",
+      "title": "Na Colômbia, um ministério cristão usa o futebol para combater a violência",
+      "content_text": "Por meio de estudos bíblicos e treinos de futebol, o Christian Union Sports Club viu membros de gangues abraçarem o evangelho.",
+      "image": "https://pt.christianitytoday.com/wp-content/uploads/sites/15/2026/08/colombia-soccer-ministry.jpg?resize=1200,628",
+      "tags": [
+        "Teologia e Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Christianity Today (PT)"
+        }
+      ]
+    },
+    {
+      "id": "https://www.nationalgeographicbrasil.com/historia",
+      "url": "https://www.nationalgeographicbrasil.com/historia",
+      "title": "História e Cultura",
+      "content_text": "BrasilReabilitação dos animaisTamanduá bandeiraEstradaMulheres na Conservação Reabilitação dos animaisVermilinguaTamanduá bandeiraPerda de habitatEstradaMulheres na Conservação",
+      "image": "https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/queen-victoria-og.jpg?w=1600&h=1067",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "National Geographic Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.nationalgeographicbrasil.com/assunto/temas/historia/idade-antiga/civilizacoes-antigas/roma-antiga",
+      "url": "https://www.nationalgeographicbrasil.com/assunto/temas/historia/idade-antiga/civilizacoes-antigas/roma-antiga",
+      "title": "Roma Antiga",
+      "content_text": "Para revelar uma antiga rua com degraus em Jerusalém, arqueólogos e engenheiros israelenses estão construindo uma espécie de túnel de metrô sob um bairro...",
+      "image": "https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/og-jerusalem-street.jpg?w=1600&h=1600",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "National Geographic Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://revistagalileu.globo.com/ciencia/biologia/noticia/2026/09/flor-do-diabo-rarissima-e-descoberta-sob-o-solo-em-parque-da-tailandia.ghtml",
+      "url": "https://revistagalileu.globo.com/ciencia/biologia/noticia/2026/09/flor-do-diabo-rarissima-e-descoberta-sob-o-solo-em-parque-da-tailandia.ghtml",
+      "title": "\"Flor do diabo\" raríssima é descoberta sob o solo em parque da Tailândia",
+      "content_text": "Planta de aparência incomum vive escondida sob o solo da floresta, não realiza fotossíntese e é conhecida por uma única população com menos de 50 indivíduos",
+      "image": "https://s2-galileu.glbimg.com/9sfV6-d_zCPGKSV85XwwXQ4S6nM=/700x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/s/C/6S9Pt8SlGdeZpbBIonaQ/low-res-fig-1.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Revista Galileu"
+        }
+      ]
+    },
+    {
+      "id": "https://revistagalileu.globo.com/ciencia/meio-ambiente/noticia/2026/09/por-que-o-deserto-mais-seco-do-mundo-ficou-coberto-de-neve-nas-ultimas-semanas.ghtml",
+      "url": "https://revistagalileu.globo.com/ciencia/meio-ambiente/noticia/2026/09/por-que-o-deserto-mais-seco-do-mundo-ficou-coberto-de-neve-nas-ultimas-semanas.ghtml",
+      "title": "Por que o deserto mais seco do mundo ficou coberto de neve nas últimas semanas",
+      "content_text": "Série de tempestades de inverno atingiu o norte do Chile em agosto, levando neve dos Andes até áreas próximas ao Pacífico e provocando chuvas equivalentes a anos de precipitação em poucos dias",
+      "image": "https://s2-galileu.glbimg.com/gF0xkj-J70C3P1Ot5bA53jPkQPA=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/y/4/v5g6o7Scii7Orezzut5w/atacamasnowzm-oli2-20260814.jpg",
+      "tags": [
+        "Ciência e Tecnologia"
+      ],
+      "authors": [
+        {
+          "name": "Revista Galileu"
+        }
+      ]
+    },
+    {
+      "id": "https://revistagalileu.globo.com/saude/noticia/2026/09/como-mulher-que-recebeu-transplante-de-pulmao-acabou-com-alergia-a-amendoim.ghtml",
+      "url": "https://revistagalileu.globo.com/saude/noticia/2026/09/como-mulher-que-recebeu-transplante-de-pulmao-acabou-com-alergia-a-amendoim.ghtml",
+      "title": "Como mulher que recebeu transplante de pulmão acabou com alergia a amendoim",
+      "content_text": "Acredita-se que células do sistema imunológico do doador de 12 anos, alérgico a amendoim, possam ter migrado para o corpo da paciente durante a cirurgia e provocado reações que só desapareceram um ano depois; entenda o caso",
+      "image": "https://s2-galileu.glbimg.com/zVHi_ipOsVfJ5RnA2Dt_BbAfRRE=/960x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/u/r/puxUBbS0W7ptmGezSffQ/allergy-test-on-arm.jpg",
+      "tags": [
+        "Ciência e Tecnologia"
+      ],
+      "authors": [
+        {
+          "name": "Revista Galileu"
+        }
+      ]
+    },
+    {
+      "id": "https://revistagalileu.globo.com/sociedade/curiosidade/noticia/2026/09/britanico-levanta-800-toneladas-em-desafio-de-24h-e-quebra-recorde.ghtml",
+      "url": "https://revistagalileu.globo.com/sociedade/curiosidade/noticia/2026/09/britanico-levanta-800-toneladas-em-desafio-de-24h-e-quebra-recorde.ghtml",
+      "title": "Britânico levanta 800 toneladas em desafio de 24h e quebra recorde",
+      "content_text": "Um personal trainer realizou quase 12 mil repetições de levantamento terra e movimentou mais de 822 toneladas para quebrar recorde mundial",
+      "image": "https://s2-galileu.glbimg.com/7-_iaE71Z88VU4aFleCJSGbaPeY=/1920x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/B/u/tYI3faRbiKb1vA2dvMAA/design-sem-nome-4-.jpg",
+      "tags": [
+        "Ciência e Tecnologia"
+      ],
+      "authors": [
+        {
+          "name": "Revista Galileu"
+        }
+      ]
+    },
+    {
+      "id": "https://revistagalileu.globo.com/ciencia/arqueologia/noticia/2026/09/o-que-guarda-tumba-egipcia-com-porta-falsa-de-4-mil-anos-recem-encontrada.ghtml",
+      "url": "https://revistagalileu.globo.com/ciencia/arqueologia/noticia/2026/09/o-que-guarda-tumba-egipcia-com-porta-falsa-de-4-mil-anos-recem-encontrada.ghtml",
+      "title": "O que guarda tumba egípcia com porta falsa de 4 mil anos recém-encontrada",
+      "content_text": "Descoberta em Saqqara revela o sepultamento de um alto funcionário do Antigo Império e um raro conjunto de objetos rituais preservados em sua posição original",
+      "image": "https://s2-galileu.glbimg.com/TJTI3IRgzC9xD0ss5oX5kxnEJ5k=/1179x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/u/5/imqGU8QoamY8DxK5AugQ/news-20260901-egypt-saqqara-false-door.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Revista Galileu - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/c248qzqvzqpo",
+      "url": "https://www.bbc.com/portuguese/articles/c248qzqvzqpo",
+      "title": "Os mistérios de uma antiga civilização avançada ainda pouco conhecida",
+      "content_text": "A civilização do Vale do Indo era contemporânea dos mesopotâmicos e dos egípcios e existiu por milhares de anos; mas por que sabemos tão pouco sobre ela?",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d5e3/live/a0f0a870-0bf7-11f1-b830-51fcdb0e0c16.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/cql12re7dg4o",
+      "url": "https://www.bbc.com/portuguese/articles/cql12re7dg4o",
+      "title": "A versão mais antiga e simples de Stonehenge encontrada a poucos quilômetros do famoso monumento",
+      "content_text": "A estrutura consistia em dois postes alinhados com os solstícios de 5 mil anos atrás. A versão mais antiga e simples de Stonehenge encontrada a poucos quilômetros do famoso monumento",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/8e10/live/8ce1b710-6adf-11f1-b1db-af71d47507d6.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/cgkpxvyyy4no",
+      "url": "https://www.bbc.com/portuguese/articles/cgkpxvyyy4no",
+      "title": "6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
+      "content_text": "Durante séculos, as técnicas de artesãos romanos, incas, etruscos e maias permaneceram inexplicáveis. 6 tecnologias antigas que intrigam a ciência moderna (e ainda são difíceis de replicar)",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/d861/live/88b51ad0-378e-11f1-9d5c-8ba507d7dbde.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/clyx5ewj8p9o",
+      "url": "https://www.bbc.com/portuguese/articles/clyx5ewj8p9o",
+      "title": "O zoológico de Montezuma que surpreendeu os espanhóis há 500 anos e que só agora começamos a entender",
+      "content_text": "Uma nova pesquisa revela detalhes sobre os animais mantidos pelo imperador asteca Montezuma II na antiga cidade de Tenochtitlán. Entre eles, aves, serpentes, onças-pintadas, pumas e lobos",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/597a/live/46aeda70-3448-11f1-acfc-bb3dca3045bc.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil - Arqueologia"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/cwyzg259neno",
+      "url": "https://www.bbc.com/portuguese/articles/cwyzg259neno",
+      "title": "Pattaya, a 'cidade do pecado' onde 5 mil militares americanos desembarcaram após oito meses em alto mar",
+      "content_text": "Após 250 dias no mar, o USS Abraham Lincoln atracou perto de Pattaya, cidade conhecida por sua agitada vida noturna e turismo sexual.",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/3894/live/fea7bf50-a6af-11f1-b048-153395f36aa1.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/c4gqm6vqd33o",
+      "url": "https://www.bbc.com/portuguese/articles/c4gqm6vqd33o",
+      "title": "Número usado como contato de Moraes aparece ligado a contas digitais no TikTok e aplicativos de celular",
+      "content_text": "No TikTok, número atribuído a Moraes em relatório da PF aparece vinculado a um perfil identificado como 'Xandao, mostra investigação da BBC",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/f320/live/c5e84180-a6ff-11f1-aed2-8d6da8d75094.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bbc.com/portuguese/articles/c7708nnn3g3o",
+      "url": "https://www.bbc.com/portuguese/articles/c7708nnn3g3o",
+      "title": "STF deve blindar Moraes de investigação, diz especialista: 'Não vi ministros do Supremo perderem nada em qualquer cenário'",
+      "content_text": "Para Ivar Hartmann, doutor em Direito e professor associado do Insper, corporativismo da Corte tende a brecar avanço da apuração sobre ministro e escândalo do Master.",
+      "image": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/de0e/live/5a193490-a6ec-11f1-9e4c-79c1c0e340c6.jpg",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "BBC News Brasil"
+        }
+      ]
+    },
+    {
+      "id": "https://monergismo.com/protestantismo-communio/",
+      "url": "https://monergismo.com/protestantismo-communio/",
+      "title": "Protestantismo Communio",
+      "content_text": "Contrariamente à mitologia que talvez tenhas ouvido dos lábios de apologetas católicos-romanos, a Reforma não foi um movimento individualista, mas um movimento católico e eclesial. Um esforço para restaurar à igreja sua catolicidade, e isto se evidencia de várias formas.",
+      "image": "https://monergismo.com/wp-content/uploads/2026/06/Generatedimage_1781199443721-930x620.png",
+      "tags": [
+        "Teologia Reformada"
+      ],
+      "authors": [
+        {
+          "name": "Monergismo"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-from-critic-to-ally-israel-and-greece-grow-closer-a/",
+      "url": "https://cafetorah.com/israel-from-critic-to-ally-israel-and-greece-grow-closer-a/",
+      "title": "De críticos a aliados, Israel e Grécia se aproximam cada vez mais",
+      "content_text": "De críticos a aliados, Israel e Grécia se aproximam cada vez maissetembro 2, 2026From critic: A relação entre Israel e a Grécia tem passado por uma transformação notável nos últimos anos, deixando par...",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/09/leonhard_niederwimmer-archaeology-4881001_1920.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-idf-ousts-reservist-who-prayed-with-besieging-settle/",
+      "url": "https://cafetorah.com/israel-idf-ousts-reservist-who-prayed-with-besieging-settle/",
+      "title": "Forças de Defesa de Israel demitem reservista que rezou em vilarejo sitiado",
+      "content_text": "Forças de Defesa de Israel demitem reservista que rezou em vilarejo sitiadosetembro 2, 2026Ousts reservist: O exército israelense (IDF) afastou um soldado da reserva que foi flagrado orando ao lado de...",
+      "image": "https://cafetorah.com/wp-content/uploads/2019/04/soldados-da-idf-na-samaria-e-judeia.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/muro-defensivo-construido-por-israel-na-grecia/",
+      "url": "https://cafetorah.com/muro-defensivo-construido-por-israel-na-grecia/",
+      "title": "Muro defensivo construído por Israel na Grécia",
+      "content_text": "Muro defensivo construído por Israel na Gréciasetembro 2, 2026Greece's israeli-built: A assinatura, na segundafeira, de um acordo de cerca de 3 bilhões de euros entre Grécia e Israel marca...",
+      "image": "https://cafetorah.com/wp-content/uploads/2021/02/Arrow_system.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-us-strikes-iran-as-revolutionary-guards-retaliate-ag/",
+      "url": "https://cafetorah.com/israel-us-strikes-iran-as-revolutionary-guards-retaliate-ag/",
+      "title": "EUA atacam o Irã enquanto a Guarda Revolucionária retalia",
+      "content_text": "EUA atacam o Irã enquanto a Guarda Revolucionária retaliasetembro 2, 2026Strikes iran: Na última terçafeira, as forças armadas dos Estados Unidos lançaram uma série de ataques aéreos contra alvos estr...",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Estreito-de-Ormuz.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-your-home-in-jerusalem-awaits-you-sponsored-conten/",
+      "url": "https://cafetorah.com/israel-your-home-in-jerusalem-awaits-you-sponsored-conten/",
+      "title": "Israel: Your home in Jerusalem awaits you Sponsored Conten",
+      "content_text": "Your home: A Theatron Residences, localizada no bairro de Talbieb, em Jerusalém, está divulgando a disponibilidade de quatro apartamentos de alto padrãohel",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-us-giant-blackstone-invests-27m-in-israeli-cyber-st/",
+      "url": "https://cafetorah.com/israel-us-giant-blackstone-invests-27m-in-israeli-cyber-st/",
+      "title": "Israel: US giant Blackstone invests 27m in Israeli cyber st",
+      "content_text": "Giant blackstone: A startup israelense Huskeys, sediada em Tel Aviv, está desenvolvendo uma solução inovadora para controlar e proteger o tráfego da",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-israel-braces-for-possible-hezbollah-flare-up/",
+      "url": "https://cafetorah.com/israel-israel-braces-for-possible-hezbollah-flare-up/",
+      "title": "Israel: Israel braces for possible Hezbollah flare-up",
+      "content_text": "Israel braces: Israel tem avaliado, nas últimas semanas, que o Irã pressionado por um cerco econômico cada vez mais rigoroso",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-broke-isolated-and-abandoned-by-beijing-iran/",
+      "url": "https://cafetorah.com/israel-broke-isolated-and-abandoned-by-beijing-iran/",
+      "title": "Israel: Broke, isolated and abandoned by Beijing, Iran'",
+      "content_text": "EUA atacam o Irã enquanto a Guarda Revolucionária retaliasetembro 2, 2026Strikes iran: Na última terçafeira, as forças armadas dos Estados Unidos lançaram uma série de ataques aéreos contra alvos estr...",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://cafetorah.com/israel-idf-fires-commander-filmed-praying-with-west-bank-je/",
+      "url": "https://cafetorah.com/israel-idf-fires-commander-filmed-praying-with-west-bank-je/",
+      "title": "Israel: IDF fires commander filmed praying with West Bank Je",
+      "content_text": "Israel: IDF fires commander filmed praying with West Bank Jesetembro 2, 2026No CommentsFires commander: O Exército de Defesa de Israel (IDF) divulgou que um comandante foi filmado orando ao lado de mi...",
+      "image": "https://cafetorah.com/wp-content/uploads/2026/04/Banner-Livro-Desvendando.jpg",
+      "tags": [
+        "Israel e Oriente Médio"
+      ],
+      "authors": [
+        {
+          "name": "Cafetorah - Notícias de Israel"
+        }
+      ]
+    },
+    {
+      "id": "https://portasabertas.org.br/noticias/cristaos-perseguidos/cristaos-sob-violencia-e-pressao-em-burkina-faso/",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/cristaos-sob-violencia-e-pressao-em-burkina-faso/",
+      "title": "Cristãos sob violência e pressão em Burkina Faso",
+      "content_text": "Descubra como a violência extremista afeta cristãos em Burkina Faso, provoca deslocamentos e desafia a igreja local a permanecer firme na fé.",
+      "image": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/20194904/4608x2592-5.avif",
+      "tags": [
+        "Perseguição Religiosa"
+      ],
+      "authors": [
+        {
+          "name": "Portas Abertas"
+        }
+      ]
+    },
+    {
+      "id": "https://portasabertas.org.br/noticias/fake-news/",
+      "url": "https://portasabertas.org.br/noticias/fake-news/",
+      "title": "Fake News - Portas Abertas",
+      "content_text": "Fake News - Portas Abertas",
+      "image": "https://portasabertas.org.br/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&id=38757&type=play&hash=62c1b04dee07a559f92c5d0e480428da",
+      "tags": [
+        "Perseguição Religiosa"
+      ],
+      "authors": [
+        {
+          "name": "Portas Abertas"
+        }
+      ]
+    },
+    {
+      "id": "https://portasabertas.org.br/noticias/cristaos-perseguidos/atualizacoes-sobre-o-desaparecimento-forcado-de-raymond-koh/",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/atualizacoes-sobre-o-desaparecimento-forcado-de-raymond-koh/",
+      "title": "Atualizações sobre o desaparecimento forçado de Raymond Koh",
+      "content_text": "Pastor sequestrado há oito anos na Malásia segue desaparecido Atualizações sobre o desaparecimento forçado de Raymond Koh",
+      "image": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/08/26140637/MY_Susanna-during-the-press-statement-2-2025_0028549-AVIF.avif",
+      "tags": [
+        "Perseguição Religiosa"
+      ],
+      "authors": [
+        {
+          "name": "Portas Abertas"
+        }
+      ]
+    },
+    {
+      "id": "https://portasabertas.org.br/noticias/cristaos-perseguidos/abdu-um-evangelista-no-tiktok-no-chifre-da-africa/",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/abdu-um-evangelista-no-tiktok-no-chifre-da-africa/",
+      "title": "De líder muçulmano a evangelista no TikTok: a história de Abdu no Chifre da África",
+      "content_text": "Conheça a história de Abdu, um evangelista radicalmente transformado por Jesus que compartilha a fé em um dos contextos mais desafiadores do mundo.",
+      "image": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2025/06/18163120/SW2026_Banners_noticias9.avif",
+      "tags": [
+        "Perseguição Religiosa"
+      ],
+      "authors": [
+        {
+          "name": "Portas Abertas"
+        }
+      ]
+    },
+    {
+      "id": "https://portasabertas.org.br/noticias/cristaos-perseguidos/siria-atribui-ataque-a-igreja-mar-elias-ao-estado-islamico/",
+      "url": "https://portasabertas.org.br/noticias/cristaos-perseguidos/siria-atribui-ataque-a-igreja-mar-elias-ao-estado-islamico/",
+      "title": "Síria atribui ataque à Igreja Mar Elias ao Estado Islâmico",
+      "content_text": "Autoridades sírias afirmam que o Estado Islâmico foi responsável pelo ataque à Igreja Mar Elias e ampliam operações antiterrorismo no país.",
+      "image": "https://sitepa.s3.amazonaws.com/wp-content/uploads/br/2026/05/30064903/6000x3375-10.avif",
+      "tags": [
+        "Perseguição Religiosa"
+      ],
+      "authors": [
+        {
+          "name": "Portas Abertas"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdkRhOTBkTVRvYkZlT2x5RWFHdnRtZFlfX1BSdk11VHBpWHdpRHVTNUw3b0paT01vN1lFZGNQanNaVm13VEtzdVNad0hhVWNNOEpuOWE0a1o0Tzk1N1hsNUZ4dFJDSHY5Qm1Rd2FMRGVwM0ZLMVBieDI5aHgwZlpXR3hVbUxsOWNsMF9jeXlSLU9jd1p3ZDlKUmk5S2VqQ0hfMmVwZGFtOXo4b3I1YnZ5dEpBZXo2dmM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdkRhOTBkTVRvYkZlT2x5RWFHdnRtZFlfX1BSdk11VHBpWHdpRHVTNUw3b0paT01vN1lFZGNQanNaVm13VEtzdVNad0hhVWNNOEpuOWE0a1o0Tzk1N1hsNUZ4dFJDSHY5Qm1Rd2FMRGVwM0ZLMVBieDI5aHgwZlpXR3hVbUxsOWNsMF9jeXlSLU9jd1p3ZDlKUmk5S2VqQ0hfMmVwZGFtOXo4b3I1YnZ5dEpBZXo2dmM?oc=5",
+      "title": "Alexandre, o Grande - e a inevitável queda do império - sampi.net.br",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMitwFBVV95cUxOdkRhOTBkTVRvYkZlT2x5RWFHdnRtZFlfX1BSdk11VHBpWHdpRHVTNUw3b0paT01vN1lFZGNQanNaVm13VEtzdVNad0hhVWNNOEpuOWE0a1o0Tzk1N1hsNUZ4dFJDSHY5Qm1Rd2FMRGVwM0ZLM...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Contexto Histórico"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Grécia Antiga e Helenismo"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDI0dWRId21NcEd1THV2VlpYbmNiV2k0OUYxaXlEYnRMMjNzUXBtbXZSaXdiUGE1UkdMS2I0Y2w4eGpwdzV2MUhlbkFaRjFiTWZIa29jOFQtclkxOEVhclpGU0VUYkxIWVJQczZjVlRwVDJQMzNleHE4LUxKSVVOejNoZlJTa2MzQndyYzJaSEVJQjg0WWlNM2xydFhZMnhLVkgyc2tlVTZzcWNEbUllZDNlWE1oU3gyUG5GX0k3RVVFTnVw0gHKAUFVX3lxTE9ZN3FfWWR2cEFXeG1vcFlBZk5INl9pT1dSN1ppc2tQTE42WGtjSUR4UTZHZlNPVF9pckZ1WUphdDZMVjZaTzc5ejlzdldWdlhTOEZSb2xUZmtleWNYdEgtWGMwZTFuc2l5OFJnV3FnTmo1dWNJbl9kVWxtZUZBVTR5SGxDcjdjRTBrbXZXa0RxZHVPRGNRV3hIZkpMdzd0S05lYlAxVGxLZ0NJVWlmajB3MThDWnZvenZrLVpGek52Z29za2lvc0J2YlE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDI0dWRId21NcEd1THV2VlpYbmNiV2k0OUYxaXlEYnRMMjNzUXBtbXZSaXdiUGE1UkdMS2I0Y2w4eGpwdzV2MUhlbkFaRjFiTWZIa29jOFQtclkxOEVhclpGU0VUYkxIWVJQczZjVlRwVDJQMzNleHE4LUxKSVVOejNoZlJTa2MzQndyYzJaSEVJQjg0WWlNM2xydFhZMnhLVkgyc2tlVTZzcWNEbUllZDNlWE1oU3gyUG5GX0k3RVVFTnVw0gHKAUFVX3lxTE9ZN3FfWWR2cEFXeG1vcFlBZk5INl9pT1dSN1ppc2tQTE42WGtjSUR4UTZHZlNPVF9pckZ1WUphdDZMVjZaTzc5ejlzdldWdlhTOEZSb2xUZmtleWNYdEgtWGMwZTFuc2l5OFJnV3FnTmo1dWNJbl9kVWxtZUZBVTR5SGxDcjdjRTBrbXZXa0RxZHVPRGNRV3hIZkpMdzd0S05lYlAxVGxLZ0NJVWlmajB3MThDWnZvenZrLVpGek52Z29za2lvc0J2YlE?oc=5",
+      "title": "Iphan recomenda escavação manual de achado arqueológico da estação 14-Bis do metrô em SP - Estadão",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMixAFBVV95cUxQMDI0dWRId21NcEd1THV2VlpYbmNiV2k0OUYxaXlEYnRMMjNzUXBtbXZSaXdiUGE1UkdMS2I0Y2w4eGpwdzV2MUhlbkFaRjFiTWZIa29jOFQtclkxOEVhclpGU0VUYkxIWVJQczZjVlRwVDJQM...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Achados Arqueológicos"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRmF5bFZiUjRGd21pOVRFY0NmX09WeWpna2JWUEVzUW1pUS13ZzNsZlJ6bnQ5blFNMVp6Ny16LVFhaVJKQlVST2hyeXJHdEV2VjVVcHRyeHFfd1NTUklrbHhDMWE1cVdsaHdNTUpYMEVwQ1Z3UktpYzVJWU9TU3hZU1dZTko1LXMyc3U2Ynd3OE9yenZiM0dSdXhMaFZBdHUtbDd0eFhMTl9odw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRmF5bFZiUjRGd21pOVRFY0NmX09WeWpna2JWUEVzUW1pUS13ZzNsZlJ6bnQ5blFNMVp6Ny16LVFhaVJKQlVST2hyeXJHdEV2VjVVcHRyeHFfd1NTUklrbHhDMWE1cVdsaHdNTUpYMEVwQ1Z3UktpYzVJWU9TU3hZU1dZTko1LXMyc3U2Ynd3OE9yenZiM0dSdXhMaFZBdHUtbDd0eFhMTl9odw?oc=5",
+      "title": "Sem adiar o sonho: casamento é realizado em igreja alagada nas Filipinas - Rádio Itatiaia",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMiqgFBVV95cUxPRmF5bFZiUjRGd21pOVRFY0NmX09WeWpna2JWUEVzUW1pUS13ZzNsZlJ6bnQ5blFNMVp6Ny16LVFhaVJKQlVST2hyeXJHdEV2VjVVcHRyeHFfd1NTUklrbHhDMWE1cVdsaHdNTUpYMEVwQ1Z3U...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Notícias Regionais"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Itatiaia (MG)"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMingFBVV95cUxNalBkVTNOSHk0SFF5cnBocDVTNUdaOTJhRkJ3NWx0a3BtVlJmS2VROTBhdFJFaWVYY0RCcVdCQm9BZDRMbWRYeDNmWVhtRTFLeDBNem5xLUxKMHNFb3djWmUyV0sxSkphWEd6b0FaSWluZTNtN09XbzNsa0pzNjFTU1lhNE5UbWU5VnBPM2p0Y0pHdGZNZ1g0WHFvVjlldw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNalBkVTNOSHk0SFF5cnBocDVTNUdaOTJhRkJ3NWx0a3BtVlJmS2VROTBhdFJFaWVYY0RCcVdCQm9BZDRMbWRYeDNmWVhtRTFLeDBNem5xLUxKMHNFb3djWmUyV0sxSkphWEd6b0FaSWluZTNtN09XbzNsa0pzNjFTU1lhNE5UbWU5VnBPM2p0Y0pHdGZNZ1g0WHFvVjlldw?oc=5",
+      "title": "Obras na Rodovia JP revelam sítio arqueológico - diariodoamapa.com.br",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMingFBVV95cUxNalBkVTNOSHk0SFF5cnBocDVTNUdaOTJhRkJ3NWx0a3BtVlJmS2VROTBhdFJFaWVYY0RCcVdCQm9BZDRMbWRYeDNmWVhtRTFLeDBNem5xLUxKMHNFb3djWmUyV0sxSkphWEd6b0FaSWluZTNtN...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Achados Arqueológicos"
+        }
+      ]
+    },
+    {
+      "id": "https://folhagospel.com/tre-sp-multa-tarcisio-de-freitas-propaganda-eleitoral-igreja/",
+      "url": "https://folhagospel.com/tre-sp-multa-tarcisio-de-freitas-propaganda-eleitoral-igreja/",
+      "title": "TRE-SP multa Tarcísio de Freitas por propaganda eleitoral irregular em igreja",
+      "content_text": "O TRE-SP multou o governador Tarcísio de Freitas por propaganda eleitoral irregular em templo religioso. Entenda a decisão judicial e a lei eleitoral. The post TRE-SP multa Tarcísio de Freitas por pro...",
+      "image": "https://folhagospel.com/wp-content/uploads/2024/06/image-3.png",
       "tags": [
         "Notícias Cristãs"
       ],
       "authors": [
         {
-          "name": "Radio 93 - Giro Cristão"
+          "name": "Folha Gospel"
+        }
+      ]
+    },
+    {
+      "id": "https://folhagospel.com/filme-beyond-belief-petra-estreia-estados-unidos/",
+      "url": "https://folhagospel.com/filme-beyond-belief-petra-estreia-estados-unidos/",
+      "title": "Filme Beyond Belief, inspirado no rock cristão da banda Petra, estreia nos EUA",
+      "content_text": "O filme Beyond Belief, inspirado no rock cristão da banda Petra, estreia nos EUA com participações de Bob Hartman e John Schlitt. Saiba mais sobre o longa! The post Filme Beyond Belief, inspirado no r...",
+      "image": "https://folhagospel.com/wp-content/uploads/2026/09/filme-beyond-belief-petra-estreia-estados-unidos.webp",
+      "tags": [
+        "Notícias Cristãs"
+      ],
+      "authors": [
+        {
+          "name": "Folha Gospel"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOXzlnaFVUSUM5NnlGTUtyTWExMzU5SEZGNWNOMTd4cVZka0pvY0N3R0t0bHpjeHdvSjJON2RhZnYyWk51Y092N3IzaHFyLUI0S2NzTDB0VGMwazR5VmpEbG9xX3RjX3dGLXZ4Y04tZjFUcFZ1T1VpRTg2WGVyMk9tZVR6TGh1UXV6cGt1Y2kwbHNSX3VLaklvWUlMeGoyaFVWZUlMaHdkT29oMU5XZXluS2IwTERSZGljRENuUW5iTGx5bTNNSDJMRXR6YXlYcWFKOWwxbnNmRGt3MU9QZkdZdmRDNDViTy1vSnc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOXzlnaFVUSUM5NnlGTUtyTWExMzU5SEZGNWNOMTd4cVZka0pvY0N3R0t0bHpjeHdvSjJON2RhZnYyWk51Y092N3IzaHFyLUI0S2NzTDB0VGMwazR5VmpEbG9xX3RjX3dGLXZ4Y04tZjFUcFZ1T1VpRTg2WGVyMk9tZVR6TGh1UXV6cGt1Y2kwbHNSX3VLaklvWUlMeGoyaFVWZUlMaHdkT29oMU5XZXluS2IwTERSZGljRENuUW5iTGx5bTNNSDJMRXR6YXlYcWFKOWwxbnNmRGt3MU9QZkdZdmRDNDViTy1vSnc?oc=5",
+      "title": "Cientistas detectam ouro em vestes de seda de arcebispo medieval na Catedral de Canterbury - Aventuras na História",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMi6gFBVV95cUxOXzlnaFVUSUM5NnlGTUtyTWExMzU5SEZGNWNOMTd4cVZka0pvY0N3R0t0bHpjeHdvSjJON2RhZnYyWk51Y092N3IzaHFyLUI0S2NzTDB0VGMwazR5VmpEbG9xX3RjX3dGLXZ4Y04tZjFUcFZ1T...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "História da Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Idade Média"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd3FiSVFRMjFkZ2ZDdkVYbUc2V21vaTFuRXVoV09rbVZ3dkV0U0c3Yl9UZ0ZiRjhQQU43ZERDVFVVR3U4Y2xjOURSYU5EM3NoT0c5OFJtZlkzempldjJmTEdYMW0wUWNyOUlTVE50eEhjWTd3aGszaUxTYldPOGU3bG1rTzRDNGRkZmV0YmZSQU51dUNscVIyTEtET1FpSG9vaGNiTWlfQzhtckd3T0pEQ2EyeGtXMnk3c2U1NHpEb2JBeU0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd3FiSVFRMjFkZ2ZDdkVYbUc2V21vaTFuRXVoV09rbVZ3dkV0U0c3Yl9UZ0ZiRjhQQU43ZERDVFVVR3U4Y2xjOURSYU5EM3NoT0c5OFJtZlkzempldjJmTEdYMW0wUWNyOUlTVE50eEhjWTd3aGszaUxTYldPOGU3bG1rTzRDNGRkZmV0YmZSQU51dUNscVIyTEtET1FpSG9vaGNiTWlfQzhtckd3T0pEQ2EyeGtXMnk3c2U1NHpEb2JBeU0?oc=5",
+      "title": "Cidade oculta de Nimrud é descoberta e revela segredo assírio - Aventuras na História",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMiwwFBVV95cUxNd3FiSVFRMjFkZ2ZDdkVYbUc2V21vaTFuRXVoV09rbVZ3dkV0U0c3Yl9UZ0ZiRjhQQU43ZERDVFVVR3U4Y2xjOURSYU5EM3NoT0c5OFJtZlkzempldjJmTEdYMW0wUWNyOUlTVE50eEhjWTd3a...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Arqueologia e História"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Nínive e Assíria"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWjJCRDRKcjE3aVAzNS1tdktoMmZ0aHE2aFpaN19NaTJsRVVZMkhwcEpKcU5JN2g1OFFLQ2dYaElwbXRSNGJ1QzQwd2JKa1M4OC1kTUdxRC1tejI1OEtLelQ0UG5tdE5qa2tseUVPLVFOU0drM1pfdmhhVklvQVZoVi1uNHhRWDVzZWZZbGlQa29JQlNkc3QxWXdxa0c5NGdjaXRqelJIa1V4VkxGdm1kMHZ1U3p4MFZLdEVIaHp2OA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWjJCRDRKcjE3aVAzNS1tdktoMmZ0aHE2aFpaN19NaTJsRVVZMkhwcEpKcU5JN2g1OFFLQ2dYaElwbXRSNGJ1QzQwd2JKa1M4OC1kTUdxRC1tejI1OEtLelQ0UG5tdE5qa2tseUVPLVFOU0drM1pfdmhhVklvQVZoVi1uNHhRWDVzZWZZbGlQa29JQlNkc3QxWXdxa0c5NGdjaXRqelJIa1V4VkxGdm1kMHZ1U3p4MFZLdEVIaHp2OA?oc=5",
+      "title": "Idade média de criminosos envolvidos em abuso de menores cai para 19 anos - Francês News",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMivwFBVV95cUxPWjJCRDRKcjE3aVAzNS1tdktoMmZ0aHE2aFpaN19NaTJsRVVZMkhwcEpKcU5JN2g1OFFLQ2dYaElwbXRSNGJ1QzQwd2JKa1M4OC1kTUdxRC1tejI1OEtLelQ0UG5tdE5qa2tseUVPLVFOU0drM...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "História da Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Idade Média"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPb3U1WTZzcGczWms0MjFOcFMtWlhzeEdnSmQwYjBiVHNfX3dmTUZlamRzMXF3bFhmVXpaSENjdE5UaTNDMEJuczhPSTBWNDFOczVuSm9nUGNrZFh4S1gxN21lVWdaQVNDSWozNk4xUFJaY1N5c0hDZDZ0TG9QVW4xTmpLOHNyWW1nTjF2aVBpV0hTN1NPcFRySVFvdzdkTWlNRVFNc3AyUklWc1RuOVdJbklTNDFjSnc3X3M5cQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPb3U1WTZzcGczWms0MjFOcFMtWlhzeEdnSmQwYjBiVHNfX3dmTUZlamRzMXF3bFhmVXpaSENjdE5UaTNDMEJuczhPSTBWNDFOczVuSm9nUGNrZFh4S1gxN21lVWdaQVNDSWozNk4xUFJaY1N5c0hDZDZ0TG9QVW4xTmpLOHNyWW1nTjF2aVBpV0hTN1NPcFRySVFvdzdkTWlNRVFNc3AyUklWc1RuOVdJbklTNDFjSnc3X3M5cQ?oc=5",
+      "title": "Coleção virtual resgata memória de 21 peças sacras furtadas de igreja em Itatiaia - Rádio Itatiaia",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMivAFBVV95cUxPb3U1WTZzcGczWms0MjFOcFMtWlhzeEdnSmQwYjBiVHNfX3dmTUZlamRzMXF3bFhmVXpaSENjdE5UaTNDMEJuczhPSTBWNDFOczVuSm9nUGNrZFh4S1gxN21lVWdaQVNDSWozNk4xUFJaY1N5c...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "Notícias Regionais"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Itatiaia (MG)"
+        }
+      ]
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xR2RqNjNEWUo2aEpjcDl1VlFCUE5uaTNKUHlFajFlTVVNT3o2V01wSVRmRlhNUXJnXzlQaS1yQzJKRXo3bUxzdXlfTVpDX055U2hwZGVuTjUtM2s?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xR2RqNjNEWUo2aEpjcDl1VlFCUE5uaTNKUHlFajFlTVVNT3o2V01wSVRmRlhNUXJnXzlQaS1yQzJKRXo3bUxzdXlfTVpDX055U2hwZGVuTjUtM2s?oc=5",
+      "title": "Prefeitura do Cabo de Santo Agostinho - Prefeitura do Cabo de Santo Agostinho",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMiW0FVX3lxTE9xR2RqNjNEWUo2aEpjcDl1VlFCUE5uaTNKUHlFajFlTVVNT3o2V01wSVRmRlhNUXJnXzlQaS1yQzJKRXo3bUxzdXlfTVpDX055U2hwZGVuTjUtM2s?oc5\" target\"_blank\"Prefeitura do ...",
+      "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "tags": [
+        "História da Igreja"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Patrística"
         }
       ]
     }

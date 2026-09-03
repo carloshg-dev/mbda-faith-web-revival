@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { GraduationCap, BookOpen, Users, Award } from "lucide-react";
-import { Modal } from "./ui/Modal";
+import { Modal } from "../components/ui/Modal";
 
 const Seterec = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

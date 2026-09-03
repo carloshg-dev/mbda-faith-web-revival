@@ -1,0 +1,9 @@
+# Local review copies and responsive assets awaiting integration.
+# Originals supplied by the church remain untouched.
+photo-review/
+prepared-media/
+questions/
+
+# Browser profiles generated during local visual verification are not project assets.
+qa/profile-*/
+*profile*/

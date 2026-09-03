@@ -1,13 +1,13 @@
 
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/pages/**/*.{ts,tsx}",
+		"./src/components/site/**/*.{ts,tsx}",
+		"./src/components/{Blog,ReconNewsFeed}.tsx",
 	],
 	prefix: "",
 	theme: {
@@ -114,5 +114,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animate],
 } satisfies Config;

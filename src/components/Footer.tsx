@@ -53,7 +53,6 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-white/85 text-sm">
               <li>Domingo: 08:00 / 09:00 / 11:00</li>
               <li>Quarta-feira: 20:00 - Oração e Palavra</li>
-              <li>Sexta-feira: 20:00 - Oração e Palavra (online)</li>
             </ul>
 
             <a

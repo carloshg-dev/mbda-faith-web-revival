@@ -21,7 +21,13 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Supabase imports
-from supabase import create_client, Client
+try:
+    from supabase import create_client, Client
+except ImportError:
+    create_client = None
+    Client = object
+from scripts.bounded_http import BoundedSession
+from scripts.news_repository import save_static_feed
 from dotenv import load_dotenv
 from dateutil import parser as dateutil_parser
 from dateutil import tz
@@ -42,7 +48,7 @@ except Exception as _e:
 
 class ChristianNewsScraper:
     def __init__(self):
-        self.session = requests.Session()
+        self.session = BoundedSession()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
@@ -67,15 +73,17 @@ class ChristianNewsScraper:
             self.summary_max_chars = int(os.getenv('SUMMARY_MAX_CHARS', '400'))
         except Exception:
             self.summary_max_chars = 400
+        self.max_items = max(1, min(60, self.max_items))
+        self.summary_max_chars = max(80, min(400, self.summary_max_chars))
         self.timezone_name = os.getenv('TIMEZONE', 'America/Sao_Paulo')
         self.local_tz = tz.gettz(self.timezone_name) or tz.gettz('UTC')
         
         # Initialize Supabase client
         self.supabase_url = os.getenv('VITE_SUPABASE_URL')
         # Prefer service role key for write operations; fallback to anon key for read-only environments
-        self.supabase_key = os.getenv('SUPABASE_SERVICE_ROLE_KEY') or os.getenv('VITE_SUPABASE_ANON_KEY')
+        self.supabase_key = os.getenv('SUPABASE_SERVICE_ROLE_KEY')
         
-        if not self.supabase_url or not self.supabase_key:
+        if os.getenv('NEWS_WRITE_SUPABASE', 'false').lower() != 'true' or not create_client or not self.supabase_url or not self.supabase_key:
             logger.warning("Supabase credentials not found. Will save to JSON only.")
             self.supabase = None
         else:
@@ -229,7 +237,7 @@ class ChristianNewsScraper:
         if dt is None:
             return False
         age = datetime.utcnow() - dt
-        return age <= timedelta(hours=max_age_hours)
+        return timedelta(minutes=-5) <= age <= timedelta(hours=max_age_hours)
 
     def filter_recent_articles(self, articles: List[Dict], max_age_hours: int = 24) -> List[Dict]:
         return [a for a in articles if self.is_recent_article(a, max_age_hours=max_age_hours)]
@@ -337,6 +345,7 @@ class ChristianNewsScraper:
 
     def filter_for_output(self, articles: List[Dict]) -> List[Dict]:
         """Política de saída: prioriza notícias de hoje (timezone configurado); se não houver, usa recentes (<= max_age_hours)."""
+        articles = self.filter_recent_articles(articles, max_age_hours=self.max_age_hours)
         today = self.filter_today_articles(articles)
         if today:
             return today
@@ -351,7 +360,7 @@ class ChristianNewsScraper:
                 'Accept': 'application/rss+xml, application/xml, text/xml',
                 'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
             }
-            response = requests.get(rss_url, headers=headers, timeout=15)
+            response = self.session.get(rss_url, headers=headers, timeout=15)
             if response.status_code != 200:
                 logger.warning(f"Falha ao acessar RSS {source_name}: {response.status_code}")
                 return news_list
@@ -372,7 +381,7 @@ class ChristianNewsScraper:
                     link = (link_elem.get_text() or '').strip()
                     summary_raw = description_elem.get_text() if description_elem else ''
                     summary = self.clean_text(BeautifulSoup(summary_raw, 'html.parser').get_text()) if summary_raw else ''
-                    date = pub_date_elem.get_text() if pub_date_elem else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    date = pub_date_elem.get_text() if pub_date_elem else None
 
                     image_url = self.extract_image_from_content(link)
 
@@ -394,28 +403,7 @@ class ChristianNewsScraper:
         return news_list
 
     def cleanup_old_supabase_records(self, max_age_hours: int = 24) -> None:
-        """Remove registros antigos (> max_age_hours) da tabela news_articles no Supabase."""
-        try:
-            if not self.supabase:
-                logger.warning("Supabase não configurado; pulando limpeza.")
-                return
-
-            cutoff = datetime.utcnow() - timedelta(hours=max_age_hours)
-            cutoff_iso = cutoff.isoformat() + 'Z'
-
-            # Prioriza remoção por created_at (timestamptz gerenciado pelo banco)
-            logger.info(f"Limpando registros com created_at < {cutoff_iso}")
-            result = self.supabase.table('news_articles').delete().lt('created_at', cutoff_iso).execute()
-            # Alguns registros antigos podem não ter created_at consistente; como fallback, tente por date quando for formato ISO
-            try:
-                _ = self.supabase.table('news_articles').delete().lt('date', cutoff_iso).execute()
-            except Exception:
-                # Se a coluna 'date' não for compatível com comparação temporal, ignore silenciosamente
-                pass
-
-            logger.info("✅ Limpeza concluída no Supabase (registros >24h removidos)")
-        except Exception as e:
-            logger.error(f"Erro ao limpar registros antigos no Supabase: {e}")
+        raise RuntimeError('Automatic deletion disabled. Database maintenance requires a separate reviewed operation.')
 
     def filter_content_for_reconciliation(self, news_list: List[Dict], mode: str = 'STRICT') -> List[Dict]:
         """Filter news content to align with Reconciliation brotherhood values
@@ -685,7 +673,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else ""
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     if title and link:
                         news_list.append({
@@ -724,7 +712,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else ""
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     if title and link:
                         news_list.append({
@@ -763,7 +751,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else ""
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     if title and link:
                         news_list.append({
@@ -802,7 +790,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else ""
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     if title and link:
                         news_list.append({
@@ -930,7 +918,7 @@ class ChristianNewsScraper:
                                 'summary': summary[:200] + "..." if len(summary) > 200 else summary,
                                 'url': link,
                                 'source': 'Portas Abertas',
-                                'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                'date': None,
                                 'category': 'Perseguição Religiosa',
                                 'image_url': image_url
                             })
@@ -1020,7 +1008,7 @@ class ChristianNewsScraper:
                                             'summary': summary[:200] + "..." if len(summary) > 200 else summary,
                                             'url': link,
                                             'source': 'Portas Abertas - Cristãos Perseguidos',
-                                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                            'date': None,
                                             'category': 'Perseguição Religiosa',
                                             'image_url': image_url
                                         })
@@ -1086,7 +1074,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + "..." if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'Cafetorah - Notícias de Israel',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Israel e Oriente Médio',
                                     'image_url': image_url
                                 })
@@ -1130,7 +1118,7 @@ class ChristianNewsScraper:
                                 summary = self.clean_text(desc_soup.get_text())
                             
                             # Get publication date or use current
-                            date = pub_date_elem.get_text() if pub_date_elem else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                            date = pub_date_elem.get_text() if pub_date_elem else None
                             
                             # Extract image
                             image_url = self.extract_image_from_content(link)
@@ -1171,7 +1159,7 @@ class ChristianNewsScraper:
                 'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8',
             }
             
-            response = requests.get(rss_url, headers=headers, timeout=15)
+            response = self.session.get(rss_url, headers=headers, timeout=15)
             
             if response.status_code == 200:
                 # Parse XML using xml parser for RSS
@@ -1197,7 +1185,7 @@ class ChristianNewsScraper:
                                 summary = self.clean_text(desc_soup.get_text())
                             
                             # Get publication date or use current
-                            date = pub_date_elem.get_text() if pub_date_elem else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                            date = pub_date_elem.get_text() if pub_date_elem else None
                             
                             # Extract image from enclosure or content
                             image_url = ""
@@ -1279,7 +1267,7 @@ class ChristianNewsScraper:
                         summary_elem = article.find(['p', 'div'], class_=re.compile(r'(summary|excerpt|lead|deck|resume|description)', re.I)) or article.find('p')
                         summary = self.clean_text(summary_elem.get_text() if summary_elem else '')
 
-                        pub_date = datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                        pub_date = None
                         if not summary or len(summary) < 30:
                             try:
                                 a_resp = self.session.get(link, timeout=15)
@@ -1357,7 +1345,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'BBC News Brasil',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Arqueologia e História',
                                     'image_url': image_url
                                 })
@@ -1395,7 +1383,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'BBC News Brasil - Arqueologia',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Arqueologia e História',
                                     'image_url': image_url
                                 })
@@ -1433,7 +1421,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'Revista Galileu - Arqueologia',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Arqueologia e História',
                                     'image_url': image_url
                                 })
@@ -1471,7 +1459,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'CNN Brasil - Arqueologia',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Arqueologia e História',
                                     'image_url': image_url
                                 })
@@ -1541,7 +1529,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary or title[:200] + '...',
                                     'url': link,
                                     'source': 'Revista Galileu',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': category,
                                     'image_url': image_url
                                 })
@@ -1581,7 +1569,7 @@ class ChristianNewsScraper:
                                     'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                                     'url': link,
                                     'source': 'National Geographic Brasil - Arqueologia',
-                                    'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                    'date': None,
                                     'category': 'Arqueologia e História',
                                     'image_url': image_url
                                 })
@@ -1623,7 +1611,7 @@ class ChristianNewsScraper:
                             except Exception:
                                 link = link_raw
                             description = self.clean_text(item.description.text if item.description else '')
-                            pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                            pub_date = item.pubDate.text if item.pubDate else None
                             if title and link:
                                 image_url = self.extract_image_from_content(link)
                                 news_list.append({
@@ -1648,7 +1636,7 @@ class ChristianNewsScraper:
         try:
             url = 'https://noticiasdeisrael.com.br/'
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            response = requests.get(url, headers=headers, timeout=10)
+            response = self.session.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -1701,7 +1689,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Notícias de Israel',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Israel e Oriente Médio',
                         'image_url': image_url
                     })
@@ -1722,7 +1710,7 @@ class ChristianNewsScraper:
         try:
             url = 'https://voltemosaoevangelho.com/'
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            response = requests.get(url, headers=headers, timeout=10)
+            response = self.session.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -1765,7 +1753,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Voltemos ao Evangelho',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Teologia Reformada',
                         'image_url': image_url
                     })
@@ -1784,7 +1772,7 @@ class ChristianNewsScraper:
         try:
             url = 'https://ministeriofiel.com.br/'
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            response = requests.get(url, headers=headers, timeout=10)
+            response = self.session.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -1827,7 +1815,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Ministério Fiel',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Teologia e Ensino',
                         'image_url': image_url
                     })
@@ -1846,7 +1834,7 @@ class ChristianNewsScraper:
         try:
             url = 'https://www.biblicalarchaeology.org/news/'
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            response = requests.get(url, headers=headers, timeout=10)
+            response = self.session.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -1889,7 +1877,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Biblical Archaeology Society',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia Bíblica',
                         'image_url': image_url
                     })
@@ -1937,7 +1925,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Christianity Today (PT)',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Teologia e Igreja',
                         'image_url': image_url
                     })
@@ -1980,7 +1968,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'SABNET Revista',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia e História',
                         'image_url': image_url
                     })
@@ -2020,7 +2008,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'MAE USP',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia e História',
                         'image_url': image_url
                     })
@@ -2060,7 +2048,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'IAB - Instituto de Arqueologia Brasileira',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia e História',
                         'image_url': image_url
                     })
@@ -2100,7 +2088,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'IBArq',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia Bíblica',
                         'image_url': image_url
                     })
@@ -2140,7 +2128,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Incrível História',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'História e Arqueologia',
                         'image_url': image_url
                     })
@@ -2180,7 +2168,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Arqueologia e Pré-História',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Arqueologia e História',
                         'image_url': image_url
                     })
@@ -2197,7 +2185,7 @@ class ChristianNewsScraper:
         try:
             url = 'https://teologiabrasileira.com.br/noticias/'
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            response = requests.get(url, headers=headers, timeout=10)
+            response = self.session.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -2240,7 +2228,7 @@ class ChristianNewsScraper:
                         'summary': summary[:200] + '...' if len(summary) > 200 else summary,
                         'url': link,
                         'source': 'Teologia Brasileira',
-                        'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                        'date': None,
                         'category': 'Teologia e Doutrina',
                         'image_url': image_url
                     })
@@ -2295,7 +2283,7 @@ class ChristianNewsScraper:
                             'summary': summary,
                             'url': link,
                             'source': 'Monergismo',
-                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                            'date': None,
                             'category': 'Teologia Reformada',
                             'image_url': image_url
                         })
@@ -2351,7 +2339,7 @@ class ChristianNewsScraper:
                             'summary': summary,
                             'url': link,
                             'source': 'IPB Nacional',
-                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                            'date': None,
                             'category': 'Igreja Presbiteriana',
                             'image_url': image_url
                         })
@@ -2407,7 +2395,7 @@ class ChristianNewsScraper:
                             'summary': summary,
                             'url': link,
                             'source': 'Instituto Mackenzie',
-                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                            'date': None,
                             'category': 'Educação Teológica',
                             'image_url': image_url
                         })
@@ -2470,7 +2458,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else title[:200] + "..."
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     news_list.append({
                         'title': title,
@@ -2510,7 +2498,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else title[:200] + "..."
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     news_list.append({
                         'title': title,
@@ -2550,7 +2538,7 @@ class ChristianNewsScraper:
                     title = self.clean_text(item.title.text) if item.title else "Sem título"
                     link = item.link.text if item.link else ""
                     description = self.clean_text(item.description.text) if item.description else title[:200] + "..."
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     # Determine category based on content
                     category = 'Calvinismo' if 'calvin' in title.lower() or 'predestina' in title.lower() else 'Arminianismo'
@@ -2649,7 +2637,7 @@ class ChristianNewsScraper:
                                             'summary': summary[:200] + "..." if len(summary) > 200 else summary,
                                             'url': link,
                                             'source': 'Editora Fiel',
-                                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                                            'date': None,
                                             'category': 'Livros Teológicos',
                                             'image_url': image_url
                                         })
@@ -2715,7 +2703,7 @@ class ChristianNewsScraper:
                             'summary': summary,
                             'url': link,
                             'source': 'CPAD',
-                            'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
+                            'date': None,
                             'category': 'Editora Cristã',
                             'image_url': image_url
                         })
@@ -2753,7 +2741,7 @@ class ChristianNewsScraper:
                     summary = self.clean_text(description)
                     
                     # Extract publication date
-                    pub_date = item.pubDate.text if item.pubDate else datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
+                    pub_date = item.pubDate.text if item.pubDate else None
                     
                     news_list.append({
                         'title': title,
@@ -2775,41 +2763,8 @@ class ChristianNewsScraper:
         return news_list
 
     def get_fallback_news(self) -> List[Dict]:
-        """Provide high-quality fallback news aligned with reformed theology and Reconciliation brotherhood"""
-        return [
-            {
-                'title': 'A Importância da Doutrina da Graça na Vida Cristã',
-                'summary': 'Reflexão sobre como a compreensão bíblica da graça soberana de Deus transforma nossa vida de fé e nossa relação com o próximo na irmandade cristã.',
-                'url': 'https://voltemosaoevangelho.com/doutrina-graca-vida-crista/',
-                'source': 'Voltemos ao Evangelho',
-                'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
-                'category': 'Teologia Reformada'
-            },
-            {
-                'title': 'Perseguição aos Cristãos: Como Orar pela Igreja Perseguida',
-                'summary': 'Orientações bíblicas sobre como a igreja local pode interceder pelos irmãos que sofrem perseguição ao redor do mundo, fortalecendo os laços da irmandade cristã.',
-                'url': 'https://www.portasabertas.org.br/oracao-igreja-perseguida/',
-                'source': 'Portas Abertas',
-                'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
-                'category': 'Igreja Perseguida'
-            },
-            {
-                'title': 'Os Dons Espirituais na Igreja Reformada: Ordem e Edificação',
-                'summary': 'Estudo sobre como os dons espirituais devem ser exercidos com ordem e para edificação da igreja, mantendo o equilíbrio bíblico entre espiritualidade e reverência.',
-                'url': 'https://www.monergismo.com/dons-espirituais-ordem-edificacao/',
-                'source': 'Monergismo',
-                'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
-                'category': 'Dons Espirituais'
-            },
-            {
-                'title': 'Reconciliação: O Ministério da Igreja no Mundo',
-                'summary': 'Como a igreja deve exercer o ministério da reconciliação, promovendo a paz e a unidade entre os irmãos e sendo instrumento de Deus para a restauração.',
-                'url': 'https://cristianismohoje.com.br/ministerio-reconciliacao/',
-                'source': 'Cristianismo Hoje',
-                'date': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
-                'category': 'Ministério da Reconciliação'
-            }
-        ]
+        """Never invent news when publishers cannot be reached."""
+        return []
 
     def scrape_all_sources(self) -> List[Dict]:
         """Scrape news from all configured sources"""
@@ -3038,48 +2993,15 @@ class ChristianNewsScraper:
         logger.info(f"Final filtered articles for Reconciliation: {len(recent_filtered_news)}")
         return recent_filtered_news
 
-    def save_news_to_json(self, news_data: List[Dict], filename: str = 'christian_news.json'):
-        """Save news data to JSON file and Supabase"""
-        try:
-            # Save to Supabase first
-            if self.supabase:
-                # Política de saída: hoje (timezone) primeiro; caso vazio, usa recentes
-                eligible_news = self.filter_for_output(news_data)
-                self.save_to_supabase(eligible_news)
-            
-            # Create data directory if it doesn't exist (src)
-            data_dir = os.path.join(os.path.dirname(__file__), '..', 'src', 'data')
-            os.makedirs(data_dir, exist_ok=True)
-            
-            filepath = os.path.join(data_dir, filename)
-            
-            # Add metadata
-            output_data = {
-                'last_updated': datetime.now().isoformat(),
-                'total_articles': len(self.filter_for_output(news_data)),
-                'sources': sorted(list(set([article['source'] for article in self.filter_for_output(news_data)]))),
-                'articles': self.filter_for_output(news_data)
-            }
-            
-            # Write to src/data
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, ensure_ascii=False, indent=2)
-            logger.info(f"News data saved to {filepath}")
-            
-            # Also write to public/data for frontend to fetch in production
-            project_root = os.path.dirname(os.path.dirname(__file__))
-            public_data_dir = os.path.join(project_root, 'public', 'data')
-            os.makedirs(public_data_dir, exist_ok=True)
-            public_filepath = os.path.join(public_data_dir, filename)
-            with open(public_filepath, 'w', encoding='utf-8') as pf:
-                json.dump(output_data, pf, ensure_ascii=False, indent=2)
-            logger.info(f"News data saved to {public_filepath}")
-            
-            return filepath
-            
-        except Exception as e:
-            logger.error(f"Error saving news data: {e}")
-            return None
+    def save_news_to_json(self, news_data: List[Dict], filename: str = 'christian_news.json', output_root=None):
+        if filename != 'christian_news.json':
+            raise ValueError('Fixed feed filename required')
+        eligible = self.filter_for_output(news_data)
+        root = output_root or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        result = save_static_feed(root, eligible, self.parse_article_date, self.max_items)
+        if self.supabase and not output_root:
+            self.save_to_supabase(eligible)
+        return result
 
     def save_to_supabase(self, news_data: List[Dict]):
         """Save news data to Supabase database"""
@@ -3187,13 +3109,14 @@ def main():
                     logger.error(f"Erro ao enviar notificação ao Discord: {de}")
                     print(f"❌ Erro ao notificar Discord: {de}")
             else:
-                print("❌ Failed to save news data")
+                raise RuntimeError("Failed to save news data")
         else:
-            print("❌ No news data collected")
+            raise RuntimeError("No verified news collected; previous edition preserved")
             
     except Exception as e:
         logger.error(f"Error in main execution: {e}")
         print(f"❌ Error: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

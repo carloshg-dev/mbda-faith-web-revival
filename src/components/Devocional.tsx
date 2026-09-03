@@ -79,7 +79,7 @@ const Devocional = () => {
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <a
-              href="https://www.youtube.com/@ministeriobiblicodareconcilia"
+              href="https://www.youtube.com/@mbdareconciliacao"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-[#1d64d8] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#1958bf]"

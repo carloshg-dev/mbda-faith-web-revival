@@ -35,27 +35,17 @@ export const SOCIAL_LINKS: SocialLink[] = [
 const SCHEDULE_COLORS = {
   sunday: '#f97316',    // Laranja
   wednesday: '#eab308', // Amarelo
-  friday: '#8b5cf6',    // Roxo
-
 } as const;
 
 // Agenda da igreja
 export const CHURCH_SCHEDULE = [
-  // COLUNA ESQUERDA (3 cards)
+  // COLUNA ESQUERDA
 
   {
     day: 'Quarta-feira',
     color: SCHEDULE_COLORS.wednesday,
     activities: [
       { time: '20h', activity: 'Oração e Palavra', type: 'Presencial', icon: '🙏' }
-    ],
-    position: 'left'
-  },
-  {
-    day: 'Sexta-feira',
-    color: SCHEDULE_COLORS.friday,
-    activities: [
-      { time: '20h', activity: 'Oração e Palavra', type: 'Online (quando anunciado)', icon: '💻' }
     ],
     position: 'left'
   },

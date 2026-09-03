@@ -1,6 +1,6 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
-import { Abrigo } from '../data/abrigos';
+import { Abrigo } from './data/abrigos';
 
 interface AbrigoCardProps {
   abrigo: Abrigo;

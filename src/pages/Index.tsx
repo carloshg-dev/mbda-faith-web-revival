@@ -1,48 +1,21 @@
-
-import Navbar from "../components/Navbar";
-
-import QuemSomos from "../components/QuemSomos";
-import DeclaracaoDeFe from "../components/DeclaracaoDeFe";
-import Devocional from "../components/Devocional";
-import EstudosBiblicos from "../components/EstudosBiblicos";
-
-import Agenda from "../components/Agenda";
-import EspacoFamilia from "../components/EspacoFamilia";
-import Midia from "../components/Midia";
-import ContatoForm from "../components/ContatoForm";
-import Footer from "../components/Footer";
-import FloatingButtons from "../components/FloatingButtons";
-import ChatBox from "../components/ChatBox";
+import SiteHeader from "../components/site/SiteHeader";
+import HomeHero from "../components/site/HomeHero";
+import WeeklyPreview from "../components/site/WeeklyPreview";
+import EventGallery from "../components/site/EventGallery";
+import { AboutChurch, FaithDeclaration, FullSchedule, FamilySpace } from "../components/site/ChurchSections";
+import StudySection from "../components/site/StudySection";
+import MediaArchive from "../components/site/MediaArchive";
+import ContactSection from "../components/site/ContactSection";
+import SiteFooter from "../components/site/SiteFooter";
+import ReconNewsFeed from "../components/ReconNewsFeed";
 import { useSEO } from "../hooks/useSEO";
 import { SEO_CONFIG } from "../constants";
-import ReconNewsFeed from "../components/ReconNewsFeed";
-import StitchHomeShell from "../components/StitchHomeShell";
 
-const Index = () => {
-  // Configuração SEO centralizada
+export default function Index() {
   useSEO(SEO_CONFIG);
-
-  return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
-        <StitchHomeShell />
-        <ReconNewsFeed />
-        <QuemSomos />
-        <DeclaracaoDeFe />
-        <Devocional />
-        <EstudosBiblicos />
-
-        <Agenda />
-        <EspacoFamilia />
-        <Midia />
-        <ContatoForm />
-      </main>
-      <Footer />
-      <FloatingButtons />
-      <ChatBox />
-    </div>
-  );
-};
-
-export default Index;
+  return <>
+    <SiteHeader />
+    <main id="conteudo"><HomeHero /><WeeklyPreview /><AboutChurch /><EventGallery /><FullSchedule /><ReconNewsFeed /><FaithDeclaration /><StudySection /><FamilySpace /><MediaArchive /><ContactSection /></main>
+    <SiteFooter />
+  </>;
+}
