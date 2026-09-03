@@ -1,8 +1,8 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Reconciliação News",
-  "home_page_url": "https://www.igrejadarecon.com.br",
-  "feed_url": "https://www.igrejadarecon.com.br/reconnews-feed.json",
+  "home_page_url": "https://mbdareconciliacao.vercel.app",
+  "feed_url": "https://mbdareconciliacao.vercel.app/reconnews-feed.json",
   "language": "pt-BR",
   "description": "Referências de notícias cristãs, com acesso à fonte original.",
   "items": [

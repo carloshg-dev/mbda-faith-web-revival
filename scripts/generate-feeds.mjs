@@ -4,7 +4,7 @@ import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { normalizeFeed, MAX_FEED_BYTES } from '../src/domain/news.ts';
 
-const SITE = 'https://www.igrejadarecon.com.br';
+const SITE = 'https://mbdareconciliacao.vercel.app';
 const escapeXml = (value='') => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[char]));
 export function renderFeeds(data, now=Date.now()) {
   const feed = normalizeFeed(data, now);

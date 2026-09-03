@@ -1,7 +1,8 @@
 // Explicit publication boundary: originals stay in the workspace, outside dist.
 import { cp, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
-export const PUBLIC_FILES = ['favicon.ico','robots.txt','googled68219518b89556b.html','blog/index.html',
+// Do not publish the legacy blog/index.html: it shadows the SPA rewrite on Vercel.
+export const PUBLIC_FILES = ['favicon.ico','robots.txt','googled68219518b89556b.html',
   'data/christian_news.json','reconnews-feed.json','reconnews-rss.xml','videos/devocional-evangelizar-540p.mp4'];
 export async function copyPublicAssets(root, output) {
   for (const file of PUBLIC_FILES) {

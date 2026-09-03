@@ -7,12 +7,12 @@ import { copyPublicAssets, PUBLIC_FILES } from '../scripts/public-assets.mjs';
 test('publication copies only approved derivatives, never archives or source videos',async()=>{
   const root=await mkdtemp(join(tmpdir(),'recon-assets-test-'));
   try {
-    for(const file of [...PUBLIC_FILES,'images/site/example.webp','images/site/example.webp.json','videos/aobrigatoriedade-de-evangelizar.mp4','images/reunião-de-casais/album.zip']) {
+    for(const file of [...PUBLIC_FILES,'blog/index.html','images/site/example.webp','images/site/example.webp.json','videos/aobrigatoriedade-de-evangelizar.mp4','images/reunião-de-casais/album.zip']) {
       const destination=join(root,'public',file);await mkdir(join(destination,'..'),{recursive:true});await writeFile(destination,'fixture');
     }
     await copyPublicAssets(root,join(root,'output'));
     assert.equal(await readFile(join(root,'output/images/site/example.webp'),'utf8'),'fixture');
-    for(const file of ['images/site/example.webp.json','videos/aobrigatoriedade-de-evangelizar.mp4','images/reunião-de-casais/album.zip']) await assert.rejects(access(join(root,'output',file)));
+    for(const file of ['blog/index.html','images/site/example.webp.json','videos/aobrigatoriedade-de-evangelizar.mp4','images/reunião-de-casais/album.zip']) await assert.rejects(access(join(root,'output',file)));
   } finally { await rm(root,{recursive:true,force:true}); }
 });
 
