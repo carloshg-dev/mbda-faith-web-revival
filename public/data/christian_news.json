@@ -1,11 +1,33 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-09-04T14:11:10.478115+00:00",
-  "total_articles": 2,
+  "last_updated": "2026-09-04T23:55:55.574889+00:00",
+  "total_articles": 4,
   "sources": [
+    "Folha Gospel",
+    "Google News - Cristãos Perseguidos",
     "Radio 93 - Giro Cristão"
   ],
   "articles": [
+    {
+      "title": "Nepal: parceiros locais iniciam assistência a famílias afetadas pelas enchentes - Portas Abertas",
+      "summary": "a href\"https:news.google.comrssarticlesCBMiuwFBVV95cUxQcmQ5bG13N0lCQlNrUjZtdEVPcDlUX29lYnlxVTBOWWVfdXRqQTNWNjBhMGhVNXl6d3JuOWtvS3FtbkpHRFFkSXhsNENjY3ZYazFjaWs1R1BRLXc3S28wQUw5X0k0NmlYcnZ6SHhhcS00Vkxra...",
+      "source": "Google News - Cristãos Perseguidos",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmQ5bG13N0lCQlNrUjZtdEVPcDlUX29lYnlxVTBOWWVfdXRqQTNWNjBhMGhVNXl6d3JuOWtvS3FtbkpHRFFkSXhsNENjY3ZYazFjaWs1R1BRLXc3S28wQUw5X0k0NmlYcnZ6SHhhcS00Vkxra3JOSnR2N21MWWJiOTNXREtQMWctRGZEYW9QWjhuNlljWWFBR0hPR2lFLUFaajBVWkxQSXNNTkZ6MjdVM05vdy1iVEZOSjJj?oc=5",
+      "category": "Igreja Perseguida",
+      "image_url": "",
+      "date": "2026-09-04T18:00:00+00:00",
+      "publication_date_verified": true
+    },
+    {
+      "title": "EUA deve encerrar 2026 sem acolher nenhum refugiado vítima de perseguição religiosa",
+      "summary": "Estados Unidos suspendem reassentamento de refugiados vítimas de perseguição religiosa devido a novas regras de asilo. The post EUA deve encerrar 2026 sem acolher nenhum refugiado vítima de perseguiçã...",
+      "source": "Folha Gospel",
+      "url": "https://folhagospel.com/eua-barram-refugiados-cristaos-perseguidos-no-mundo/",
+      "category": "Notícias Cristãs",
+      "image_url": "https://folhagospel.com/wp-content/uploads/2023/04/Bandeira-dos-EUA-e-duas-cruzes-no-topo-de-uma-igreja-Foto-Canva-Pro.jpg",
+      "date": "2026-09-04T12:45:00+00:00",
+      "publication_date_verified": true
+    },
     {
       "title": "Espanhol é idioma com maior distribuição de Bíblias impressas no mundo",
       "summary": "Foram 4,38 milhões de exemplares. The post Espanhol é idioma com maior distribuição de Bíblias impressas no mundo appeared first on Rádio 93FM-RJ.",

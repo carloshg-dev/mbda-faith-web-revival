@@ -7,6 +7,37 @@
   "description": "Referências de notícias cristãs, com acesso à fonte original.",
   "items": [
     {
+      "id": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmQ5bG13N0lCQlNrUjZtdEVPcDlUX29lYnlxVTBOWWVfdXRqQTNWNjBhMGhVNXl6d3JuOWtvS3FtbkpHRFFkSXhsNENjY3ZYazFjaWs1R1BRLXc3S28wQUw5X0k0NmlYcnZ6SHhhcS00Vkxra3JOSnR2N21MWWJiOTNXREtQMWctRGZEYW9QWjhuNlljWWFBR0hPR2lFLUFaajBVWkxQSXNNTkZ6MjdVM05vdy1iVEZOSjJj?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmQ5bG13N0lCQlNrUjZtdEVPcDlUX29lYnlxVTBOWWVfdXRqQTNWNjBhMGhVNXl6d3JuOWtvS3FtbkpHRFFkSXhsNENjY3ZYazFjaWs1R1BRLXc3S28wQUw5X0k0NmlYcnZ6SHhhcS00Vkxra3JOSnR2N21MWWJiOTNXREtQMWctRGZEYW9QWjhuNlljWWFBR0hPR2lFLUFaajBVWkxQSXNNTkZ6MjdVM05vdy1iVEZOSjJj?oc=5",
+      "title": "Nepal: parceiros locais iniciam assistência a famílias afetadas pelas enchentes - Portas Abertas",
+      "content_text": "a href\"https:news.google.comrssarticlesCBMiuwFBVV95cUxQcmQ5bG13N0lCQlNrUjZtdEVPcDlUX29lYnlxVTBOWWVfdXRqQTNWNjBhMGhVNXl6d3JuOWtvS3FtbkpHRFFkSXhsNENjY3ZYazFjaWs1R1BRLXc3S28wQUw5X0k0NmlYcnZ6SHhhcS00Vkxra...",
+      "date_published": "2026-09-04T18:00:00.000Z",
+      "tags": [
+        "Igreja Perseguida"
+      ],
+      "authors": [
+        {
+          "name": "Google News - Cristãos Perseguidos"
+        }
+      ]
+    },
+    {
+      "id": "https://folhagospel.com/eua-barram-refugiados-cristaos-perseguidos-no-mundo/",
+      "url": "https://folhagospel.com/eua-barram-refugiados-cristaos-perseguidos-no-mundo/",
+      "title": "EUA deve encerrar 2026 sem acolher nenhum refugiado vítima de perseguição religiosa",
+      "content_text": "Estados Unidos suspendem reassentamento de refugiados vítimas de perseguição religiosa devido a novas regras de asilo. The post EUA deve encerrar 2026 sem acolher nenhum refugiado vítima de perseguiçã...",
+      "date_published": "2026-09-04T12:45:00.000Z",
+      "image": "https://folhagospel.com/wp-content/uploads/2023/04/Bandeira-dos-EUA-e-duas-cruzes-no-topo-de-uma-igreja-Foto-Canva-Pro.jpg",
+      "tags": [
+        "Notícias Cristãs"
+      ],
+      "authors": [
+        {
+          "name": "Folha Gospel"
+        }
+      ]
+    },
+    {
       "id": "https://radio93.com.br/noticias/giro-cristao/espanhol-e-idioma-com-maior-distribuicao-de-biblias-impressas-no-mundo/",
       "url": "https://radio93.com.br/noticias/giro-cristao/espanhol-e-idioma-com-maior-distribuicao-de-biblias-impressas-no-mundo/",
       "title": "Espanhol é idioma com maior distribuição de Bíblias impressas no mundo",
