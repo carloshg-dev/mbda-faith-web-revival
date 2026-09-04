@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowUpRight, ChevronLeft, ChevronRight, RefreshCw, Search } from "lucide-react";
 import { loadNewsFeed } from "../api/newsApi";
-import { selectNews, type NewsFeed, type NewsItem } from "../domain/news";
+import type { NewsFeed, NewsItem } from "../domain/news";
+import { selectNews } from "../domain/newsQuery";
 
 const dateLabel = (value: string) => new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"short",year:"numeric",timeZone:"America/Sao_Paulo"}).format(new Date(value));
 function NewsStory({item}:{item:NewsItem}) {

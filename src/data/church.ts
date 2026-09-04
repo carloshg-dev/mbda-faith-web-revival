@@ -25,24 +25,41 @@ export const MONTHLY_GATHERINGS = [
 
 export type EventPhoto = {
   id: string;
-  kind: "couple" | "community" | "pastor";
-  width: 719 | 720;
-  height: 1280 | 1560;
+  kind: "couple" | "community" | "pastor" | "baptism";
+  width: number;
+  height: number;
+  alt?: string;
 };
 
+export const BAPTISM_EVENT = {
+  title: "Culto Especial de Batismo",
+  date: "26 de agosto de 2026",
+  dateTime: "2026-08-26",
+  description: "Fé, confissão pública e novos começos em uma caminhada de discipulado com Cristo.",
+  youtube: "https://www.youtube.com/watch?v=lyla5Gl2oBI",
+} as const;
+
 export const EVENT_PHOTOS = [
+  { id: "batismo-01", kind: "baptism", width: 720, height: 1560, alt: "Participantes do batismo reunidos junto à tribuna antes da celebração" },
   { id: "032", kind: "couple", width: 720, height: 1280 },
   { id: "004", kind: "couple", width: 720, height: 1280 },
   { id: "005", kind: "couple", width: 720, height: 1280 },
+  { id: "batismo-02", kind: "baptism", width: 720, height: 1560, alt: "Batizanda sendo acolhida na piscina durante o culto especial" },
   { id: "011", kind: "couple", width: 719, height: 1280 },
   { id: "019", kind: "couple", width: 720, height: 1280 },
+  { id: "batismo-03", kind: "baptism", width: 720, height: 1560, alt: "Novo membro sendo recebido ao sair das águas do batismo" },
   { id: "020", kind: "couple", width: 719, height: 1280 },
   { id: "045", kind: "pastor", width: 720, height: 1560 },
+  { id: "batismo-04", kind: "baptism", width: 720, height: 405, alt: "Igreja reunida em oração durante o culto especial de batismo" },
   { id: "027", kind: "couple", width: 720, height: 1280 },
   { id: "034", kind: "couple", width: 720, height: 1280 },
+  { id: "batismo-05", kind: "baptism", width: 720, height: 1560, alt: "Momento de cuidado e acolhimento após o batismo nas águas" },
   { id: "040", kind: "couple", width: 720, height: 1280 },
   { id: "042", kind: "community", width: 720, height: 1560 },
+  { id: "batismo-06", kind: "baptism", width: 720, height: 405, alt: "Comunidade da Reconciliação reunida para celebrar os novos membros" },
   { id: "052", kind: "couple", width: 720, height: 1560 },
   { id: "055", kind: "community", width: 720, height: 1280 },
 ] as const satisfies readonly EventPhoto[];
-export const eventPhoto = (id: string, width: 480 | 720) => `/images/site/eventos/evento-${id}-${width}.webp`;
+export const eventPhoto = (id: string, width: 480 | 720) => id.startsWith("batismo-")
+  ? `/images/site/eventos/${id}-${width}.webp`
+  : `/images/site/eventos/evento-${id}-${width}.webp`;

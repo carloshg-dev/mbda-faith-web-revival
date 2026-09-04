@@ -60,6 +60,37 @@ test('the books stand is linked from the global navigation and accepts optional 
   assert.match(books, /Tessalonicenses — visão de uma igreja local/);
 });
 
+test('the books stand includes the supplied collection as optimized local covers', async () => {
+  const books = await readFile(new URL('../src/data/recommendedBooks.ts', import.meta.url), 'utf8');
+  const suppliedCovers = [
+    'biblia-e-seus-interpretes',
+    'comentario-novo-testamento',
+    'cultura-biblica-antigo-testamento',
+    'doutrinas-da-biblia',
+    'duas-naturezas-redentor',
+    'geografia-historica-mundo-biblico',
+    'pequeno-manual-doutrinas',
+    'plano-de-deus-mundo',
+    'principios-interpretacao-biblica',
+    'ser-de-deus-e-suas-obras',
+  ];
+  for (const cover of suppliedCovers) {
+    assert.match(books, new RegExp(`/images/site/livros/${cover}-480\\.webp`));
+    await access(new URL(`../public/images/site/livros/${cover}-480.webp`, import.meta.url));
+  }
+});
+
+test('the homepage promotes the current literature feature without fixing a book title', async () => {
+  const [preview,sections]=await Promise.all([
+    readFile(new URL('../src/components/site/WeeklyPreview.tsx', import.meta.url), 'utf8'),
+    readFile(new URL('../src/components/site/ChurchSections.tsx', import.meta.url), 'utf8'),
+  ]);
+  assert.match(preview,/href="\/blog"/);
+  assert.match(preview,/Literatura em destaque aplicada/i);
+  assert.doesNotMatch(preview,/Estude Tessalonicenses/);
+  assert.doesNotMatch(sections,/Estude Tessalonicenses/);
+});
+
 test('book recommendations preserve full covers and exclude editorial setup instructions', async () => {
   const [blog, styles] = await Promise.all([
     readFile(blogPath, 'utf8'),

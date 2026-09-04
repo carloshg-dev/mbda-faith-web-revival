@@ -58,8 +58,8 @@
 .book-stand-heading { display: grid; grid-template-columns: minmax(0,1fr) minmax(320px,520px); gap: 72px; align-items: end; }
 .book-stand-heading h2 { max-width: 650px; font-size: clamp(48px,5.5vw,78px); }
 .book-stand-heading p { max-width: 55ch; color: #c5cfdf; font-size: 16px; }
-.book-shelf { display: flex; gap: 64px; align-items: stretch; margin-top: 50px; padding: 0 0 38px; overflow-x: auto; border-bottom: 5px solid #23324e; box-shadow: 0 5px 0 var(--gold); scrollbar-width: thin; scrollbar-color: var(--gold) #23324e; }
-.recommended-book { flex: 0 0 min(690px,75vw); display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; align-items: center; }
+.book-shelf { display: flex; gap: 64px; align-items: stretch; margin-top: 50px; padding: 0 0 38px; overflow-x: auto; border-bottom: 5px solid #23324e; box-shadow: 0 5px 0 var(--gold); scrollbar-width: thin; scrollbar-color: var(--gold) #23324e; scroll-snap-type: x proximity; }
+.recommended-book { flex: 0 0 min(690px,75vw); display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; align-items: center; scroll-snap-align: start; }
 .recommended-book-cover { align-self: start; aspect-ratio: 480 / 854; background: #111e38; box-shadow: 0 20px 42px rgb(0 0 0 / 34%); }
 .recommended-book-cover img { width: 100%; height: 100%; object-fit: contain; object-position: center top; }
 .recommended-book-copy h3 { color: var(--paper); font: 600 clamp(29px,3vw,42px)/1.06 var(--condensed); }
@@ -183,6 +183,13 @@ h2 { font: 400 46px/1.13 var(--display); }
 .schedule-row > svg { width: 28px; height: 28px; }
 .schedule-row time { font-variant-numeric: tabular-nums; }
 .schedule-row:hover { background: #ede8de; }
+.literature-feature { display: grid; grid-template-columns: 42px minmax(0,1fr) 24px; align-items: center; gap: 14px; margin-top: 22px; padding: 20px 4px 0; border-top: 1px solid #c6c9c5; color: var(--ink); }
+.literature-feature > svg:first-child { width: 28px; height: 28px; color: var(--blue); }
+.literature-feature > svg:last-child { width: 21px; color: var(--blue); transition: transform 160ms ease-out; }
+.literature-feature strong { display: block; font: 600 25px/1.15 var(--condensed); }
+.literature-feature small { display: block; margin-top: 5px; color: var(--muted); font: 400 13px/1.45 var(--body); }
+.literature-feature:hover strong { color: var(--blue); }
+.literature-feature:hover > svg:last-child { transform: translateX(4px); }
 .event-teaser { display: block; box-shadow: var(--lift-shadow); border-radius: 4px; overflow: hidden; background: var(--paper); }
 .event-teaser img { width: 100%; height: 212px; object-fit: cover; object-position: center 0%; }
 .event-teaser > span { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; font: 400 24px/1.2 var(--display); text-transform: uppercase; }
@@ -280,6 +287,11 @@ h2 { font: 400 46px/1.13 var(--display); }
 .community-copy h2 { font-size: 58px; margin-bottom: 24px; }
 .community-copy p { max-width: 44ch; color: var(--muted); margin: 20px 0; }
 .community-copy h3 { font: 600 29px/1.2 var(--condensed); margin-top: 34px; }
+.event-feature-note { margin: 26px 0 4px; padding: 22px 0; border-block: 1px solid var(--line); }
+.event-feature-note time { display: block; color: var(--blue); font: 600 12px/1.4 var(--body); letter-spacing: .08em; text-transform: uppercase; }
+.event-feature-note strong { display: block; margin-top: 5px; font: 600 23px/1.2 var(--condensed); }
+.community-copy .event-feature-note p { margin: 8px 0 5px; font-size: 14px; line-height: 1.55; }
+.event-feature-note .inline-link { font-size: 13px; }
 .event-gallery { margin: 0; background: var(--navy); overflow: hidden; border-radius: 4px; }
 .event-gallery img { width: 100%; height: 570px; object-fit: contain; animation: gallery-reveal 480ms cubic-bezier(.16,1,.3,1) both; }
 @keyframes gallery-reveal {

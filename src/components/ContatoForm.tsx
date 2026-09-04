@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { EMAILJS_CONFIG } from "../config/emailjs";
 import { contactFormLimiter } from "../utils/rateLimiter";
 import { validateEmail, sanitizeInput, isBot } from "../utils/emailValidator";
+import { escapeTemplateText } from "../domain/contact";
 
 interface FormData {
   nome: string;
@@ -24,9 +25,8 @@ const ContatoForm = () => {
   const [submitError, setSubmitError] = useState(false);
   const [rateLimitError, setRateLimitError] = useState<string>("");
   const [emailError, setEmailError] = useState<string>("");
-  const [userIdentifier] = useState(
-    () => `${navigator.userAgent.slice(0, 50)}_${Date.now()}_${Math.random()}`
-  );
+  // Local anti-double-submit bucket, not authentication or server-side abuse protection.
+  const userIdentifier = "church-contact";
 
   useEffect(() => {
     emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
@@ -89,11 +89,10 @@ const ContatoForm = () => {
       }
 
       const templateParams = {
-        name: sanitizeInput(formData.nome),
-        email: formData.email.toLowerCase().trim(),
-        message: sanitizeInput(formData.mensagem),
+        name: escapeTemplateText(sanitizeInput(formData.nome)),
+        email: escapeTemplateText(formData.email.toLowerCase().trim()),
+        message: escapeTemplateText(sanitizeInput(formData.mensagem)),
         timestamp: new Date().toLocaleString("pt-BR"),
-        userAgent: navigator.userAgent.slice(0, 100),
       };
 
       const result = await emailjs.send(

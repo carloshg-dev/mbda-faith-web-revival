@@ -1,3 +1,5 @@
+import { validContactEmail } from "../domain/contact.ts";
+
 /**
  * Validador de email avançado com proteção anti-spam
  * Detecta emails temporários, domínios suspeitos e padrões de bot
@@ -58,8 +60,7 @@ export function validateEmail(email: string): EmailValidationResult {
   };
 
   // Validação básica de formato
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
+  if (!validContactEmail(email)) {
     result.reason = 'Formato de email inválido';
     return result;
   }
@@ -164,16 +165,11 @@ export function isBot(honeypotValue: string): boolean {
 }
 
 /**
- * Sanitiza input removendo caracteres perigosos
+ * Legacy text normalization only. This does not sanitize HTML or validate URLs.
+ * Consumers must escape template values at the point of output.
  * @param input - String para sanitizar
  * @returns string - String sanitizada
  */
 export function sanitizeInput(input: string): string {
-  return input
-    .trim()
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '') // Remove scripts
-    .replace(/<[^>]*>/g, '') // Remove HTML tags
-    .replace(/javascript:/gi, '') // Remove javascript:
-    .replace(/on\w+\s*=/gi, '') // Remove event handlers
-    .substring(0, 1000); // Limita tamanho
+  return input.trim().slice(0, 1000);
 }

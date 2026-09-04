@@ -1,3 +1,9 @@
+import { toDisplayText } from "./text.ts";
+import { MAX_ARTICLES, FRESHNESS_MS } from "./newsPolicy.ts";
+import { normalizeSearch } from "./newsQuery.ts";
+export { MAX_ARTICLES, MAX_FEED_BYTES, FRESHNESS_MS } from "./newsPolicy.ts";
+export { normalizeSearch, selectNews } from "./newsQuery.ts";
+
 export interface NewsItem {
   title: string; summary: string; url: string; source: string; date: string;
   category: string; image_url?: string; dateVerified: boolean;
@@ -10,9 +16,6 @@ export interface NewsFeed {
   unavailable: boolean;
   rejected: number;
 }
-export const MAX_ARTICLES = 60;
-export const MAX_FEED_BYTES = 1_000_000;
-export const FRESHNESS_MS = 48 * 60 * 60 * 1000;
 const publishers = [
   "gospelprime.com.br", "guiame.com.br", "portasabertas.org.br", "cafetorah.com",
   "folhagospel.com", "radio93.com.br", "cpadnews.com.br", "noticiasdeisrael.com.br",
@@ -35,8 +38,7 @@ const knownSyntheticTitles = [
   "Teólogos debatem relevância da fé cristã na era digital",
 ];
 const isRecord = (value: unknown): value is Record<string, unknown> => !!value && typeof value === "object" && !Array.isArray(value);
-export const normalizeSearch = (value: string): string => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-const plain = (value: unknown, max: number): string => typeof value === "string" ? value.replace(/<[^>]*>/g, "").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&nbsp;/g," ").replace(/\s+/g," ").trim().slice(0,max) : "";
+const plain = toDisplayText;
 export function safeHttpsUrl(value: unknown, restrictPublisher = false): string | undefined {
   if (typeof value !== "string" || value.length > 2048 || value.includes("\\") || [...value].some(char => char.charCodeAt(0) <= 32)) return;
   try {
@@ -81,13 +83,4 @@ export function normalizeFeed(value: unknown, now = Date.now()): NewsFeed {
   return { articles: articles.slice(0, MAX_ARTICLES), updatedAt,
     stale: !updatedAt || now - Date.parse(updatedAt) > FRESHNESS_MS,
     unavailable: false, rejected };
-}
-export function selectNews(items: NewsItem[], search: string, category: string, source: string, page: number, pageSize = 6) {
-  const terms = normalizeSearch(search.trim()).split(/\s+/).filter(Boolean);
-  const filtered = items.filter(item => (!category || item.category === category) && (!source || item.source === source)
-    && terms.every(term => normalizeSearch(item.title + " " + item.summary + " " + item.source).includes(term)));
-  const size = Math.max(1, Math.min(12, Math.floor(pageSize) || 6));
-  const pageCount = Math.max(1, Math.ceil(filtered.length / size));
-  const safePage = Math.min(Math.max(0, Math.floor(page) || 0), pageCount - 1);
-  return { items: filtered.slice(safePage * size, (safePage + 1) * size), total: filtered.length, page: safePage, pageCount };
 }

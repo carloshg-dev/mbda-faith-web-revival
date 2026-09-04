@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-03T06:58:18.5349021Z",
+  "generatedAt": "2026-09-03T11:21:43.7267275Z",
   "title": "Design System: Ministério Bíblico da Reconciliação",
   "extensions": {
     "colorMeta": {
@@ -81,6 +81,30 @@
         "displayName": "Navy Copy",
         "canonical": "#c7d1e5",
         "tonalRamp": ["oklch(15% 0.030 264.4)", "oklch(25% 0.030 264.4)", "oklch(35% 0.030 264.4)", "oklch(45% 0.030 264.4)", "oklch(55% 0.030 264.4)", "oklch(65% 0.030 264.4)", "oklch(80% 0.030 264.4)", "oklch(95% 0.030 264.4)"]
+      },
+      "review-navy-selected": {
+        "role": "primary",
+        "displayName": "Review Navy Selected",
+        "canonical": "#182947",
+        "tonalRamp": ["oklch(15% 0.049 258)", "oklch(25% 0.049 258)", "oklch(35% 0.049 258)", "oklch(45% 0.049 258)", "oklch(55% 0.049 258)", "oklch(65% 0.049 258)", "oklch(80% 0.049 258)", "oklch(95% 0.049 258)"]
+      },
+      "review-paper": {
+        "role": "neutral",
+        "displayName": "Review Paper",
+        "canonical": "#f8f4eb",
+        "tonalRamp": ["oklch(15% 0.013 86)", "oklch(25% 0.013 86)", "oklch(35% 0.013 86)", "oklch(45% 0.013 86)", "oklch(55% 0.013 86)", "oklch(65% 0.013 86)", "oklch(80% 0.013 86)", "oklch(95% 0.013 86)"]
+      },
+      "review-info-surface": {
+        "role": "neutral",
+        "displayName": "Review Info Surface",
+        "canonical": "#edf3ff",
+        "tonalRamp": ["oklch(15% 0.018 258)", "oklch(25% 0.018 258)", "oklch(35% 0.018 258)", "oklch(45% 0.018 258)", "oklch(55% 0.018 258)", "oklch(65% 0.018 258)", "oklch(80% 0.018 258)", "oklch(95% 0.018 258)"]
+      },
+      "review-info-ink": {
+        "role": "primary",
+        "displayName": "Review Info Ink",
+        "canonical": "#173b79",
+        "tonalRamp": ["oklch(15% 0.105 260)", "oklch(25% 0.105 260)", "oklch(35% 0.105 260)", "oklch(45% 0.105 260)", "oklch(55% 0.105 260)", "oklch(65% 0.105 260)", "oklch(80% 0.105 260)", "oklch(95% 0.105 260)"]
       }
     },
     "typographyMeta": {
@@ -89,7 +113,9 @@
       "title": { "displayName": "Condensed Title", "purpose": "Notícias, estudos e agrupamentos de conteúdo." },
       "action": { "displayName": "Condensed Action", "purpose": "Botões, navegação e links de alta visibilidade." },
       "body": { "displayName": "Reading Body", "purpose": "Doutrina, artigos, formulários e texto corrente." },
-      "label": { "displayName": "Operational Label", "purpose": "Campos, metadados e estados compactos." }
+      "label": { "displayName": "Operational Label", "purpose": "Campos, metadados e estados compactos." },
+      "editorial-metadata": { "displayName": "Editorial Metadata", "purpose": "Ponto recorrente de 12px dentro da rampa operacional de 10px a 14px para identificação, histórico e estados do dossiê." },
+      "editorial-action": { "displayName": "Editorial Action", "purpose": "Decisões compactas de 18px na trilha de aprovação." }
     },
     "shadows": [
       { "name": "ambient-lift", "value": "0 3px 8px rgb(2 8 23 / 10%)", "purpose": "Elevação curta e suave do teaser fotográfico sobre paper." },
@@ -100,6 +126,7 @@
       { "name": "gallery-reveal", "value": "480ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Revelação autoral da fotografia atual; reduzida a 0.01ms sob prefers-reduced-motion." }
     ],
     "breakpoints": [
+      { "name": "editorial-mobile", "value": "560px" },
       { "name": "compact", "value": "640px" },
       { "name": "navigation", "value": "900px" },
       { "name": "wide", "value": "1190px" }
@@ -187,21 +214,30 @@
       "description": "Moldura navy para uma fotografia por vez, sem cortar pessoas, com revelação autoral e legenda discreta.",
       "html": "<figure class=\"ds-gallery\"><div class=\"ds-gallery-image\" role=\"img\" aria-label=\"Área de fotografia comunitária\">Registro da comunidade</div><figcaption>Eventos da Reconciliação · Ministério Bíblico da Reconciliação</figcaption></figure>",
       "css": ".ds-gallery { width:min(420px,100%); margin:0; overflow:hidden; border-radius:4px; background:var(--navy); } .ds-gallery-image { height:480px; display:grid; place-items:center; padding:32px; color:var(--paper); background:linear-gradient(135deg,var(--navy),#0a2d6f); font:600 24px/1.2 var(--condensed); animation:ds-gallery-reveal 480ms cubic-bezier(.16,1,.3,1) both; } .ds-gallery figcaption { padding:14px; color:#c7d1e5; text-align:center; font:12px/1.5 var(--body); } @keyframes ds-gallery-reveal { from { opacity:.2; clip-path:inset(0 9% 0 0); filter:saturate(.72); } to { opacity:1; clip-path:inset(0); filter:saturate(1); } } @media (prefers-reduced-motion:reduce) { .ds-gallery-image { animation-duration:.01ms; animation-iteration-count:1; } }"
+    },
+    {
+      "name": "Editorial Review Dossier",
+      "kind": "custom",
+      "description": "Superfície operacional somente de desenvolvimento: fila navy, documento dominante com imagem real e trilha de aprovação em papel; identidade, estado e consequência permanecem explícitos.",
+      "html": "<section class=\"ds-editorial\" aria-label=\"Dossiê de revisão\"><aside class=\"ds-editorial-queue\"><p>FILA DE REVISÃO · 5</p><button aria-pressed=\"true\"><small>Evento</small><strong>Encontro de famílias</strong><span>Em revisão · Rev. 3</span></button></aside><article class=\"ds-editorial-document\"><small>DOSSIÊ DE REVISÃO · EVENTO</small><h2>ENCONTRO DE FAMÍLIAS</h2><div class=\"ds-editorial-media\" role=\"img\" aria-label=\"A fotografia deve usar um registro real do acervo\">Imagem real do acervo</div><p>Conteúdo demonstrativo para leitura antes da decisão editorial.</p></article><aside class=\"ds-editorial-approval\"><small>REVISOR</small><strong>Equipe MBdaR</strong><p>Revisão 3 de 3 · nada é publicado nesta demonstração.</p><div><button class=\"ds-editorial-adjust\">Solicitar ajustes</button><button class=\"ds-editorial-approve\">Aprovar revisão</button></div></aside></section>",
+      "css": ".ds-editorial { display:grid; grid-template-columns:220px minmax(320px,1fr) 230px; color:#020817; background:#fffefa; border:1px solid #d9d8d0; font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; } .ds-editorial-queue { padding:18px; color:#fffefa; background:#06132c; border-right:1px solid #31405b; } .ds-editorial-queue>p,.ds-editorial small { margin:0 0 12px; font-size:11px; font-weight:600; letter-spacing:.1em; } .ds-editorial-queue button { width:100%; display:grid; gap:4px; padding:14px; color:#fffefa; text-align:left; background:#182947; border:0; border-left:3px solid #075be8; border-radius:4px; } .ds-editorial-queue button small { margin:0; color:#f3b51b; } .ds-editorial-queue button span { color:#55a0ff; font-size:12px; } .ds-editorial-document { padding:22px; background:#fffefa; } .ds-editorial-document h2 { margin:8px 0 16px; font:400 36px/1.05 Anton,sans-serif; } .ds-editorial-media { min-height:150px; display:grid; place-items:center; color:#c7d1e5; background:#06132c; border-radius:4px; } .ds-editorial-approval { padding:18px; background:#f8f4eb; border-left:1px solid #d9d8d0; } .ds-editorial-approval>strong { display:block; margin-bottom:10px; } .ds-editorial-approval>div { display:grid; gap:8px; margin-top:24px; } .ds-editorial-approval button { min-height:48px; border-radius:4px; font:600 18px/1 \"Barlow Condensed\",sans-serif; } .ds-editorial-adjust { color:#020817; background:#f3b51b; border:1px solid #d49a08; } .ds-editorial-adjust:hover { background:#ffd259; } .ds-editorial-approve { color:#fff; background:#0744b9; border:1px solid #0744b9; } .ds-editorial-approve:hover { background:#0a56d7; } .ds-editorial button:focus-visible { outline:3px solid #075be8; outline-offset:3px; } @media(max-width:900px) { .ds-editorial { grid-template-columns:1fr; } .ds-editorial-queue { border-right:0; } .ds-editorial-approval { border-left:0; border-top:1px solid #d9d8d0; } }"
     }
   ],
   "narrative": {
     "northStar": "Luz que Reconcilia",
-    "overview": "O sistema traduz acolhimento pastoral como uma cena de luz: campos midnight e navy dão profundidade institucional, planos cobalt conduzem o olhar e o dourado marca os momentos de encontro e ação. Em contraste, superfícies off-white desaceleram a experiência para agenda, doutrina, notícias e leitura longa. O resultado é solene sem ser distante, contemporâneo sem perder o caráter comunitário.\n\nA marca oficial e os registros reais da igreja são a autoridade visual. A expressão é editorial e condensada nas chamadas, mas recorre a uma sans de sistema no conteúdo extenso para sustentar legibilidade. O ritmo alterna entradas monumentais com blocos calmos e informativos; não é uma sequência indiscriminada de cartões.",
+    "overview": "O sistema traduz acolhimento pastoral como uma cena de luz: campos midnight e navy dão profundidade institucional, planos cobalt conduzem o olhar e o dourado marca os momentos de encontro e ação. Em contraste, superfícies off-white desaceleram a experiência para agenda, doutrina, notícias e leitura longa. O resultado é solene sem ser distante, contemporâneo sem perder o caráter comunitário.\n\nA marca oficial e os registros reais da igreja são a autoridade visual. A expressão é editorial e condensada nas chamadas, mas recorre a uma sans de sistema no conteúdo extenso para sustentar legibilidade. O ritmo alterna entradas monumentais com blocos calmos e informativos; não é uma sequência indiscriminada de cartões.\n\nNa superfície operacional de gestão editorial, essa mesma identidade assume densidade de trabalho: navy organiza a fila, papel sustenta o documento e a trilha de decisão permanece visível. A composição favorece uma revisão sequencial e cuidadosa, com autoria, estado e consequência sempre explícitos; ela não tenta converter o trabalho editorial em um painel genérico de métricas.",
     "keyCharacteristics": [
       "Azul profundo e cobalt como ambiente; dourado como luz e ação.",
       "Tipografia condensada para voz e hierarquia; sans de sistema para leitura longa.",
       "Superfícies amplas, cantos compactos e divisores finos.",
       "Fotografia comunitária real, exibida com enquadramento respeitoso e carregamento seletivo.",
-      "Estados de foco explícitos e movimento reduzido respeitado em toda a experiência."
+      "Estados de foco explícitos e movimento reduzido respeitado em toda a experiência.",
+      "Gestão editorial em fluxo fila–documento–aprovação, sem publicação implícita."
     ],
     "rules": [
       { "name": "The Gold Is a Signal Rule", "body": "Dourado indica ação principal, foco em fundo escuro ou um pequeno marco de hierarquia; ele não cobre grandes superfícies de leitura.", "section": "colors" },
       { "name": "The Alternating Sanctuary Rule", "body": "Áreas navy criam presença e pausa; paper, white e quiet-surface retomam leitura e serviço. A alternância substitui grades intermináveis de cartões.", "section": "colors" },
+      { "name": "The Editorial Consequence Rule", "body": "No dossiê de revisão, dourado significa solicitar ajustes e cobalt funcional significa aprovar; estado, usuário e efeito não podem depender apenas da cor.", "section": "colors" },
       { "name": "The Condensed Voice, Open Reading Rule", "body": "Anton e Barlow Condensed constroem a voz pública; a sans de sistema assume parágrafos longos, controles densos e informação verificável.", "section": "typography" },
       { "name": "The Monument Is Route-Specific Rule", "body": "O display acima de 6rem e a linha institucional em caixa alta pertencem ao hero aprovado da home, não são um padrão automático para novas páginas.", "section": "typography" },
       { "name": "The Tonal-First Rule", "body": "Crie profundidade primeiro com contraste de superfície, divisores e enquadramento; reserve a sombra ambiente para uma peça visual que realmente precise se destacar.", "section": "elevation" }
@@ -212,7 +248,9 @@
       "Do use Anton e Barlow Condensed para voz pública, mantendo a sans de sistema em textos longos e controles densos.",
       "Do preserve a marca oficial, imagens documentais reais e enquadramento `contain` quando um corte poderia remover pessoas.",
       "Do keep controles interativos com alvo mínimo de 44px, foco visível e estados compreensíveis sem depender só de movimento.",
-      "Do keep notícias como conteúdo editorial plano, com fonte, data e saída para a publicação original."
+      "Do keep notícias como conteúdo editorial plano, com fonte, data e saída para a publicação original.",
+      "Do keep a gestão editorial como rota somente de desenvolvimento até autenticação e RLS receberem revisão humana.",
+      "Do keep fila, documento e aprovação em ordem sequencial, com identidade do usuário, estado e consequência escritos por extenso."
     ],
     "donts": [
       "Don't transformar cada seção em uma grade de cartões elevados; use ritmo, tom e divisores como estrutura principal.",
@@ -220,7 +258,9 @@
       "Don't aplicar o hero monumental, a linha institucional em caixa alta ou a cena de broadcast a rotas que não sejam a home sem uma nova decisão de superfície.",
       "Don't cortar rostos e corpos em registros comunitários, pré-carregar o álbum inteiro ou iniciar mídia automaticamente.",
       "Don't inventar edifícios, notícias, fontes, datas, doutrina ou identidade visual para preencher lacunas.",
-      "Don't depender de animação para comunicar estado; a experiência completa deve permanecer legível com movimento reduzido."
+      "Don't depender de animação para comunicar estado; a experiência completa deve permanecer legível com movimento reduzido.",
+      "Don't permitir que a demonstração editorial sugira publicação, persistência ou mutação de banco; toda ação local deve declarar seu limite.",
+      "Don't trocar a fotografia real do acervo por imagem gerada, decoração abstrata ou fundo cenográfico no dossiê."
     ]
   }
 }

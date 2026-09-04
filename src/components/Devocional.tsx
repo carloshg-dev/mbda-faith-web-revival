@@ -1,4 +1,5 @@
 import { Radio, Youtube } from "lucide-react";
+import { localVideoPath, youtubeEmbedUrl } from "../domain/media";
 
 interface VideoConfig {
   type: "youtube" | "local" | "auto";
@@ -8,21 +9,21 @@ interface VideoConfig {
 
 const videoConfig: VideoConfig = {
   type: "local",
-  src: "/videos/aobrigatoriedade-de-evangelizar.mp4",
+  src: "/videos/devocional-evangelizar-540p.mp4",
   title: "Devocional - A Obrigatoriedade de Evangelizar - Ministério Bíblico da Reconciliação",
 };
 
-const isYouTubeUrl = (url: string) => url.includes("youtube.com") || url.includes("youtu.be");
-
 const VideoPlayer = ({ config }: { config: VideoConfig }) => {
   const { type, src, title } = config;
-  const videoType = type === "auto" ? (isYouTubeUrl(src) ? "youtube" : "local") : type;
+  const embed = youtubeEmbedUrl(src);
+  const videoType = type === "auto" ? (embed ? "youtube" : "local") : type;
 
   if (videoType === "youtube") {
+    if (!embed) return <p>Vídeo indisponível.</p>;
     return (
       <iframe
         className="h-full w-full"
-        src={src}
+        src={embed}
         title={title}
         frameBorder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,25 +33,12 @@ const VideoPlayer = ({ config }: { config: VideoConfig }) => {
     );
   }
 
-  if (src.includes("youtu")) {
-    return (
-      <button
-        type="button"
-        className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-[#1d64d8] to-[#0f4ea8] text-center text-white transition-colors hover:from-[#1958bf] hover:to-[#0d438f]"
-        onClick={() => window.open(src, "_blank", "noopener,noreferrer")}
-      >
-        <span className="text-5xl leading-none">▶</span>
-        <h3 className="mt-3 text-xl font-bold">Assistir no YouTube</h3>
-        <p className="mt-1 text-sm text-white/85">Clique para abrir o devocional completo</p>
-      </button>
-    );
-  }
+  const local = localVideoPath(src);
+  if (!local) return <p>Vídeo indisponível.</p>;
 
   return (
-    <video className="h-full w-full object-cover" controls preload="metadata" title={title}>
-      <source src={src} type="video/mp4" />
-      <source src={src} type="video/webm" />
-      <source src={src} type="video/ogg" />
+    <video className="h-full w-full object-cover" controls preload="none" title={title}>
+      <source src={local} />
       Seu navegador não suporta o elemento de vídeo.
     </video>
   );

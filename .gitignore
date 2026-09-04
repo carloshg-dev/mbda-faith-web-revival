@@ -58,3 +58,5 @@ tore-*
 /public/images/logo-26anos.png
 /public/images/logo-sem-faicha.png
 /.impeccable/review/
+/source-assets/*.zip
+/public/images/site/*.webp.json

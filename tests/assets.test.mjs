@@ -25,6 +25,26 @@ test('event gallery uses the approved event path, couples and solo pastor curati
   for(const id of ['005','020','027','034','052']) assert.match(galleryData,new RegExp(`id:\\s*["']${id}["'],\\s*kind:\\s*["']couple["']`));
 });
 
+test('baptism gallery starts with the featured celebration and uses responsive local derivatives',async()=>{
+  const [galleryData,galleryView]=await Promise.all([
+    readFile(new URL('../src/data/church.ts',import.meta.url),'utf8'),
+    readFile(new URL('../src/components/site/EventGallery.tsx',import.meta.url),'utf8'),
+  ]);
+  const photos=galleryData.slice(galleryData.indexOf('export const EVENT_PHOTOS'),galleryData.indexOf('export const eventPhoto'));
+  assert.match(photos,/EVENT_PHOTOS\s*=\s*\[\s*\{ id: "batismo-01"/);
+  assert.equal((photos.match(/kind: "baptism"/g)??[]).length,6);
+  assert.match(galleryData,/26 de agosto de 2026/);
+  assert.match(galleryData,/youtube\.com\/watch\?v=lyla5Gl2oBI/);
+  assert.match(galleryView,/srcSet=/);
+  for(let index=1;index<=6;index++) {
+    const id=String(index).padStart(2,'0');
+    await Promise.all([
+      access(new URL(`../public/images/site/eventos/batismo-${id}-480.webp`,import.meta.url)),
+      access(new URL(`../public/images/site/eventos/batismo-${id}-720.webp`,import.meta.url)),
+    ]);
+  }
+});
+
 test('weekly schedule exposes only the confirmed Sunday and Wednesday services',async()=>{
   const scheduleData=await readFile(new URL('../src/data/church.ts',import.meta.url),'utf8');
   const activeSchedule=scheduleData.slice(scheduleData.indexOf('export const WEEKLY_SCHEDULE'),scheduleData.indexOf('export type EventPhoto'));

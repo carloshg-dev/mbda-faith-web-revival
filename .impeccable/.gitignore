@@ -7,3 +7,8 @@ questions/
 # Browser profiles generated during local visual verification are not project assets.
 qa/profile-*/
 *profile*/
+
+# Generated briefs, screenshots and exploration artifacts remain local.
+*
+!.gitignore
+!design.json

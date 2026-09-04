@@ -22,7 +22,7 @@ export default function ContactSection() {
     try {
       const { default: emailjs } = await import("@emailjs/browser");
       await emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
-        name:escapeTemplateText(input.name.trim()), email:input.email.trim().toLowerCase(),
+        name:escapeTemplateText(input.name.trim()), email:escapeTemplateText(input.email.trim().toLowerCase()),
         message:escapeTemplateText(input.message.trim()), timestamp:new Date().toLocaleString("pt-BR", {timeZone:"America/Sao_Paulo"}),
       }, {publicKey:EMAILJS_CONFIG.PUBLIC_KEY, limitRate:{id:"church-contact",throttle:60_000}});
       form.reset(); setStatus("success");

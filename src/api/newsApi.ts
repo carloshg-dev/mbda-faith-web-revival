@@ -1,4 +1,5 @@
-import { FRESHNESS_MS, MAX_FEED_BYTES, normalizeFeed, type NewsFeed } from "../domain/news.ts";
+import { FRESHNESS_MS, MAX_FEED_BYTES } from "../domain/newsPolicy.ts";
+import type { NewsFeed } from "../domain/news.ts";
 export type { NewsItem } from "../domain/news";
 
 const CACHE_MS = 15 * 60_000;
@@ -41,6 +42,8 @@ export class NewsClient {
         }
       } finally { reader.releaseLock(); }
       content += decoder.decode();
+      // Load parsing code only when the bounded feed is actually requested.
+      const { normalizeFeed } = await import("../domain/news.ts");
       const feed = normalizeFeed(JSON.parse(content), this.now());
       this.cached = feed; this.checkedAt = this.now();
       return feed;

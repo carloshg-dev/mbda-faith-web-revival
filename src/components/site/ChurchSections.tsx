@@ -62,7 +62,7 @@ export function FamilySpace() {
   return <section id="espaco-familia" className="section-space family-section" aria-labelledby="family-title">
     <div className="content-width family-layout">
       <div className="family-photo"><img src="/images/site/familia.webp" alt="Arte do Espaço Família do Ministério Bíblico da Reconciliação" width="1200" height="676" loading="lazy" decoding="async" /><p className="fine-print">Arte do acervo. Consulte a agenda atual para confirmar os encontros.</p></div>
-      <div><h2 id="family-title">Crescer na fé.<br />Caminhar juntos.</h2><p>Valorizamos as famílias e celebramos cada momento de cuidado, discipulado e convivência cristã.</p><p>O Espaço Família é parte da nossa vida em comunidade. Conheça os encontros e converse conosco para participar.</p><a className="button button-blue" href={CHURCH.whatsapp} target="_blank" rel="noopener noreferrer">Fale com a igreja <ArrowUpRight aria-hidden="true" /></a><a className="inline-link" href="/blog">Estude Tessalonicenses <ChevronRight aria-hidden="true" /></a></div>
+      <div><h2 id="family-title">Crescer na fé.<br />Caminhar juntos.</h2><p>Valorizamos as famílias e celebramos cada momento de cuidado, discipulado e convivência cristã.</p><p>O Espaço Família é parte da nossa vida em comunidade. Conheça os encontros e converse conosco para participar.</p><a className="button button-blue" href={CHURCH.whatsapp} target="_blank" rel="noopener noreferrer">Fale com a igreja <ArrowUpRight aria-hidden="true" /></a></div>
     </div>
   </section>;
 }

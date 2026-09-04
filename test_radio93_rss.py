@@ -1,5 +1,5 @@
-import requests
-import xml.etree.ElementTree as ET
+from defusedxml import ElementTree as ET
+from scripts.bounded_http import BoundedSession
 from datetime import datetime
 
 def test_radio93_rss():
@@ -12,14 +12,15 @@ def test_radio93_rss():
     
     try:
         print(f"Testando RSS: {rss_url}")
-        response = requests.get(rss_url, headers=headers, timeout=10)
+        with BoundedSession(max_bytes=1_000_000, max_requests=4, max_seconds=30) as session:
+            response = session.get(rss_url, headers=headers)
         response.raise_for_status()
         
         print(f"Status: {response.status_code}")
         print(f"Content-Type: {response.headers.get('content-type')}")
         
         # Parse XML
-        root = ET.fromstring(response.content)
+        root = ET.fromstring(response.content, forbid_dtd=True, forbid_entities=True, forbid_external=True)
         
         # Encontrar todos os itens
         items = root.findall('.//item')

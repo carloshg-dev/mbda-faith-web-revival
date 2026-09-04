@@ -1,4 +1,4 @@
-import { CalendarDays, ChevronRight } from "lucide-react";
+import { BookOpenText, CalendarDays, ChevronRight } from "lucide-react";
 import { eventPhoto, WEEKLY_SCHEDULE } from "../../data/church";
 
 export default function WeeklyPreview() {
@@ -12,6 +12,11 @@ export default function WeeklyPreview() {
             <CalendarDays aria-hidden="true" /><span>{item.short}</span><time>{item.time}</time><span>{item.title}</span><ChevronRight aria-hidden="true" />
           </a>)}
         </div>
+        <a className="literature-feature" href="/blog">
+          <BookOpenText aria-hidden="true" />
+          <span><strong>Literatura em destaque aplicada</strong><small>Leitura bíblica, contexto e aplicação para a vida da igreja.</small></span>
+          <ChevronRight aria-hidden="true" />
+        </a>
       </div>
       <a className="event-teaser" href="#comunidade">
         <img src={eventPhoto("032", 480)} srcSet={`${eventPhoto("032",480)} 480w, ${eventPhoto("032",720)} 720w`} sizes="(max-width: 760px) 90vw, 36vw" width="720" height="1280" alt="Casal participante de um evento da Reconciliação" loading="lazy" decoding="async" />

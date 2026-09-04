@@ -15,6 +15,10 @@ colors:
   quiet-line: "#d9d8d0"
   quiet-surface: "#e9e7df"
   navy-copy: "#c7d1e5"
+  review-navy-selected: "#182947"
+  review-paper: "#f8f4eb"
+  review-info-surface: "#edf3ff"
+  review-info-ink: "#173b79"
 typography:
   display:
     fontFamily: '"Anton", sans-serif'
@@ -47,6 +51,17 @@ typography:
     fontSize: "13px"
     fontWeight: 600
     lineHeight: 1.5
+  editorial-metadata:
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+    fontSize: "12px"
+    fontWeight: 600
+    lineHeight: 1.5
+    letterSpacing: ".1em"
+  editorial-action:
+    fontFamily: '"Barlow Condensed", sans-serif'
+    fontSize: "18px"
+    fontWeight: 600
+    lineHeight: 1
 rounded:
   compact: "4px"
   circle: "50%"
@@ -93,6 +108,18 @@ components:
     rounded: "{rounded.circle}"
     width: "44px"
     height: "44px"
+  editorial-adjustment-action:
+    backgroundColor: "{colors.reconciliation-gold}"
+    textColor: "{colors.midnight-ink}"
+    typography: "{typography.editorial-action}"
+    rounded: "{rounded.compact}"
+    height: "48px"
+  editorial-approval-action:
+    backgroundColor: "{colors.action-blue}"
+    textColor: "{colors.pure-white}"
+    typography: "{typography.editorial-action}"
+    rounded: "{rounded.compact}"
+    height: "48px"
 ---
 
 # Design System: Ministério Bíblico da Reconciliação
@@ -105,6 +132,8 @@ O sistema traduz acolhimento pastoral como uma cena de luz: campos midnight e na
 
 A marca oficial e os registros reais da igreja são a autoridade visual. A expressão é editorial e condensada nas chamadas, mas recorre a uma sans de sistema no conteúdo extenso para sustentar legibilidade. O ritmo alterna entradas monumentais com blocos calmos e informativos; não é uma sequência indiscriminada de cartões.
 
+Na superfície operacional de gestão editorial, essa mesma identidade assume densidade de trabalho: navy organiza a fila, papel sustenta o documento e a trilha de decisão permanece visível. A composição favorece uma revisão sequencial e cuidadosa, com autoria, estado e consequência sempre explícitos; ela não tenta converter o trabalho editorial em um painel genérico de métricas.
+
 **Key Characteristics:**
 
 - Azul profundo e cobalt como ambiente; dourado como luz e ação.
@@ -112,6 +141,7 @@ A marca oficial e os registros reais da igreja são a autoridade visual. A expre
 - Superfícies amplas, cantos compactos e divisores finos.
 - Fotografia comunitária real, exibida com enquadramento respeitoso e carregamento seletivo.
 - Estados de foco explícitos e movimento reduzido respeitado em toda a experiência.
+- Gestão editorial em fluxo fila–documento–aprovação, sem publicação implícita.
 
 ## Colors
 
@@ -137,12 +167,18 @@ A paleta alterna profundidade azul-noturna e superfícies de leitura quentes, co
 - **Quiet Line:** divisores de um pixel em listas, filtros e cartões editoriais.
 - **Navy Copy:** texto secundário legível em blocos navy.
 - **Pure White:** contraste pontual em ações azuis.
+- **Review Navy Selected:** extensão tonal reservada à pendência ativa na fila editorial.
+- **Review Paper:** papel secundário da trilha de aprovação, separado do documento sem recorrer a sombra.
+- **Review Info Surface:** faixa clara que comunica o limite local e não-publicável da demonstração.
+- **Review Info Ink:** texto operacional de alto contraste dentro da faixa informativa.
 
 ### Named Rules
 
 **The Gold Is a Signal Rule.** Dourado indica ação principal, foco em fundo escuro ou um pequeno marco de hierarquia; ele não cobre grandes superfícies de leitura.
 
 **The Alternating Sanctuary Rule.** Áreas navy criam presença e pausa; paper, white e quiet-surface retomam leitura e serviço. A alternância substitui grades intermináveis de cartões.
+
+**The Editorial Consequence Rule.** No dossiê de revisão, dourado significa solicitar ajustes e cobalt funcional significa aprovar; estado, usuário e efeito não podem depender apenas da cor.
 
 ## Typography
 
@@ -162,6 +198,8 @@ A paleta alterna profundidade azul-noturna e superfícies de leitura quentes, co
 - **Action** (600, base de 24px, 1.2): botões, navegação principal e links de alta visibilidade.
 - **Body** (400, 16px, 1.65): leitura corrente; blocos longos ficam tipicamente entre 65ch e 75ch.
 - **Label** (600, 13px, 1.5): campos, estados, metadados e texto operacional curto.
+- **Editorial Metadata** (600, rampa de 10px a 14px, 1.5): identificação, datas, histórico, estados e microcopy do dossiê; 12px é o ponto recorrente, com caixa alta e espaçamento de 0.1em apenas nos rótulos estruturais.
+- **Editorial Action** (600, 18px, 1): decisões compactas na trilha de aprovação, sempre em Barlow Condensed.
 
 ### Named Rules
 
@@ -183,9 +221,13 @@ As composições usam grids assimétricos de duas colunas para equilibrar mensag
 
 **ReconNews.** O feed vive sobre reading-white. Filtros começam em uma grade 1.5/1/1, passam a duas colunas em 900px e uma em 640px. As matérias seguem três, duas e uma coluna nos mesmos estágios editoriais, mantendo metadados e ações junto à fonte.
 
+**Editorial management / Dossiê de revisão.** A rota `/gestao` é exclusivamente local e carregada apenas em desenvolvimento até existirem autenticação e políticas RLS revisadas. No desktop, a primeira vista usa três colunas contínuas — fila navy de 340px, documento dominante de no mínimo 520px e aprovação de 310px — sem uma grade de widgets. Em 900px, a ordem permanece fila → documento → aprovação: a fila vira trilho horizontal, o dossiê ocupa a largura disponível e a decisão vem em seguida. Em 560px, cabeçalho e metadados compactam sem ocultar a identidade do revisor. A prioridade é concluir uma revisão sequencial, não alternar rapidamente entre métricas.
+
 ## Elevation & Depth
 
 O sistema é tonal por padrão: mudanças entre midnight, navy, paper, white e quiet-surface criam a maior parte da profundidade. Uma sombra ambiente curta e suave eleva o teaser de evento; no stand, a capa recebe uma sombra própria e a linha dourada reforça a prateleira. Notícias, formulários e listas dependem de cor, borda e recorte, não de pilhas de sombras.
+
+O dossiê editorial é inteiramente tonal e plano: navy selecionado, reading-white, review-paper e divisores de 1px separam fila, documento e aprovação. Não adicione sombras à superfície operacional.
 
 ### Shadow Vocabulary
 
@@ -201,6 +243,8 @@ O sistema é tonal por padrão: mudanças entre midnight, navy, paper, white e q
 O idioma formal é contido: 4px em botões, campos, mídia, mensagens de estado e superfícies enquadradas. Controles puramente icônicos e símbolos de reprodução usam círculos completos de pelo menos 44px. Divisores de 1px estruturam listas e artigos sem transformar cada conteúdo em caixa.
 
 Imagens comunitárias respeitam sua proporção: o carrossel usa `object-fit: contain` sobre navy para não cortar pessoas; teasers e cartões editoriais podem usar `cover` quando o enquadramento foi explicitamente definido. A cena do hero é fundo ambiental, nunca uma fotografia documental do edifício.
+
+Na gestão editorial, painéis, campos, mídia, estados e ações conservam os cantos de 4px; regras finas, e não cartões arredondados, sustentam a leitura contínua do dossiê.
 
 ## Components
 
@@ -249,6 +293,15 @@ Cada obra mantém capa integral à esquerda e texto à direita, com título Barl
 
 Filtros têm rótulos explícitos e campos compactos; estado de coleta ocupa uma faixa entre divisores. Cartões mostram fonte, categoria, resumo limitado a três linhas, data qualificada e link externo visível. Estados vazio, desatualizado e indisponível preservam a mesma hierarquia editorial e nunca simulam conteúdo.
 
+### Editorial Review Dossier
+
+- **Queue:** fila navy compacta com tipo, título, revisão, estado, horário e seleção cobalt; o item ativo recebe Review Navy Selected e a fotografia, quando usada, deve vir do acervo real.
+- **Document:** peça dominante em Reading White, com título condensado, metadados de 10px a 14px, fotografia documental no fluxo, resumo e prévia de publicação; não funciona como fundo nem como painel de métricas.
+- **Approval rail:** Review Paper mantém autoria, identidade do revisor, revisão, linha do tempo, checklist e comentário em sequência persistente.
+- **States:** rascunho, em revisão, ajustes solicitados, aprovado, publicado e arquivado são nomeados textualmente. Enquanto a rota for local, a faixa informativa e os retornos de ação devem afirmar que nada foi publicado nem alterado no banco.
+- **Actions:** “Solicitar ajustes” usa Reconciliation Gold; “Aprovar revisão” usa o cobalt funcional de Action Blue. Ambas mantêm cantos de 4px, altura mínima de 48px, estado desabilitado e foco cobalt visível.
+- **Responsive flow:** abaixo de 900px, preserve a ordem fila horizontal → documento → aprovação; abaixo de 560px, mantenha a identidade do usuário visível junto ao estado.
+
 ## Do's and Don'ts
 
 ### Do:
@@ -259,6 +312,8 @@ Filtros têm rótulos explícitos e campos compactos; estado de coleta ocupa uma
 - **Do** preserve a marca oficial, imagens documentais reais e enquadramento `contain` quando um corte poderia remover pessoas.
 - **Do** keep controles interativos com alvo mínimo de 44px, foco visível e estados compreensíveis sem depender só de movimento.
 - **Do** keep notícias como conteúdo editorial plano, com fonte, data e saída para a publicação original.
+- **Do** keep a gestão editorial como rota somente de desenvolvimento até autenticação e RLS receberem revisão humana.
+- **Do** keep fila, documento e aprovação em ordem sequencial, com identidade do usuário, estado e consequência escritos por extenso.
 
 ### Don't:
 
@@ -268,3 +323,5 @@ Filtros têm rótulos explícitos e campos compactos; estado de coleta ocupa uma
 - **Don't** cortar rostos e corpos em registros comunitários, pré-carregar o álbum inteiro ou iniciar mídia automaticamente.
 - **Don't** inventar edifícios, notícias, fontes, datas, doutrina ou identidade visual para preencher lacunas.
 - **Don't** depender de animação para comunicar estado; a experiência completa deve permanecer legível com movimento reduzido.
+- **Don't** permitir que a demonstração editorial sugira publicação, persistência ou mutação de banco; toda ação local deve declarar seu limite.
+- **Don't** trocar a fotografia real do acervo por imagem gerada, decoração abstrata ou fundo cenográfico no dossiê.

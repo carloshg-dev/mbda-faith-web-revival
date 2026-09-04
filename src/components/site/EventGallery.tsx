@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
-import { EVENT_PHOTOS, eventPhoto } from "../../data/church";
+import { ChevronLeft, ChevronRight, ExternalLink, Pause, Play } from "lucide-react";
+import { BAPTISM_EVENT, EVENT_PHOTOS, eventPhoto, type EventPhoto } from "../../data/church";
 
 export default function EventGallery() {
   const section = useRef<HTMLElement>(null);
@@ -29,13 +29,15 @@ export default function EventGallery() {
     return () => clearInterval(timer);
   }, [running]);
   const change = (step: number) => { setPaused(true); setFailed(false); setIndex(i => (i + step + EVENT_PHOTOS.length) % EVENT_PHOTOS.length); };
-  const photo = EVENT_PHOTOS[index];
-  const alt = photo.kind === "pastor"
+  const photo: EventPhoto = EVENT_PHOTOS[index];
+  const alt = photo.alt ?? (photo.kind === "pastor"
     ? "Pr. Luiz Carlos Aparício pregando na tribuna durante um evento da Reconciliação"
     : photo.kind === "community"
       ? "Momento de comunhão entre participantes de um evento da Reconciliação"
-      : "Casal participante de um evento da Reconciliação";
-  const caption = photo.kind === "pastor"
+      : "Casal participante de um evento da Reconciliação");
+  const caption = photo.kind === "baptism"
+    ? `${BAPTISM_EVENT.title} · ${BAPTISM_EVENT.date}`
+    : photo.kind === "pastor"
     ? "Pr. Luiz Carlos Aparício · Ministração na Reconciliação"
     : "Eventos da Reconciliação · Ministério Bíblico da Reconciliação";
   return <section id="comunidade" ref={section} className="section-space community-section" aria-labelledby="community-title">
@@ -46,6 +48,12 @@ export default function EventGallery() {
         <p>Encontros que fortalecem os vínculos, renovam a fé e fazem parte da nossa história.</p>
         <h3>Eventos da Reconciliação</h3>
         <p>Uma seleção de registros reais dos encontros da nossa igreja. Celebrações, comunhão e momentos que fazem parte da nossa história.</p>
+        <div className="event-feature-note">
+          <time dateTime={BAPTISM_EVENT.dateTime}>{BAPTISM_EVENT.date}</time>
+          <strong>{BAPTISM_EVENT.title}</strong>
+          <p>{BAPTISM_EVENT.description}</p>
+          <a href={BAPTISM_EVENT.youtube} target="_blank" rel="noopener noreferrer" className="inline-link">Assistir à celebração <ExternalLink aria-hidden="true" /></a>
+        </div>
         <a href="#agenda" className="inline-link">Confira a agenda semanal <ChevronRight aria-hidden="true" /></a>
         <div className="gallery-controls" onFocusCapture={() => setFocused(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setFocused(false); }}>
           <span className="gallery-position" aria-live={running ? "off" : "polite"}>{String(index+1).padStart(2,"0")} <span>/ {String(EVENT_PHOTOS.length).padStart(2,"0")}</span></span>
