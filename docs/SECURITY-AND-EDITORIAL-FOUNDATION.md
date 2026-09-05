@@ -1,6 +1,8 @@
 # Fundação de segurança e gestão editorial
 
-Estado: implementação local para revisão. Nenhuma migração de banco, configuração de produção ou publicação faz parte desta etapa.
+Estado atualizado em 05/09/2026 UTC: o domínio editorial e o painel continuam locais.
+O primeiro pacote de permissões do banco foi aplicado em produção, com autorização,
+backup e restauração verificada. Evidências em `SUPABASE-HARDENING-2026-09-05.md`.
 
 ## Impacto no sistema atual
 
@@ -35,7 +37,11 @@ Todo conteúdo percorre `rascunho → em revisão → aprovado → publicado`. C
 
 ## Supabase: limite desta etapa
 
-O projeto confirmado anteriormente foi apenas validado quanto à identidade e leitura pública existente. Isso não comprova RLS, papéis, políticas de escrita, recuperação ou backup.
+O projeto foi agora auditado por catálogo PostgreSQL. A inserção pública foi
+bloqueada, os grants foram reduzidos, o cadastro público foi desabilitado e a
+função de limpeza recebeu search_path fixado. Os dados e a leitura pública foram
+preservados. Isso ainda não implementa os papéis, login ou fluxo de aprovação
+editorial no backend; consulte o relatório datado para o escopo exato do backup.
 
 A URL PostgreSQL é segredo de servidor. Localmente, quando uma ferramenta de administração realmente precisar dela, a sintaxe é `DATABASE_URL="postgresql://..."` no `.env.local`. Ela nunca deve receber prefixo `VITE_`, ser enviada ao Git ou ser colocada no código do navegador. O site atual não consome essa variável.
 
@@ -52,6 +58,6 @@ Antes de ativar o painel, ainda será necessária revisão humana de um pacote i
 - Os testes locais demonstram as regras do domínio, mas não demonstram segurança de produção do Supabase.
 - O build local valida empacotamento; não equivale a deploy.
 - A auditoria npm está limpa no ambiente atual.
-- A auditoria Python baseada em resolução de requisitos não concluiu no Windows; o job permanece limitado a dez minutos no CI e deve ser observado antes da publicação.
+- O gate Python da publicação `2f76e38` concluiu com sucesso no GitHub Actions.
 - Alertas CodeQL só podem ser considerados corrigidos depois de um novo resultado no GitHub, não apenas pelo patch local.
 - O painel visual ainda depende da escolha da organização da interface; nenhuma autenticação simulada será exposta em produção.

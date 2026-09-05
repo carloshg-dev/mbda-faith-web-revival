@@ -1,0 +1,4 @@
+# Manual Supabase backup/hardening utility; Python 3.11+.
+# Not part of the website build or client bundle.
+psycopg2-binary==2.9.12
+python-dotenv==1.2.2

@@ -60,3 +60,7 @@ tore-*
 /.impeccable/review/
 /source-assets/*.zip
 /public/images/site/*.webp.json
+
+# Private, reusable audit kit: keep its originals and review out of this public repo.
+/docs/irondome-security-vybecode/
+/docs/IRONDOME-REVIEW-2026-09-05.md

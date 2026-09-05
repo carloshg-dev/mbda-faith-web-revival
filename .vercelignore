@@ -9,3 +9,7 @@ public/images/logo-26anos.png
 public/images/logo-sem-faicha.png
 public/videos/aobrigatoriedade-de-evangelizar.mp4
 public/videos/devocional-ofrutodafe.mp4
+
+# Local audit material is not part of the church deployment.
+docs/irondome-security-vybecode
+docs/IRONDOME-REVIEW-2026-09-05.md
